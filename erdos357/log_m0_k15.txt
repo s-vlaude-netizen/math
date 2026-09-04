@@ -1,0 +1,4 @@
+K=15 M=20 mode=0 firstgap=0  nodes=407627538  time=115.22s  NONE
+K=15 M=21 mode=0 firstgap=0  nodes=1099325340  time=330.30s  NONE
+K=15 M=22 mode=0 firstgap=0  nodes=101823919  time=28.89s  FOUND gaps=[1,11,16,8,21,22,20,19,15,18,14,17,6,3,4]
+==> a(15) = 22  (mode 0)
