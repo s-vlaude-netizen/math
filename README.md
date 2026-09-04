@@ -38,7 +38,7 @@ condition $a_i\le n$ bounds its gaps. Both sequences therefore ask:
 
 | | published | new |
 |---|---|---|
-| A364153 | 13 terms, to $a(13)=18$ | $a(14)=20$, $a(15)=22$ |
+| A364153 | 13 terms, to $a(13)=18$ | $a(14)=20$, $a(15)=22$, $a(16)=24$ |
 | A364132 | 22 terms, to $a(22)=52$ | $a(23)=56$, $a(24)=60$, $a(25)=63$ |
 
 ## Erdős 1016 — how sparse can a pancyclic graph be?

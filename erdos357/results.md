@@ -25,6 +25,7 @@ testing distinctness (`verify.py`).
 |---:|---:|---|---|
 | 14 | **20** | 1, 4, 6, 17, 15, 14, 20, 16, 19, 18, 8, 13, 9, 3 | $m=18$ (54 492 130 nodes), $m=19$ (149 445 063) |
 | 15 | **22** | 1, 11, 16, 8, 21, 22, 20, 19, 15, 18, 14, 17, 6, 3, 4 | $m=20$ (407 627 538), $m=21$ (1 099 325 340) |
+| 16 | **24** | 1, 2, 6, 5, 23, 20, 24, 22, 18, 12, 21, 17, 15, 10, 16, 19 | $m=22$ (2 973 532 126), $m=23$ (7 920 625 479) |
 
 ### A364132 (increasing)
 
@@ -46,10 +47,10 @@ $f(n)$, $n=1\ldots63$ (monotone):
 24 24 25
 ```
 
-$g(n)$, $n=1\ldots22$ (arbitrary order):
+$g(n)$, $n=1\ldots24$ (arbitrary order):
 
 ```
-1 2 3 3 4 5 6 6 7 8 8 9 10 11 11 11 12 13 13 14 14 15
+1 2 3 3 4 5 6 6 7 8 8 9 10 11 11 11 12 13 13 14 14 15 15 16
 ```
 
 Erdős asked whether $f(n)=o(n)$. At the record points the ratio $k/a(k)$ is
@@ -57,7 +58,7 @@ Erdős asked whether $f(n)=o(n)$. At the record points the ratio $k/a(k)$ is
 | $k$ | 10 | 12 | 15 | 18 | 20 | 22 | 23 | 24 | 25 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | $f$-ratio | .556 | .500 | .500 | .474 | .426 | .423 | **.411** | **.400** | **.397** |
-| $g$-ratio | .769 | .706 | .682 | — | — | — | — | — | — |
+| $g$-ratio | .769 | .706 | .682 (k=15), .667 (k=16) | — | — | — | — | — | — |
 
 The monotone ratio decreases essentially monotonically over the whole computed
 range and the two new terms continue it; the best proven lower bound in the
