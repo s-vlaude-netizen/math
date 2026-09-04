@@ -59,7 +59,7 @@ the triangle). The name looks like a leftover and may be worth correcting.
 
 ## A364132 / A364153 — Erdős problem 357
 
-**A364132** (monotone case), continuing `..., 41, 47, 50, 52`: `56, 60, 63`
+**A364132** (monotone case), continuing `..., 41, 47, 50, 52`: `56, 60, 63, 67`
 **A364153** (arbitrary order), continuing `..., 14, 17, 18`: `20, 22, 24`
 
 **Suggested comment for both.** Writing P_0=0 and P_i=a_1+...+a_i, a sum
@@ -77,3 +77,4 @@ A364132(k) is the same minimum restricted to rulers whose gaps increase.
 * A364132(23)=56: 1, 4, 6, 8, 24, 27, 33, 35, 36, 37, 39, 40, 41, 44, 45, 46, 48, 49, 52, 53, 54, 55, 56
 * A364132(24)=60: 1, 6, 12, 15, 30, 31, 36, 37, 40, 41, 42, 43, 44, 46, 47, 49, 50, 53, 54, 55, 56, 58, 59, 60
 * A364132(25)=63: 2, 4, 8, 10, 13, 33, 34, 41, 42, 43, 44, 45, 47, 48, 49, 51, 52, 53, 54, 55, 57, 59, 61, 62, 63
+* A364132(26)=67: 1, 2, 4, 5, 14, 22, 35, 39, 42, 44, 49, 50, 51, 52, 53, 54, 55, 56, 58, 59, 61, 63, 64, 65, 66, 67

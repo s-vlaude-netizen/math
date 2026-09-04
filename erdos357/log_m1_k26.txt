@@ -1,3 +1,6 @@
 K=26 M=63 mode=1 firstgap=0  nodes=4646240693  time=314.41s  NONE
 K=26 M=64 mode=1 firstgap=0  nodes=7543065861  time=514.24s  NONE
 K=26 M=65 mode=1 firstgap=0  nodes=11828068601  time=815.55s  NONE
+K=26 M=66 mode=1 firstgap=0  nodes=18859978541  time=1279.94s  NONE
+K=26 M=67 mode=1 firstgap=0  nodes=18773527  time=1.39s  FOUND gaps=[1,2,4,5,14,22,35,39,42,44,49,50,51,52,53,54,55,56,58,59,61,63,64,65,66,67]
+==> a(26) = 67  (mode 1)
