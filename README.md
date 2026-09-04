@@ -57,17 +57,21 @@ dimension only $k+1$, so it has at most $2^{k+1}-1$ cycles *in total* and its
 whole cycle spectrum is read off from that many bitmasks — no cycle enumeration.
 A counting prune and a rotation symmetry reduction do the rest.
 
-**New terms:** A105206 was known for $n=3\ldots22$; $h(n)$ is now determined
-exhaustively for $n=23\ldots35$ as well:
+**New terms:** A105206 was known for $n=3\ldots22$; $h(n)$ is now determined for
+$n=23\ldots40$ as well:
 
 ```
-n     23 24 25 26 27 28 29 30 31 32 33 34 35
-a(n)  27 28 30 31 32 33 34 35 36 37 38 39 40
+n     23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+a(n)  27 28 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45
 ```
+
+Up to $n=33$ the lower bound is an exhaustive refutation of every chord set one
+size smaller; from $n=34$ on it follows from Bondy's counting bound, and only a
+witness is needed.
 
 The by-product is evidence on Erdős's own question. Writing $N(k)$ for the
-largest $n$ with $h(n)=k$, the computed values give $N(k)/2^k = 3,\,2.5,\,2,\,1.75,\,1.5,\,\le1.14$
-for $k=0..5$ — falling at every step, where Bondy's counting bound alone would
+largest $n$ with $h(n)=k$, the computed values give $N(k)/2^k = 3,\,2.5,\,2,\,1.75,\,1.5$
+for $k=0..5$ (the last being $\le 1.25$) — falling at every step, where Bondy's counting bound alone would
 permit it to stay near 2 forever. That is the direction Erdős believed but could
 not prove.
 

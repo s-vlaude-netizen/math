@@ -3,3 +3,12 @@
    [n=36 k=2 ruled out: n=36 k=2 nodes=17 time=0.00s IMPOSSIBLE]
    [n=36 k=3 ruled out: n=36 k=3 nodes=17 time=0.00s IMPOSSIBLE]
    [n=36 k=4 ruled out: n=36 k=4 nodes=17 time=0.00s IMPOSSIBLE]
+n=36  h(n)=5  a(n)=41   n=36 k=5 nodes=276249985 time=735.83s PANCYCLIC chords=[(0,2),(0,11),(1,7),(7,10),(8,19)]
+   [n=37 k=0 ruled out: n=37 k=0 nodes=0 time=0.00s IMPOSSIBLE]
+   [n=37 k=1 ruled out: n=37 k=1 nodes=17 time=0.00s IMPOSSIBLE]
+   [n=37 k=2 ruled out: n=37 k=2 nodes=17 time=0.00s IMPOSSIBLE]
+   [n=37 k=3 ruled out: n=37 k=3 nodes=17 time=0.00s IMPOSSIBLE]
+   [n=37 k=4 ruled out: n=37 k=4 nodes=17 time=0.00s IMPOSSIBLE]
+   [n=37 k=5 ruled out: ]
+   [n=37 k=6 ruled out: ]
+n=37  NO SOLUTION up to k=6

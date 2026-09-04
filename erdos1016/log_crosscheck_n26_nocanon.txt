@@ -1,0 +1,1 @@
+n=26 k=4 nodes=311112744 time=422.47s IMPOSSIBLE
