@@ -1,7 +1,16 @@
-sidon
-pancyclic
+# compiled searchers (build with the commands in each README)
+erdos357/sidon
+erdos357/sidon2
+erdos1016/pancyclic
+erdos1016/pancyclic2
+erdos1016/heur
+erdos1016/heur2
+__pycache__/
+*.pyc
+# downloaded/derived survey data
 survey/problems.yaml
 survey/oeisdata.json
 survey/probs.json
 survey/openseqs.json
-pancyclic2
+# in-progress run logs
+erdos1016/refute41.txt
