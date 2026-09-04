@@ -1,0 +1,5 @@
+   [n=36 k=0 ruled out: n=36 k=0 nodes=0 time=0.00s IMPOSSIBLE]
+   [n=36 k=1 ruled out: n=36 k=1 nodes=17 time=0.00s IMPOSSIBLE]
+   [n=36 k=2 ruled out: n=36 k=2 nodes=17 time=0.00s IMPOSSIBLE]
+   [n=36 k=3 ruled out: n=36 k=3 nodes=17 time=0.00s IMPOSSIBLE]
+   [n=36 k=4 ruled out: n=36 k=4 nodes=17 time=0.00s IMPOSSIBLE]

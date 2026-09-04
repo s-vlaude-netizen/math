@@ -1,0 +1,1 @@
+K=16 M=22 mode=0 firstgap=0  nodes=2973532126  time=978.48s  NONE

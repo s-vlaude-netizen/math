@@ -1,0 +1,5 @@
+K=25 M=60 mode=1 firstgap=0  nodes=2011830971  time=136.04s  NONE
+K=25 M=61 mode=1 firstgap=0  nodes=3201978599  time=216.16s  NONE
+K=25 M=62 mode=1 firstgap=0  nodes=5199898929  time=344.45s  NONE
+K=25 M=63 mode=1 firstgap=0  nodes=1934799356  time=127.24s  FOUND gaps=[2,4,8,10,13,33,34,41,42,43,44,45,47,48,49,51,52,53,54,55,57,59,61,62,63]
+==> a(25) = 63  (mode 1)

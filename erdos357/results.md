@@ -32,16 +32,18 @@ testing distinctness (`verify.py`).
 |---:|---:|---|---|
 | 23 | **56** | 1, 4, 6, 8, 24, 27, 33, 35, 36, 37, 39, 40, 41, 44, 45, 46, 48, 49, 52, 53, 54, 55, 56 | $m=52,53,54,55$ (up to 566 123 991 nodes) |
 | 24 | **60** | 1, 6, 12, 15, 30, 31, 36, 37, 40, 41, 42, 43, 44, 46, 47, 49, 50, 53, 54, 55, 56, 58, 59, 60 | $m=56,\dots,59$ (up to 2 193 364 619 nodes) |
+| 25 | **63** | 2, 4, 8, 10, 13, 33, 34, 41, 42, 43, 44, 45, 47, 48, 49, 51, 52, 53, 54, 55, 57, 59, 61, 62, 63 | $m=60,61,62$ (up to 5 199 898 929 nodes) |
 
 ## The functions Erdős actually asked about
 
 Inverting the sequences gives $f$ and $g$ themselves.
 
-$f(n)$, $n=1\ldots60$ (monotone):
+$f(n)$, $n=1\ldots63$ (monotone):
 
 ```
 1 2 2 3 4 4 5 5 5 6 6 7 8 8 9 9 9 10 10 10 11 11 11 12 13 13 13 13 14 15
 15 15 16 16 16 17 17 18 18 18 19 19 19 19 19 19 20 20 20 21 21 22 22 22 22 23 23 23 23 24
+24 24 25
 ```
 
 $g(n)$, $n=1\ldots22$ (arbitrary order):
@@ -52,10 +54,10 @@ $g(n)$, $n=1\ldots22$ (arbitrary order):
 
 Erdős asked whether $f(n)=o(n)$. At the record points the ratio $k/a(k)$ is
 
-| $k$ | 10 | 12 | 15 | 18 | 20 | 22 | 23 | 24 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| $f$-ratio | .556 | .500 | .500 | .474 | .426 | .423 | **.411** | **.400** |
-| $g$-ratio | .769 | .706 | .682 | — | — | — | — | — |
+| $k$ | 10 | 12 | 15 | 18 | 20 | 22 | 23 | 24 | 25 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| $f$-ratio | .556 | .500 | .500 | .474 | .426 | .423 | **.411** | **.400** | **.397** |
+| $g$-ratio | .769 | .706 | .682 | — | — | — | — | — | — |
 
 The monotone ratio decreases essentially monotonically over the whole computed
 range and the two new terms continue it; the best proven lower bound in the
