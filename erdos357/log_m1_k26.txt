@@ -1,2 +1,3 @@
 K=26 M=63 mode=1 firstgap=0  nodes=4646240693  time=314.41s  NONE
 K=26 M=64 mode=1 firstgap=0  nodes=7543065861  time=514.24s  NONE
+K=26 M=65 mode=1 firstgap=0  nodes=11828068601  time=815.55s  NONE

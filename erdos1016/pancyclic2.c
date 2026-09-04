@@ -45,6 +45,7 @@ static int distinctLens;        /* number of lengths in 3..N realised          *
 static int best[16], haveSol = 0;
 static int FIRST = -1;
 static int CANON = 0;    /* 1 = restrict to canonical chord sets (see below) */
+static int SLICEI = -1, SLICEM = 0;  /* split the depth-1 branching over processes */
 static int MINSPAN = 0;  /* the forced minimum span s; chord (0,s) is always present */
 static int cand[2048], NCAND;   /* chords with span >= MINSPAN, excluding (0,MINSPAN) */
 
@@ -108,6 +109,7 @@ static int dfs(int j, int start)
 
     int limit = CANON ? NCAND : NCH;
     for (int ci = start; ci < limit; ci++) {
+        if (j == 1 && SLICEM && ci % SLICEM != SLICEI) continue;
         int c = CANON ? cand[ci] : ci;
         if (j == 0 && FIRST >= 0 && ci != FIRST) continue;
         chosen[j] = c;
@@ -149,6 +151,7 @@ int main(int argc, char **argv)
     for (int i = 3; i < argc; i++) {
         if (!strcmp(argv[i], "--canon")) CANON = 1;
         else if (!strcmp(argv[i], "--span") && i + 1 < argc) { CANON = 1; MINSPAN = atoi(argv[++i]); }
+        else if (!strcmp(argv[i], "--slice") && i + 2 < argc) { SLICEI = atoi(argv[++i]); SLICEM = atoi(argv[++i]); }
         else FIRST = atoi(argv[i]);
     }
     NE = N + K;
