@@ -69,11 +69,13 @@ Up to $n=33$ the lower bound is an exhaustive refutation of every chord set one
 size smaller; from $n=34$ on it follows from Bondy's counting bound, and only a
 witness is needed.
 
-The by-product is evidence on Erdős's own question. Writing $N(k)$ for the
-largest $n$ with $h(n)=k$, the computed values give $N(k)/2^k = 3,\,2.5,\,2,\,1.75,\,1.5$
-for $k=0..5$ (the last being $\le 1.25$) — falling at every step, where Bondy's counting bound alone would
-permit it to stay near 2 forever. That is the direction Erdős believed but could
-not prove.
+The by-product is evidence on Erdős's own question. Writing $N(k)$ for the largest
+$n$ with $h(n)=k$, the values are now exact for $k\le4$: $N(k)/2^k = 3,\,2.5,\,2,\,1.75,\,1.5$
+— falling at every step, where Bondy's counting bound alone would permit it to sit
+near 2 forever. That is the direction Erdős believed but could not prove. The next
+step is *not* settled: $h(40)=5$ gives only $N(5)\ge40$, so the ratio is somewhere
+in $[1.25,\,2.03]$, and the fall continues iff $N(5)<48$. Deciding $h(41)$ would
+resolve it; see `erdos1016/results.md`.
 
 ## Trusting the numbers
 

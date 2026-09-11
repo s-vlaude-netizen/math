@@ -69,13 +69,19 @@ even prove $h(n)-\log_2 n\to\infty$. Let $N(k)$ be the largest $n$ with $h(n)=k$
 
 | $k$ | 0 | 1 | 2 | 3 | 4 | 5 |
 |---|---:|---:|---:|---:|---:|---:|
-| $N(k)$ | 3 | 5 | 8 | 14 | 24 | $\ge 40$ |
+| $N(k)$ | 3 | 5 | 8 | 14 | 24 | $\in[40,65]$ |
 | Bondy's counting bound $2^{k+1}+1$ | 3 | 5 | 9 | 17 | 33 | 65 |
-| $N(k)/2^k$ | 3 | 2.5 | 2 | 1.75 | 1.5 | $\ge 1.25$ |
-| $k-\log_2 N(k)$ | −1.58 | −1.32 | −1.00 | −0.81 | −0.58 | $\le -0.32$ |
+| $N(k)/2^k$ | 3 | 2.5 | 2 | 1.75 | 1.5 | $\in[1.25,2.03]$ |
 
-$N(k)/2^k$ falls at every step of the computed range, and the gap to Bondy's
-bound widens monotonically ($0,0,1,3,9,\le 25$). If that persists,
-$h(n)-\log_2 n\to\infty$ — the direction Erdős believed but could not prove;
-the counting bound by itself would happily allow $N(k)/2^k$ to stay near 2
-forever. Six data points prove nothing, but all six point the same way.
+For $k\le 4$ these are exact, and the ratio $N(k)/2^k$ falls at every one of those
+four steps. If it keeps falling, $h(n)-\log_2 n\to\infty$ — the direction Erdős
+believed but could not prove; the counting bound by itself would happily allow
+$N(k)/2^k$ to sit near 2 forever.
+
+**$N(5)$ is not pinned down, and that is the honest caveat.** $h(40)=5$ gives only
+$N(5)\ge 40$, i.e. $N(5)/2^5\ge 1.25$ — a *lower* bound, which on its own does not
+continue the fall. The fall continues iff $N(5)<48$. Settling it means deciding
+$h(41)$: if no five-chord witness exists for $n=41$ then $N(5)=40$ and the ratio
+drops to 1.25; if one does exist the question moves to $n=42$. That decision is a
+finite computation — about 6.5 x 10^10 nodes, roughly 22 core-hours with
+`refute.sh 41 5` — and it has not been run to completion here.
