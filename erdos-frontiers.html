@@ -1,0 +1,571 @@
+<title>Two Erdős Frontiers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<style>
+  :root{
+    --paper:#FCFCFD;
+    --panel:#F1F3F7;
+    --ink:#151A24;
+    --ink2:#5A6377;
+    --rule:#DDE1E9;
+    --rule-soft:#E9ECF2;
+    --p357:#1B54A6;
+    --p1016:#1F7A52;
+    --new:#A8480E;
+    --new-wash:#F6EDE7;
+    --shadow:0 1px 2px rgba(21,26,36,.06);
+    --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1219;
+      --panel:#171D27;
+      --ink:#E6E9EF;
+      --ink2:#98A2B3;
+      --rule:#2A323F;
+      --rule-soft:#212936;
+      --p357:#4E86D6;
+      --p1016:#2F9A6B;
+      --new:#C4713A;
+      --new-wash:#22201E;
+      --shadow:0 1px 2px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1219;
+    --panel:#171D27;
+    --ink:#E6E9EF;
+    --ink2:#98A2B3;
+    --rule:#2A323F;
+    --rule-soft:#212936;
+    --p357:#4E86D6;
+    --p1016:#2F9A6B;
+    --new:#C4713A;
+    --new-wash:#22201E;
+    --shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .frame{max-width:960px;margin:0 auto;padding-inline:24px;padding-block:0 72px;}
+  .col{max-width:660px;}
+  p{margin:0 0 1.1em;}
+  a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule);}
+  a:hover{border-bottom-color:currentColor;}
+  a:focus-visible{outline:2px solid var(--p357);outline-offset:3px;border-radius:2px;}
+  strong{font-weight:600;}
+
+  h1,h2,h3{font-family:var(--serif);font-weight:600;text-wrap:balance;margin:0;}
+  h1{font-size:clamp(2.1rem,5.4vw,3rem);line-height:1.08;letter-spacing:-.015em;}
+  h2{font-size:1.6rem;line-height:1.2;letter-spacing:-.01em;}
+  h3{font-size:1.06rem;line-height:1.3;}
+
+  .eyebrow{
+    font-family:var(--sans);font-size:.72rem;font-weight:600;
+    text-transform:uppercase;letter-spacing:.11em;color:var(--ink2);
+  }
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums;}
+
+  /* ---- masthead ---- */
+  header.mast{
+    border-bottom:1px solid var(--rule);
+    padding-block:56px 28px;
+    display:flex;flex-direction:column;gap:20px;
+  }
+  .mast .standfirst{
+    font-family:var(--serif);font-size:1.24rem;line-height:1.5;color:var(--ink2);
+    max-width:34em;margin:0;
+  }
+  .tags{display:flex;flex-wrap:wrap;gap:8px;}
+  .tag{
+    font-family:var(--mono);font-size:.78rem;
+    border:1px solid var(--rule);border-radius:999px;
+    padding:2px 11px;color:var(--ink2);
+  }
+  .tag.a{color:var(--p357);border-color:color-mix(in srgb,var(--p357) 40%,var(--rule));}
+  .tag.b{color:var(--p1016);border-color:color-mix(in srgb,var(--p1016) 40%,var(--rule));}
+
+  /* ---- headline facts ---- */
+  .facts{
+    display:grid;grid-template-columns:repeat(3,1fr);
+    border-bottom:1px solid var(--rule);
+  }
+  .fact{padding:22px 20px 24px;border-left:1px solid var(--rule-soft);}
+  .fact:first-child{border-left:0;padding-left:0;}
+  .fact .n{font-family:var(--serif);font-size:2.2rem;line-height:1;font-weight:600;font-variant-numeric:tabular-nums;}
+  .fact .t{font-size:.9rem;color:var(--ink2);margin-top:8px;display:block;line-height:1.4;}
+
+  section{padding-block:44px;border-bottom:1px solid var(--rule);}
+  section:last-of-type{border-bottom:0;}
+  .sechead{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;margin-bottom:8px;}
+  .prob{font-family:var(--mono);font-size:.82rem;padding:2px 9px;border-radius:3px;color:#fff;}
+  .prob.a{background:var(--p357);}
+  .prob.b{background:var(--p1016);}
+  .lede{font-family:var(--serif);font-size:1.12rem;color:var(--ink2);max-width:36em;margin:10px 0 26px;}
+
+  blockquote{
+    margin:0 0 26px;padding:18px 22px;
+    background:var(--panel);border-left:3px solid var(--rule);
+    font-family:var(--serif);font-size:1.02rem;line-height:1.55;
+  }
+  blockquote.a{border-left-color:var(--p357);}
+  blockquote.b{border-left-color:var(--p1016);}
+  blockquote p:last-child{margin-bottom:0;}
+  blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.85rem;font-family:var(--sans);color:var(--ink2);}
+
+  .claim{
+    font-family:var(--serif);font-size:1.12rem;line-height:1.5;
+    padding:16px 0 16px 18px;border-left:3px solid var(--new);
+    margin:0 0 26px;
+  }
+
+  figure{margin:0 0 12px;}
+  figure svg{display:block;max-width:100%;height:auto;}
+  figcaption{font-size:.86rem;color:var(--ink2);line-height:1.5;margin-top:10px;max-width:52em;}
+  .figbox{
+    border:1px solid var(--rule);border-radius:6px;background:var(--panel);
+    padding:20px;overflow-x:auto;
+  }
+  .fig-split{display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:center;}
+  @media(max-width:680px){.fig-split{grid-template-columns:1fr;}}
+
+  /* svg theming */
+  .sv-rule{stroke:var(--rule);}
+  .sv-ink{stroke:var(--ink);}
+  .sv-ink2{stroke:var(--ink2);}
+  .sv-tx{fill:var(--ink);font-family:var(--mono);font-size:12px;}
+  .sv-tx2{fill:var(--ink2);font-family:var(--sans);font-size:11px;}
+  .sv-a{stroke:var(--p357);}
+  .sv-b{stroke:var(--p1016);}
+  .sv-af{fill:var(--p357);}
+  .sv-bf{fill:var(--p1016);}
+  .sv-dot{fill:var(--ink);}
+  .sv-paper{fill:var(--panel);}
+
+  table{border-collapse:collapse;width:100%;font-size:.9rem;}
+  caption{text-align:left;font-size:.86rem;color:var(--ink2);padding-bottom:10px;}
+  th,td{text-align:left;padding:7px 12px 7px 0;border-bottom:1px solid var(--rule-soft);vertical-align:top;}
+  th{
+    font-size:.78rem;letter-spacing:.03em;
+    color:var(--ink2);font-weight:600;border-bottom:1px solid var(--rule);white-space:nowrap;
+  }
+  td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;padding-right:16px;}
+  td.seq{font-family:var(--mono);font-size:.8rem;line-height:1.45;color:var(--ink2);}
+  .newval{color:var(--new);font-weight:600;}
+  .tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;padding:16px 18px;background:var(--paper);}
+
+  .strip{
+    font-family:var(--mono);font-size:.84rem;line-height:1.9;
+    background:var(--panel);border-radius:6px;padding:14px 16px;overflow-x:auto;white-space:nowrap;
+  }
+  .strip b{color:var(--new);font-weight:500;}
+
+  .funnel{display:flex;flex-wrap:wrap;gap:0;margin:6px 0 4px;}
+  .step{
+    flex:1 1 150px;padding:14px 16px 16px;border-left:1px solid var(--rule-soft);
+  }
+  .step:first-child{border-left:0;padding-left:0;}
+  .step .k{font-family:var(--mono);font-size:1.35rem;font-variant-numeric:tabular-nums;}
+  .step .d{font-size:.82rem;color:var(--ink2);line-height:1.4;margin-top:4px;}
+
+  ul.checks{list-style:none;padding:0;margin:0;display:grid;gap:14px;}
+  ul.checks li{padding-left:22px;position:relative;font-size:.97rem;}
+  ul.checks li::before{
+    content:"";position:absolute;left:0;top:.62em;width:9px;height:9px;
+    border:1.5px solid var(--p1016);border-radius:2px;
+  }
+
+  pre{
+    font-family:var(--mono);font-size:.82rem;line-height:1.7;
+    background:var(--panel);border-radius:6px;padding:16px 18px;overflow-x:auto;margin:0 0 14px;
+  }
+  .note{
+    background:var(--new-wash);border:1px solid color-mix(in srgb,var(--new) 26%,transparent);
+    border-radius:6px;padding:16px 18px;font-size:.95rem;
+  }
+  .note h3{margin-bottom:6px;color:var(--new);}
+  footer{padding-block:32px 0;border-top:1px solid var(--rule);font-size:.86rem;color:var(--ink2);}
+  @media(max-width:560px){
+    .facts{grid-template-columns:1fr;}
+    .fact{border-left:0;border-top:1px solid var(--rule-soft);padding-left:0;}
+    .fact:first-child{border-top:0;}
+  }
+</style>
+
+<div class="frame">
+
+  <header class="mast">
+    <span class="eyebrow">Computational note · September 2026</span>
+    <h1>Two Erdős Frontiers</h1>
+    <p class="standfirst">Neither conjecture is settled. What moved is the exact data behind them — because each problem has a reformulation that turns an unbounded search into a finite one.</p>
+    <div class="tags">
+      <span class="tag a">Erdős #357</span>
+      <span class="tag b">Erdős #1016</span>
+      <span class="tag">A105206</span>
+      <span class="tag">A364132</span>
+      <span class="tag">A364153</span>
+    </div>
+  </header>
+
+  <div class="facts">
+    <div class="fact">
+      <span class="n">25</span>
+      <span class="t">new exact terms, none previously published</span>
+    </div>
+    <div class="fact">
+      <span class="n">3</span>
+      <span class="t">OEIS sequences extended, all published terms reproduced first</span>
+    </div>
+    <div class="fact">
+      <span class="n">0</span>
+      <span class="t">conjectures resolved — both problems remain open</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="col">
+      <span class="eyebrow">Choosing a target</span>
+      <h2>Where is the frontier actually reachable?</h2>
+      <p class="lede">Most open problems are open because no finite computation touches them. The useful question is narrower: which open problem has a next value that nobody has computed?</p>
+      <p>That question can be answered mechanically. The community database of Erdős problems was cross-referenced against the OEIS, and the sequences carrying the editors' <span class="mono">more</span> keyword — “further terms wanted” — were sorted by how few terms are known. A short list of frontiers falls out.</p>
+    </div>
+    <div class="funnel">
+      <div class="step"><div class="k">1217</div><div class="d">problems in the database</div></div>
+      <div class="step"><div class="k">604</div><div class="d">still open</div></div>
+      <div class="step"><div class="k">214</div><div class="d">open <em>and</em> carrying an OEIS sequence</div></div>
+      <div class="step"><div class="k">2</div><div class="d">picked, both because a reformulation collapses the search</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <div class="sechead">
+        <span class="prob a">#357</span>
+        <span class="eyebrow">A364132 · A364153</span>
+      </div>
+      <h2>Sequences with distinct consecutive sums</h2>
+      <blockquote class="a">
+        <p>Let <span class="mono">1 ≤ a₁ &lt; ⋯ &lt; a<sub>k</sub> ≤ n</span> be integers such that all sums of the shape <span class="mono">a<sub>u</sub> + ⋯ + a<sub>v</sub></span> are distinct. Let <span class="mono">f(n)</span> be the maximal such <span class="mono">k</span>. How does <span class="mono">f(n)</span> grow? Is <span class="mono">f(n) = o(n)</span>?</p>
+        <cite>Erdős and Harzheim — still open</cite>
+      </blockquote>
+      <p>Searching tuples directly is hopeless. But pass to the partial sums <span class="mono">P₀ = 0</span>, <span class="mono">P<sub>i</sub> = a₁ + ⋯ + a<sub>i</sub></span>, and a consecutive sum becomes a difference <span class="mono">P<sub>v</sub> − P<sub>u−1</sub></span>.</p>
+      <p class="claim">All consecutive sums are distinct exactly when the partial sums form a <strong>Sidon set</strong> — a Golomb ruler. The side condition <span class="mono">a<sub>i</sub> ≤ n</span> says every gap of that ruler is at most <span class="mono">n</span>. So both sequences ask one thing: <strong>minimise the largest gap of a Golomb ruler with k+1 marks.</strong></p>
+    </div>
+
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 760 196" role="img" aria-label="A ruler with marks at 0, 2, 3, 10, 16, 21 and 25; its six gaps are 2, 1, 7, 6, 5, 4, and the consecutive sum of gaps two to four equals the difference of two marks.">
+          <!-- gap brackets -->
+          <g class="sv-rule" stroke-width="1" fill="none">
+            <path d="M60 80 V72 H111.2 V80"/>
+            <path d="M111.2 80 V72 H136.8 V80"/>
+            <path d="M136.8 80 V72 H316 V80"/>
+            <path d="M316 80 V72 H469.6 V80"/>
+            <path d="M469.6 80 V72 H597.6 V80"/>
+            <path d="M597.6 80 V72 H700 V80"/>
+          </g>
+          <g class="sv-tx" text-anchor="middle">
+            <text x="85.6" y="64">2</text>
+            <text x="124" y="64">1</text>
+            <text x="226.4" y="64">7</text>
+            <text x="392.8" y="64">6</text>
+            <text x="533.6" y="64">5</text>
+            <text x="648.8" y="64">4</text>
+          </g>
+          <text class="sv-tx2" x="50" y="68" text-anchor="end">gaps aᵢ</text>
+
+          <!-- the ruler -->
+          <line class="sv-ink" x1="60" y1="100" x2="700" y2="100" stroke-width="1.5"/>
+          <g class="sv-ink" stroke-width="1.5">
+            <line x1="60" y1="92" x2="60" y2="108"/>
+            <line x1="111.2" y1="92" x2="111.2" y2="108"/>
+            <line x1="136.8" y1="92" x2="136.8" y2="108"/>
+            <line x1="316" y1="92" x2="316" y2="108"/>
+            <line x1="469.6" y1="92" x2="469.6" y2="108"/>
+            <line x1="597.6" y1="92" x2="597.6" y2="108"/>
+            <line x1="700" y1="92" x2="700" y2="108"/>
+          </g>
+          <g class="sv-tx" text-anchor="middle">
+            <text x="60" y="126">0</text>
+            <text x="111.2" y="126">2</text>
+            <text x="136.8" y="126">3</text>
+            <text x="316" y="126">10</text>
+            <text x="469.6" y="126">16</text>
+            <text x="597.6" y="126">21</text>
+            <text x="700" y="126">25</text>
+          </g>
+          <text class="sv-tx2" x="50" y="126" text-anchor="end">marks Pᵢ</text>
+
+          <!-- the difference -->
+          <g class="sv-a" stroke-width="2.5" fill="none">
+            <line x1="111.2" y1="156" x2="469.6" y2="156"/>
+            <line x1="111.2" y1="150" x2="111.2" y2="162"/>
+            <line x1="469.6" y1="150" x2="469.6" y2="162"/>
+          </g>
+          <text class="sv-tx" x="290" y="182" text-anchor="middle" style="fill:var(--p357)">a₂ + a₃ + a₄ = 1 + 7 + 6 = 14 = P₄ − P₁</text>
+        </svg>
+      </div>
+      <figcaption>The witness for <span class="mono">a(6) = 7</span>: gaps <span class="mono">2, 1, 7, 6, 5, 4</span>. Its 21 consecutive sums <em>are</em> the 21 pairwise differences of the seven marks, and they are distinct — so the marks are a Sidon set, and the largest gap, 7, is the quantity being minimised.</figcaption>
+    </figure>
+
+    <div class="col" style="margin-top:30px">
+      <h3>New terms</h3>
+      <p style="font-size:.97rem;color:var(--ink2);margin-top:8px">For each, every smaller bound was <em>refuted</em> by exhaustive search before the witness was accepted; the node counts show how much search that took.</p>
+    </div>
+
+    <div class="tablewrap" style="margin-bottom:22px">
+      <table>
+        <caption><strong>A364153</strong> — arbitrary order (inverse of <span class="mono">g</span>). Published: 13 terms, ending <span class="mono">a(13) = 18</span>.</caption>
+        <thead><tr><th class="num">k</th><th class="num">a(k)</th><th>witness (a₁, …, a<sub>k</sub>)</th><th>refuted below</th></tr></thead>
+        <tbody>
+          <tr><td class="num">14</td><td class="num newval">20</td><td class="seq">1, 4, 6, 17, 15, 14, 20, 16, 19, 18, 8, 13, 9, 3</td><td class="seq">m = 18, 19 (149 445 063 nodes)</td></tr>
+          <tr><td class="num">15</td><td class="num newval">22</td><td class="seq">1, 11, 16, 8, 21, 22, 20, 19, 15, 18, 14, 17, 6, 3, 4</td><td class="seq">m = 20, 21 (1 099 325 340)</td></tr>
+          <tr><td class="num">16</td><td class="num newval">24</td><td class="seq">1, 2, 6, 5, 23, 20, 24, 22, 18, 12, 21, 17, 15, 10, 16, 19</td><td class="seq">m = 22, 23 (7 920 625 479)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <caption><strong>A364132</strong> — Erdős's original monotone case (inverse of <span class="mono">f</span>). Published: 22 terms, ending <span class="mono">a(22) = 52</span>.</caption>
+        <thead><tr><th class="num">k</th><th class="num">a(k)</th><th>witness (a₁ &lt; ⋯ &lt; a<sub>k</sub>)</th><th>refuted below</th></tr></thead>
+        <tbody>
+          <tr><td class="num">23</td><td class="num newval">56</td><td class="seq">1, 4, 6, 8, 24, 27, 33, 35, 36, 37, 39, 40, 41, 44, 45, 46, 48, 49, 52, 53, 54, 55, 56</td><td class="seq">m = 52…55 (566 123 991)</td></tr>
+          <tr><td class="num">24</td><td class="num newval">60</td><td class="seq">1, 6, 12, 15, 30, 31, 36, 37, 40, 41, 42, 43, 44, 46, 47, 49, 50, 53, 54, 55, 56, 58, 59, 60</td><td class="seq">m = 56…59 (2 193 364 619)</td></tr>
+          <tr><td class="num">25</td><td class="num newval">63</td><td class="seq">2, 4, 8, 10, 13, 33, 34, 41, 42, 43, 44, 45, 47, 48, 49, 51, 52, 53, 54, 55, 57, 59, 61, 62, 63</td><td class="seq">m = 60…62 (5 199 898 929)</td></tr>
+          <tr><td class="num">26</td><td class="num newval">67</td><td class="seq">1, 2, 4, 5, 14, 22, 35, 39, 42, 44, 49, 50, 51, 52, 53, 54, 55, 56, 58, 59, 61, 63, 64, 65, 66, 67</td><td class="seq">m = 63…66 (18 859 978 541)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col" style="margin-top:26px">
+      <p>Inverting gives the functions Erdős asked about. At the record points the ratio <span class="mono">k / a(k)</span> — which is <span class="mono">f(n)/n</span> where it is largest — keeps sliding: <span class="mono">.500</span> at <span class="mono">k = 12</span>, <span class="mono">.426</span> at 20, <span class="mono">.411</span> at 23, <span class="mono">.400</span> at 24, <span class="mono">.388</span> at 26. Suggestive of <span class="mono">f(n) = o(n)</span>, and no more than suggestive: the best proven lower bound in the monotone case is <span class="mono">f(n) ≥ (2+o(1))√n</span>, which at <span class="mono">n = 67</span> would give 16 against the true value 26.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <div class="sechead">
+        <span class="prob b">#1016</span>
+        <span class="eyebrow">A105206</span>
+      </div>
+      <h2>How sparse can a pancyclic graph be?</h2>
+      <blockquote class="b">
+        <p>Let <span class="mono">h(n)</span> be minimal such that there is a graph on <span class="mono">n</span> vertices with <span class="mono">n + h(n)</span> edges containing a cycle on <span class="mono">k</span> vertices for every <span class="mono">3 ≤ k ≤ n</span>. Estimate <span class="mono">h(n)</span>.</p>
+        <cite>Erdős — still open; he could not even prove that h(n) − log₂ n → ∞</cite>
+      </blockquote>
+      <p>Enumerating graphs is out of the question. Two observations cut it down to something a laptop finishes:</p>
+      <p class="claim">A pancyclic graph contains an <span class="mono">n</span>-cycle, so it is Hamiltonian — every candidate is <span class="mono">C<sub>n</sub></span> plus <span class="mono">k</span> chords. And its cycle space has dimension only <span class="mono">k+1</span>, so the graph has at most <span class="mono">2<sup>k+1</sup> − 1</span> cycles <em>in total</em>, and its entire cycle spectrum is that many bitmasks — no cycle enumeration at all.</p>
+      <p>The second observation is also Bondy's lower bound, <span class="mono">2<sup>k+1</sup> − 1 ≥ n − 2</span>: too few chords cannot supply enough cycles, whatever you do with them.</p>
+    </div>
+
+    <figure>
+      <div class="figbox">
+        <div class="fig-split">
+          <svg viewBox="0 0 320 320" role="img" aria-label="An eight-vertex cycle with two added chords, from vertex 0 to vertex 2 and from vertex 0 to vertex 5.">
+            <polygon class="sv-ink2" points="160,60 230.7,89.3 260,160 230.7,230.7 160,260 89.3,230.7 60,160 89.3,89.3" fill="none" stroke-width="1.5"/>
+            <g class="sv-b" stroke-width="2.5">
+              <line x1="160" y1="60" x2="260" y2="160"/>
+              <line x1="160" y1="60" x2="89.3" y2="230.7"/>
+            </g>
+            <g class="sv-bf">
+              <circle cx="160" cy="60" r="4.5"/><circle cx="230.7" cy="89.3" r="4.5"/>
+              <circle cx="260" cy="160" r="4.5"/><circle cx="230.7" cy="230.7" r="4.5"/>
+              <circle cx="160" cy="260" r="4.5"/><circle cx="89.3" cy="230.7" r="4.5"/>
+              <circle cx="60" cy="160" r="4.5"/><circle cx="89.3" cy="89.3" r="4.5"/>
+            </g>
+            <g class="sv-tx" text-anchor="middle" dominant-baseline="middle">
+              <text x="160" y="40">0</text><text x="247" y="72">1</text>
+              <text x="280" y="160">2</text><text x="247" y="248">3</text>
+              <text x="160" y="280">4</text><text x="73" y="248">5</text>
+              <text x="40" y="160">6</text><text x="73" y="72">7</text>
+            </g>
+          </svg>
+          <table style="font-size:.86rem">
+            <thead><tr><th>GF(2) combination</th><th class="num">cycle length</th></tr></thead>
+            <tbody>
+              <tr><td class="seq">H</td><td class="num">8</td></tr>
+              <tr><td class="seq">c₁</td><td class="num">3</td></tr>
+              <tr><td class="seq">c₂</td><td class="num">6</td></tr>
+              <tr><td class="seq">H ⊕ c₁</td><td class="num">7</td></tr>
+              <tr><td class="seq">H ⊕ c₂</td><td class="num">4</td></tr>
+              <tr><td class="seq">c₁ ⊕ c₂</td><td class="num">5</td></tr>
+              <tr><td class="seq">H ⊕ c₁ ⊕ c₂</td><td class="num" style="color:var(--ink2)">not a cycle</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <figcaption><span class="mono">C₈</span> plus the chords <span class="mono">(0,2)</span> and <span class="mono">(0,5)</span> — ten edges, and pancyclic. Its cycle space has dimension 3, so seven combinations exist; six of them are genuine cycles and their lengths are exactly <span class="mono">3, 4, 5, 6, 7, 8</span>. Nothing is spare, which is why <span class="mono">n = 8</span> is the largest <span class="mono">n</span> that two chords can do.</figcaption>
+    </figure>
+
+    <div class="col" style="margin-top:30px">
+      <h3>New terms</h3>
+      <p style="font-size:.97rem;color:var(--ink2);margin-top:8px">A105206 was known for <span class="mono">n = 3…22</span>. <span class="mono">h(n)</span> is now determined for <span class="mono">n = 23…40</span> as well.</p>
+    </div>
+    <div class="strip" aria-label="New values of A105206">
+      n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40<br>
+      a(n)&nbsp;&nbsp;<b>27 28 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45</b>
+    </div>
+
+    <div class="tablewrap" style="margin-top:22px">
+      <table>
+        <caption>Each row: a witness with <span class="mono">h</span> chords, plus a lower bound ruling out <span class="mono">h−1</span>. Chords are added to the cycle <span class="mono">0-1-⋯-(n−1)-0</span>.</caption>
+        <thead><tr><th class="num">n</th><th class="num">h(n)</th><th class="num">a(n)</th><th>witness chords</th><th>lower bound from</th></tr></thead>
+        <tbody>
+          <tr><td class="num">23</td><td class="num">4</td><td class="num newval">27</td><td class="seq">(0,2) (0,20) (1,18) (8,20)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">24</td><td class="num">4</td><td class="num newval">28</td><td class="seq">(0,2) (0,21) (1,19) (8,23)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">25</td><td class="num">5</td><td class="num newval">30</td><td class="seq">(0,2) (0,3) (0,4) (0,20) (1,16)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">26</td><td class="num">5</td><td class="num newval">31</td><td class="seq">(0,2) (0,3) (0,4) (1,11) (1,22)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">27</td><td class="num">5</td><td class="num newval">32</td><td class="seq">(0,2) (0,3) (0,5) (1,9) (3,18)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">28</td><td class="num">5</td><td class="num newval">33</td><td class="seq">(0,2) (0,3) (0,5) (1,17) (2,21)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">29</td><td class="num">5</td><td class="num newval">34</td><td class="seq">(0,2) (0,3) (0,5) (1,18) (2,22)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">30</td><td class="num">5</td><td class="num newval">35</td><td class="seq">(0,2) (0,3) (0,9) (3,11) (4,16)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">31</td><td class="num">5</td><td class="num newval">36</td><td class="seq">(0,2) (0,3) (0,10) (5,9) (6,24)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">32</td><td class="num">5</td><td class="num newval">37</td><td class="seq">(0,2) (0,3) (0,28) (1,14) (6,31)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">33</td><td class="num">5</td><td class="num newval">38</td><td class="seq">(0,2) (0,3) (0,29) (1,14) (6,32)</td><td>exhaustive search</td></tr>
+          <tr><td class="num">34</td><td class="num">5</td><td class="num newval">39</td><td class="seq">(0,2) (0,4) (0,21) (1,7) (3,26)</td><td>counting bound</td></tr>
+          <tr><td class="num">35</td><td class="num">5</td><td class="num newval">40</td><td class="seq">(0,2) (0,10) (1,4) (3,18) (6,34)</td><td>counting bound</td></tr>
+          <tr><td class="num">36</td><td class="num">5</td><td class="num newval">41</td><td class="seq">(0,2) (0,11) (1,7) (7,10) (8,19)</td><td>counting bound</td></tr>
+          <tr><td class="num">37</td><td class="num">5</td><td class="num newval">42</td><td class="seq">(9,26) (14,24) (25,28) (9,22) (23,25)</td><td>counting bound</td></tr>
+          <tr><td class="num">38</td><td class="num">5</td><td class="num newval">43</td><td class="seq">(1,24) (0,35) (24,26) (25,37) (19,36)</td><td>counting bound</td></tr>
+          <tr><td class="num">39</td><td class="num">5</td><td class="num newval">44</td><td class="seq">(13,31) (11,14) (12,28) (19,30) (29,31)</td><td>counting bound</td></tr>
+          <tr><td class="num">40</td><td class="num">5</td><td class="num newval">45</td><td class="seq">(20,29) (28,31) (10,25) (26,28) (27,33)</td><td>counting bound</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col" style="margin-top:26px">
+      <p>Up to <span class="mono">n = 33</span> the lower bound had to be earned: every chord set one size smaller was refuted, up to rotation. The hardest was <span class="mono">n = 25</span> with four chords — 233 829 950 nodes without the symmetry reduction, 10 997 097 with it. From <span class="mono">n = 34</span> on it is free, because <span class="mono">2⁵ − 1 = 31 &lt; n − 2</span>: four chords simply cannot make enough cycles, and only a witness is needed.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <span class="eyebrow">What the data says</span>
+      <h2>Evidence on Erdős's own question</h2>
+      <p class="lede">Write <span class="mono">N(k)</span> for the largest <span class="mono">n</span> with <span class="mono">h(n) = k</span> — the point where <span class="mono">h</span> falls furthest below <span class="mono">log₂ n</span>. If <span class="mono">N(k)/2<sup>k</sup></span> keeps falling, then <span class="mono">h(n) − log₂ n → ∞</span>, which is what Erdős believed and could not prove.</p>
+    </div>
+
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 620 300" role="img" aria-label="The ratio N(k) over 2 to the k falls from 3 to 1.5 across k equals 0 to 4, and for k equals 5 is only known to lie between 1.25 and 2.03.">
+          <!-- grid -->
+          <g class="sv-rule" stroke-width="1">
+            <line x1="70" y1="250" x2="575" y2="250"/>
+            <line x1="70" y1="190.6" x2="575" y2="190.6" opacity=".55"/>
+            <line x1="70" y1="71.9" x2="575" y2="71.9" opacity=".55"/>
+          </g>
+          <g class="sv-tx2" text-anchor="end">
+            <text x="58" y="254">0</text>
+            <text x="58" y="194.6">1</text>
+            <text x="58" y="135.2">2</text>
+            <text x="58" y="75.9">3</text>
+          </g>
+          <text class="sv-tx2" x="70" y="44">N(k) / 2ᵏ</text>
+
+          <!-- reference: what the counting bound alone permits -->
+          <line x1="70" y1="131.25" x2="575" y2="131.25" class="sv-ink2" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <text class="sv-tx2" x="575" y="117" text-anchor="end">counting bound alone permits ≈ 2 forever</text>
+
+          <!-- uncertainty band for k = 5 -->
+          <rect x="536" y="129.5" width="18" height="46.3" class="sv-paper" opacity="0"/>
+          <g class="sv-b" stroke-width="2" fill="none" opacity=".5" stroke-dasharray="4 4">
+            <line x1="450" y1="160.9" x2="545" y2="129.5"/>
+            <line x1="450" y1="160.9" x2="545" y2="175.8"/>
+          </g>
+          <g class="sv-b" stroke-width="2.5" fill="none">
+            <line x1="545" y1="129.5" x2="545" y2="175.8"/>
+            <line x1="538" y1="129.5" x2="552" y2="129.5"/>
+            <line x1="538" y1="175.8" x2="552" y2="175.8"/>
+          </g>
+
+          <!-- measured series -->
+          <polyline points="70,71.9 165,101.6 260,131.25 355,146.1 450,160.9" fill="none" class="sv-b" stroke-width="2.5"/>
+          <g class="sv-bf">
+            <circle cx="70" cy="71.9" r="5" stroke="var(--panel)" stroke-width="2"/>
+            <circle cx="165" cy="101.6" r="5" stroke="var(--panel)" stroke-width="2"/>
+            <circle cx="260" cy="131.25" r="5" stroke="var(--panel)" stroke-width="2"/>
+            <circle cx="355" cy="146.1" r="5" stroke="var(--panel)" stroke-width="2"/>
+            <circle cx="450" cy="160.9" r="5" stroke="var(--panel)" stroke-width="2"/>
+          </g>
+          <text class="sv-tx" x="86" y="68" text-anchor="start">3</text>
+          <text class="sv-tx" x="450" y="182" text-anchor="middle">1.5</text>
+          <text class="sv-tx2" x="545" y="199" text-anchor="middle">not settled</text>
+
+          <!-- x axis -->
+          <g class="sv-tx" text-anchor="middle">
+            <text x="70" y="270">0</text><text x="165" y="270">1</text><text x="260" y="270">2</text>
+            <text x="355" y="270">3</text><text x="450" y="270">4</text><text x="545" y="270">5</text>
+          </g>
+          <text class="sv-tx2" x="307" y="290" text-anchor="middle">k</text>
+        </svg>
+      </div>
+      <figcaption>Measured and exact for <span class="mono">k ≤ 4</span>; falling at every one of those four steps. For <span class="mono">k = 5</span> only the range is known, and the fan shows both ways it can go.</figcaption>
+    </figure>
+
+    <div class="tablewrap" style="margin-top:18px">
+      <table>
+        <thead><tr><th>k</th><th class="num">0</th><th class="num">1</th><th class="num">2</th><th class="num">3</th><th class="num">4</th><th class="num">5</th></tr></thead>
+        <tbody>
+          <tr><td>N(k)</td><td class="num">3</td><td class="num">5</td><td class="num">8</td><td class="num">14</td><td class="num">24</td><td class="num">[40, 65]</td></tr>
+          <tr><td>Bondy's counting bound 2<sup>k+1</sup>+1</td><td class="num">3</td><td class="num">5</td><td class="num">9</td><td class="num">17</td><td class="num">33</td><td class="num">65</td></tr>
+          <tr><td>N(k) / 2<sup>k</sup></td><td class="num">3</td><td class="num">2.5</td><td class="num">2</td><td class="num">1.75</td><td class="num">1.5</td><td class="num">[1.25, 2.03]</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col" style="margin-top:26px">
+      <div class="note">
+        <h3>The caveat, stated plainly</h3>
+        <p style="margin-bottom:0"><span class="mono">h(40) = 5</span> gives only <span class="mono">N(5) ≥ 40</span>, that is <span class="mono">N(5)/2⁵ ≥ 1.25</span> — a <em>lower</em> bound, which on its own does not continue the fall. The fall continues if and only if <span class="mono">N(5) &lt; 48</span>. Deciding it means deciding <span class="mono">h(41)</span>: if no five-chord witness exists at <span class="mono">n = 41</span>, then <span class="mono">N(5) = 40</span> and the ratio drops to 1.25; if one does, the question moves to <span class="mono">n = 42</span>. That is a finite computation — roughly 6.5 × 10¹⁰ search nodes, about 22 core-hours — and it was started but not finished here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <span class="eyebrow">Verification</span>
+      <h2>Why the numbers should be believed</h2>
+      <p class="lede">A new term is only as good as the program that produced it, so nothing here rests on a single program.</p>
+      <ul class="checks">
+        <li><strong>Both searchers reproduce every published term first.</strong> All 20 known values of A105206, all 22 of A364132, all 13 of A364153 — before any new value was accepted.</li>
+        <li><strong>The pancyclic witnesses are re-checked without the cycle-space argument at all</strong>, by enumerating every simple cycle with networkx. The two spectrum computations were also compared on 4000 random graphs: no mismatch.</li>
+        <li><strong>The Golomb witnesses are re-expanded</strong> into all <span class="mono">k(k+1)/2</span> consecutive sums, which are then tested for distinctness.</li>
+        <li><strong>The symmetry reduction was checked against the unreduced search.</strong> At <span class="mono">n = 25</span>: 233 829 950 nodes versus 10 997 097, same verdict. At <span class="mono">n = 26</span>: 311 112 744 versus 13 906 189, same verdict.</li>
+        <li><strong>Work-splitting was checked to partition exactly.</strong> Four slices of one branch sum to the unsliced node count, to the three repeated root entries.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <span class="eyebrow">Reproduce it</span>
+      <h2>Everything is one build away</h2>
+      <pre>gcc -O3 -march=native -o sidon sidon.c
+./runseq.sh 16 0 1          # A364153(16), from scratch
+python3 verify_all.py       # re-derive every claimed term
+
+gcc -O3 -march=native -o pancyclic pancyclic.c
+./scan.sh 30 6              # h(30), witness + refutation
+python3 verify_pancyclic.py crosscheck</pre>
+      <p style="font-size:.95rem;color:var(--ink2)">Each new term is recorded in a <span class="mono">certificates.json</span> alongside its witness and the bounds that were refuted, and <span class="mono">SUBMISSIONS.md</span> holds the text ready to file with the OEIS.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="col">
+      <p style="margin-bottom:.4em">Sources: <a href="https://www.erdosproblems.com/357">erdosproblems.com/357</a> · <a href="https://www.erdosproblems.com/1016">erdosproblems.com/1016</a> · <a href="https://oeis.org/A105206">A105206</a> · <a href="https://oeis.org/A364132">A364132</a> · <a href="https://oeis.org/A364153">A364153</a> · <a href="https://github.com/teorth/erdosproblems">Erdős problem database</a></p>
+      <p style="margin-bottom:0">Both problems remain open. What changed is the table of values underneath them.</p>
+    </div>
+  </footer>
+
+</div>
