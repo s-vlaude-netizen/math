@@ -41,8 +41,9 @@ place to test ideas that the literature only argues about.
   reduction that silently discards solutions.
 * **Own data point (n = 1, anecdotal).** The first rotation-symmetry version of the
   pancyclic searcher gave wrong values at the k = 0 edge case. It was caught only
-  because its output was compared with the 20 published terms. A second edge case
-  (k = 1 in a tie-break) was found by re-reading, not by a test.
+  because its output was compared with the 20 published terms. A second possible
+  edge case (k = 1 in a tie-break) was patched defensively after re-reading the
+  code; I did not show that it was ever a real bug.
 * **Idea.** Mutation-test the gates. Take a correct searcher, inject plausible
   unsound mutations (strict instead of non-strict comparison in a symmetry
   tie-break, a mirror map off by one, a counting bound one too tight, a skipped
@@ -68,8 +69,8 @@ place to test ideas that the literature only argues about.
 * **Gap.** "No prior work found" is reported with no estimate of how likely the
   search was to find it.
 * **Idea.** Calibrate the search with *planted rediscoveries*. The Erdős case study
-  already lists a dozen problems that were marked open while a solution existed
-  (333, 591, 705, 992, 1105, 397, 659, 935, 1089, and others). Hide the answer,
+  already names about ten problems that were marked open while a solution existed
+  (333, 591, 705, 992, 1105, 397, 659, 935, 1089, plus 1026 and 281 in a footnote). Hide the answer,
   run the literature agent on the bare statement, record recall. A novelty claim is
   then reported as "no hit, with recall r on a comparable set".
 * **Weak spot in my own results.** My novelty claims for the new OEIS terms rest on

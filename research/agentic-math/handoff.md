@@ -32,7 +32,8 @@ the next step. If none exists, `N(5)=40`; if one does, move on to `n=42`.
   symmetry. Measured wall-clock on refutations, against the previous searcher
   with rotation symmetry only: n=25,k=4: 14.4 s -> 2.1 s; n=30,k=4: 12.2 s ->
   0.9 s. If that factor holds at n=41 the decision drops to a few core-hours.
-* **pancyclic3 is NOT yet validated for use in a proof.** `validate3.sh` got as
+* **pancyclic3 is NOT yet validated for use in a proof.** `validate3.sh` (partial
+  log: `erdos1016/validate3.txt`) got as
   far as: all 20 published terms reproduced, four refutations (n=25,26,30,33 with
   k=4) still IMPOSSIBLE, witness at n=35 found. Not yet done: witnesses at
   n=36,39,40, and the speed test at n=41 span 16.

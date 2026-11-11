@@ -113,7 +113,7 @@ knew.
 
 ## 8. Gaps in this round
 
-Not read: FirstProof itself (referenced by three papers), the Quanta and Kalai
+Not read: FirstProof itself (referenced by several of the papers above), the Quanta and Kalai
 write-ups, anything outside arXiv (zbMATH, MathOverflow, the Erdős-site comment
 threads), and the full text of most papers above. Not checked: whether the ideas
 in `open-problems.md` already exist. Round 2 should start there.
