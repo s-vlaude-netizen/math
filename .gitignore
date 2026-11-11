@@ -15,3 +15,8 @@ survey/openseqs.json
 # in-progress run logs
 erdos1016/refute41.txt
 erdos1016/pancyclic3
+research/agentic-math/p2-gates/bin/
+research/agentic-math/p2-gates/refs/
+research/agentic-math/p2-gates/pcsearch
+research/agentic-math/p2-gates/ref_enum
+research/agentic-math/p2-gates/orbit_close
