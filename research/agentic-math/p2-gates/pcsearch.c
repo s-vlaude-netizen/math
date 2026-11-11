@@ -22,7 +22,8 @@
  *   mirror  x -> s-x fixes (0,s) and permutes the candidates; keep the set whose
  *           smallest candidate index is <= that of its mirror image.
  *
- * Usage: pcsearch N K [--find | --enum | --plant T] [--canon] [--span s] [--slice i m]
+ * Usage: pcsearch N K [--find | --enum | --plant T | --plant-stdin | --near COUNT MINLEN]
+ *                     [--canon] [--span s] [--slice i m]
  *                     [--no-count] [--no-look] [--no-filter] [--no-mirror] [--seed x]
  *        pcsearch --spectrum-stdin        (lines "n u,v u,v ..." -> cycle lengths)
  * Exit: 10 found, 20 none (find mode); 0 otherwise; 3 internal assertion.
@@ -314,7 +315,51 @@ static uint64_t eval_set(const int *cs, int k)
     return m;
 }
 
-/* Planted-solution gate: T random chord sets W, goal = spectrum(W); is some symmetric image of W retained? */
+/* Is some image of the chord set w (K chords) under the 2N symmetries reached by the search
+   when the goal is exactly the cycle spectrum of w?  Every rule is active along the way. */
+static int plant_one(const int *w)
+{
+    NEED = eval_set(w, K) | (1ULL << N);
+    NEEDN = __builtin_popcountll(NEED);
+    int sp = N;
+    for (int i = 0; i < K; i++) { int s = true_span(chu[w[i]], chv[w[i]]); if (s < sp) sp = s; }
+    int retained = 0;
+    int c0 = build_span(sp);
+    if (c0 >= 0 && sp <= MU(14, N / 2, N / 2 - 1)) {
+        static short pos[4096];
+        for (int c = 0; c < NCH; c++) pos[c] = -1;
+        for (int i = 0; i < NCAND; i++) pos[cand[i]] = (short)i;
+        for (int g = 0; g < 2 * N && !retained; g++) {
+            int tr = g % N, fl = g >= N, img[16], hasforced = 0, okimg = 1, np = 0;
+            for (int i = 0; i < K && okimg; i++) {
+                int a = chu[w[i]], b = chv[w[i]];
+                if (fl) { a = (N - a) % N; b = (N - b) % N; }
+                a = (a + tr) % N; b = (b + tr) % N;
+                if (a > b) { int x = a; a = b; b = x; }
+                int c = cidx[a][b];
+                if (c < 0) { okimg = 0; break; }
+                if (c == c0 && !hasforced) { hasforced = 1; continue; }
+                if (pos[c] < 0) { okimg = 0; break; }
+                img[np++] = pos[c];
+            }
+            if (!okimg || !hasforced) continue;
+            for (int i = 1; i < np; i++) { int x = img[i], q = i - 1; while (q >= 0 && img[q] > x) { img[q + 1] = img[q]; q--; } img[q + 1] = x; }
+            PLEN = np; for (int i = 0; i < np; i++) PREFIX[i] = img[i];
+            found_k = -1;
+            if (np == 0) { reset_lens(); int added[64], na = 0; chosen[0] = c0; if (!batch(0, fundamental(0, c0), added, &na) && NEEDN - distinctLens == 0) retained = 1; }
+            else if (search_span(c0)) retained = 1;
+            PLEN = 0;
+        }
+    }
+    return retained;
+}
+
+static void show_lost(const int *w)
+{
+    printf("LOST:"); for (int i = 0; i < K; i++) printf(" %d,%d", chu[w[i]], chv[w[i]]); printf("\n");
+}
+
+/* Planted-solution gate: T random chord sets. */
 static int run_plant(long T)
 {
     long lost = 0, shown = 0;
@@ -325,45 +370,73 @@ static int run_plant(long T)
             int ok;
             do { w[i] = (int)(rnd() % NCH); ok = 1; for (int q = 0; q < i; q++) if (w[q] == w[i]) ok = 0; } while (!ok);
         }
-        NEED = eval_set(w, K) | (1ULL << N);
-        NEEDN = __builtin_popcountll(NEED);
-        int sp = N;
-        for (int i = 0; i < K; i++) { int s = true_span(chu[w[i]], chv[w[i]]); if (s < sp) sp = s; }
-        int retained = 0;
-        int c0 = build_span(sp);
-        if (c0 >= 0 && sp <= MU(14, N / 2, N / 2 - 1)) {
-            static short pos[4096];
-            for (int c = 0; c < NCH; c++) pos[c] = -1;
-            for (int i = 0; i < NCAND; i++) pos[cand[i]] = (short)i;
-            for (int g = 0; g < 2 * N && !retained; g++) {
-                int tr = g % N, fl = g >= N, img[16], hasforced = 0, okimg = 1, np = 0;
-                for (int i = 0; i < K && okimg; i++) {
-                    int a = chu[w[i]], b = chv[w[i]];
-                    if (fl) { a = (N - a) % N; b = (N - b) % N; }
-                    a = (a + tr) % N; b = (b + tr) % N;
-                    if (a > b) { int x = a; a = b; b = x; }
-                    int c = cidx[a][b];
-                    if (c < 0) { okimg = 0; break; }
-                    if (c == c0 && !hasforced) { hasforced = 1; continue; }
-                    if (pos[c] < 0) { okimg = 0; break; }
-                    img[np++] = pos[c];
-                }
-                if (!okimg || !hasforced) continue;
-                for (int i = 1; i < np; i++) { int x = img[i], q = i - 1; while (q >= 0 && img[q] > x) { img[q + 1] = img[q]; q--; } img[q + 1] = x; }
-                PLEN = np; for (int i = 0; i < np; i++) PREFIX[i] = img[i];
-                found_k = -1;
-                if (np == 0) { reset_lens(); int added[64], na = 0; chosen[0] = c0; if (!batch(0, fundamental(0, c0), added, &na) && NEEDN - distinctLens == 0) retained = 1; }
-                else if (search_span(c0)) retained = 1;
-                PLEN = 0;
-            }
-        }
-        if (!retained) {
-            lost++;
-            if (shown < 3) { shown++; printf("LOST:"); for (int i = 0; i < K; i++) printf(" %d,%d", chu[w[i]], chv[w[i]]); printf("\n"); }
-        }
+        if (!plant_one(w)) { lost++; if (shown < 3) { shown++; show_lost(w); } }
     }
     printf("plants=%ld lost=%ld n=%d k=%d\n", T, lost, N, K);
     return lost ? 1 : 0;
+}
+
+/* The same gate on chord sets read from stdin ("u,v u,v ..." per line, K chords each):
+   known witnesses, or near-solutions produced by --near. */
+static int run_plant_stdin(void)
+{
+    long lost = 0, shown = 0, T = 0, skipped = 0, minneed = 99, maxneed = 0;
+    char line[4096];
+    CANON = 1; ENUM = 0;
+    while (fgets(line, sizeof line, stdin)) {
+        int w[16], k = 0, bad = 0; char *p = line;
+        while (*p) {
+            while (*p == ' ') p++;
+            if (*p < '0' || *p > '9') break;
+            int u = (int)strtol(p, &p, 10); if (*p == ',') p++;
+            int v = (int)strtol(p, &p, 10);
+            if (u > v) { int t = u; u = v; v = t; }
+            if (k >= 15 || u < 0 || v >= N || cidx[u][v] < 0) { bad = 1; break; }
+            w[k++] = cidx[u][v];
+        }
+        if (bad || k != K) { skipped++; continue; }
+        T++;
+        int r = plant_one(w);
+        if (NEEDN < minneed) minneed = NEEDN;
+        if (NEEDN > maxneed) maxneed = NEEDN;
+        if (!r) { lost++; if (shown < 3) { shown++; show_lost(w); } }
+    }
+    printf("plants=%ld lost=%ld n=%d k=%d (from stdin; skipped %ld; goal sizes %ld..%ld of %d)\n",
+           T, lost, N, K, skipped, minneed, maxneed, N - 2);
+    return lost ? 1 : 0;
+}
+
+/* Hill climbing for chord sets that realise at least minlen of the N-2 lengths; prints them.
+   Used only to manufacture near-solutions for the retention gate. */
+static void run_near(long count, int minlen)
+{
+    long printed = 0, evals = 0;
+    uint64_t bitN = 1ULL << N;
+    while (printed < count && evals < 400000000L) {
+        int w[16];
+        for (int i = 0; i < K; i++) {
+            int ok;
+            do { w[i] = (int)(rnd() % NCH); ok = 1; for (int q = 0; q < i; q++) if (w[q] == w[i]) ok = 0; } while (!ok);
+        }
+        int cur = __builtin_popcountll(eval_set(w, K) | bitN), stall = 0; evals++;
+        while (stall < 4 * K && cur < minlen) {
+            int j = (int)(rnd() % K), bestc = w[j], bests = cur, old = w[j];
+            for (int tries = 0; tries < 48; tries++) {
+                int c = (int)(rnd() % NCH), dup = 0;
+                for (int q = 0; q < K; q++) if (q != j && w[q] == c) dup = 1;
+                if (dup) continue;
+                w[j] = c;
+                int sc = __builtin_popcountll(eval_set(w, K) | bitN); evals++;
+                if (sc > bests) { bests = sc; bestc = c; }
+            }
+            w[j] = old;
+            if (bests > cur) { w[j] = bestc; cur = bests; stall = 0; } else stall++;
+        }
+        if (cur >= minlen) {
+            for (int i = 0; i < K; i++) printf("%d,%d%s", chu[w[i]], chv[w[i]], i + 1 < K ? " " : "");
+            printf("\n"); printed++;
+        }
+    }
 }
 
 static void spectrum_stdin(void)
@@ -394,12 +467,14 @@ int main(int argc, char **argv)
     if (argc >= 2 && !strcmp(argv[1], "--spectrum-stdin")) { spectrum_stdin(); return 0; }
     if (argc < 3) { fprintf(stderr, "usage: %s N K [--find|--enum|--plant T] [--canon] ...\n", argv[0]); return 1; }
     N = atoi(argv[1]); K = atoi(argv[2]);
-    long plantT = 0;
+    long plantT = 0, nearCount = 0; int plantStdin = 0, nearMin = 0;
     for (int i = 3; i < argc; i++) {
         if (!strcmp(argv[i], "--canon")) CANON = 1;
         else if (!strcmp(argv[i], "--enum")) ENUM = 1;
         else if (!strcmp(argv[i], "--find")) ENUM = 0;
         else if (!strcmp(argv[i], "--plant") && i + 1 < argc) plantT = atol(argv[++i]);
+        else if (!strcmp(argv[i], "--plant-stdin")) plantStdin = 1;
+        else if (!strcmp(argv[i], "--near") && i + 2 < argc) { nearCount = atol(argv[++i]); nearMin = atoi(argv[++i]); }
         else if (!strcmp(argv[i], "--seed") && i + 1 < argc) rng_s = strtoull(argv[++i], 0, 10) * 2654435761ULL + 88172645463325252ULL;
         else if (!strcmp(argv[i], "--span") && i + 1 < argc) { CANON = 1; MINSPAN = atoi(argv[++i]); }
         else if (!strcmp(argv[i], "--slice") && i + 2 < argc) { SLICEI = atoi(argv[++i]); SLICEM = atoi(argv[++i]); }
@@ -414,6 +489,8 @@ int main(int argc, char **argv)
     NEED = 0; for (int L = 3; L <= N; L++) NEED |= 1ULL << L;
     NEEDN = N - 2;
     if (plantT) return run_plant(plantT);
+    if (plantStdin) return run_plant_stdin();
+    if (nearCount) { run_near(nearCount, nearMin); return 0; }
 
     struct timespec t0, t1; clock_gettime(CLOCK_MONOTONIC, &t0);
     int r = run_search();
