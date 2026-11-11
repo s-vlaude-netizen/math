@@ -81,6 +81,8 @@ def gate_g1(binp, res):
                 break
         if val != PUBLISHED[i]:
             bad.append([n, note if note else f"got {val}, published {PUBLISHED[i]}"])
+            if len(bad) >= 3:          # three wrong terms settle it; the rest only costs time-outs
+                break
     return dict(ok=not bad, bad=bad), wit
 
 
