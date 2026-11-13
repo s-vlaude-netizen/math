@@ -20,7 +20,10 @@ want = int(sys.argv[2]) if len(sys.argv) > 2 else None
 for line in sys.stdin:
     if not line.startswith("S "):
         continue
-    t = list(map(int, line.split()[1:]))
+    w = line.split()[1:]
+    if "C" in w:                                   # arcdfs2 appends the chords itself; ignore them here
+        w = w[:w.index("C")]
+    t = list(map(int, w))
     idx, n, a = t[0], t[1], t[2:]
     if want is not None and n != want:
         continue

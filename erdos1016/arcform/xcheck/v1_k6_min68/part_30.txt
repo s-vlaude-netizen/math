@@ -1,0 +1,2 @@
+# types=55 searched=21 solutions=0 largest n=0 nodes=5462607 (largest single type 817036)
+# solutions per n:

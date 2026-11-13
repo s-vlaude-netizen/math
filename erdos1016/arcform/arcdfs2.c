@@ -34,6 +34,9 @@
  * Every solution is re-verified from scratch before it is counted (abort on failure).
  *
  * Usage: arcdfs2 NMIN [--print] [--max NMAX] [--only-L] < types      (NMIN = 0: all solutions)
+ *        --print: one line per solution,  S idx n a_0..a_{p-1} C u,v u,v ...   (arc lengths, then the
+ *        chords on the cycle 0..n-1 with position 0 at vertex 0), and one line  T idx nodes=.. solutions=..
+ *        per type searched
  *        --only-L never branches by D (this is the algorithm of arcdfs.c; for comparison)
  */
 #include <stdio.h>
@@ -46,6 +49,7 @@
 #define HSZ 4096
 
 static int p, F, lo[MAXP], fm[MAXF];
+static int nE, Ei[32], Ej[32];                     /* the chords of the type, as pairs of positions */
 static unsigned A[MAXF], C[MAXF], FULL;
 static int val[MAXP];
 static unsigned AM;                               /* assigned arcs */
@@ -128,7 +132,15 @@ static void solution(void)
     for (int v = 3; v < n; v++) if (!seen[v]) { fprintf(stderr, "type %d: non-pancyclic vector reported\n", typeidx); exit(3); }
     if (n < NMIN || n > NMAX) return;
     nsol++; if (n < MAXL) hist[n]++; if (n > bestn) bestn = n;
-    if (PRINT) { printf("S %d %d", typeidx, n); for (int i = 0; i < p; i++) printf(" %d", val[i]); printf("\n"); }
+    if (PRINT) {
+        int pos[MAXP + 1];
+        pos[0] = 0;
+        for (int i = 0; i < p; i++) pos[i + 1] = pos[i] + val[i];
+        printf("S %d %d", typeidx, n);
+        for (int i = 0; i < p; i++) printf(" %d", val[i]);
+        if (nE) { printf(" C"); for (int c = 0; c < nE; c++) printf(" %d,%d", pos[Ei[c]], pos[Ej[c]]); }
+        printf("\n");
+    }
 }
 
 static void dfs(void);
@@ -286,6 +298,18 @@ int main(int argc, char **argv)
             fm[f] = (int)strtol(q, &q, 10); A[f] = (unsigned)strtoul(q, &q, 10); C[f] = FULL & ~A[f];
             if (A[f] & ~FULL) { fprintf(stderr, "type %d: bad mask\n", typeidx); return 1; }
             if (C[f] == 0) { fprintf(stderr, "type %d: a cycle uses every arc\n", typeidx); return 1; }
+        }
+        nE = 0;
+        while (*q == ' ') q++;
+        if (*q == 'E') {
+            q++;
+            for (;;) {
+                char *e; long i = strtol(q, &e, 10);
+                if (e == q) break;
+                q = e; long j = strtol(q, &e, 10);
+                if (e == q || nE >= 32) { fprintf(stderr, "type %d: bad chord list\n", typeidx); return 1; }
+                q = e; Ei[nE] = (int)i; Ej[nE] = (int)j; nE++;
+            }
         }
         types++;
         if (NMIN && F + 3 < NMIN) continue;          /* too few cycles for n >= NMIN */
