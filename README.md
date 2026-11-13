@@ -57,25 +57,38 @@ dimension only $k+1$, so it has at most $2^{k+1}-1$ cycles *in total* and its
 whole cycle spectrum is read off from that many bitmasks — no cycle enumeration.
 A counting prune and a rotation symmetry reduction do the rest.
 
-**New terms:** A105206 was known for $n=3\ldots22$; $h(n)$ is now determined for
-$n=23\ldots40$ as well:
+**New terms.** A105206 was known for $n=3\ldots22$. It is now determined for
+$n=23\ldots114$:
 
-```
-n     23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
-a(n)  27 28 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45
-```
+| $n$ | 3 | 4–5 | 6–8 | 9–14 | 15–24 | 25–40 | 41–67 | 68–114 | $\ge115$ |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| $h(n)$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | $\ge8$ |
 
-Up to $n=33$ the lower bound is an exhaustive refutation of every chord set one
-size smaller; from $n=34$ on it follows from Bondy's counting bound, and only a
-witness is needed.
+$n\le40$ came from searching chord sets on $C_n$ for one $n$ at a time. That
+stalled at $n=41$ (22.8 core-minutes for a single value).
 
-The by-product is evidence on Erdős's own question. Writing $N(k)$ for the largest
-$n$ with $h(n)=k$, the values are now exact for $k\le4$: $N(k)/2^k = 3,\,2.5,\,2,\,1.75,\,1.5$
-— falling at every step, where Bondy's counting bound alone would permit it to sit
-near 2 forever. That is the direction Erdős believed but could not prove. The next
-step is *not* settled: $h(40)=5$ gives only $N(5)\ge40$, so the ratio is somewhere
-in $[1.25,\,2.03]$, and the fall continues iff $N(5)<48$. Deciding $h(41)$ would
-resolve it; see `erdos1016/results.md`.
+**The second reformulation** (`erdos1016/arcform/`) removes $n$ from the search.
+Describe a chord set by the cyclic pattern of its chord endpoints (its *type*;
+there are 1, 3, 14, 103, 1236, 21878, 496875 types for 1 to 7 chords) and by the
+lengths of the arcs between endpoints. Every cycle length is then a fixed linear
+form in the arc lengths. Short cycles use few short arcs and long cycles skip
+few short arcs, so the lengths can be covered from both ends, and one run decides
+every $n$ at once: "five chords never suffice for $n\ge41$" takes 17,378 search
+nodes.
+
+**The by-product is exact data on Erdős's own question.** Let $N(k)$ be the
+largest $n$ for which a pancyclic graph with $n+k$ edges exists:
+
+| $k$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| $N(k)$ | 3 | 5 | 8 | 14 | 24 | 40 | 67 | 114 |
+| $N(k)/2^k$ | 3 | 2.5 | 2 | 1.75 | 1.5 | 1.25 | 1.05 | 0.89 |
+
+The ratio falls at every step, the direction Erdős believed ($h(n)-\log_2 n\to\infty$)
+but could not prove. Counting cycles would allow it to stay near 2. This is
+evidence from eight values, not a proof; details and caveats in
+`erdos1016/results.md`. $N(7)$ comes from one program and has not been
+reproduced independently.
 
 ## Trusting the numbers
 
@@ -90,7 +103,11 @@ Every claim here is machine-checked twice, by deliberately different means:
 * the $n=25$ refutation was run both with and without the symmetry reduction
   (233 829 950 vs 10 997 097 nodes, same verdict);
 * both searchers reproduce **every** published term of their sequences before
-  being trusted on a new one.
+  being trusted on a new one;
+* the type search was compared with a naive enumeration on complete solution sets
+  (2.4 million chord sets), with the per-$n$ searcher, with a second solver and
+  with CP-SAT. Reproducing the known values alone had let two bugs through; see
+  `erdos1016/arcform/README.md`.
 
 ## Layout
 
@@ -98,4 +115,6 @@ Every claim here is machine-checked twice, by deliberately different means:
 survey/      how the problems were selected (Erdős DB + OEIS mining)
 erdos357/    Golomb-ruler searcher, verifier, results
 erdos1016/   pancyclic searcher, independent verifier, results
+erdos1016/arcform/   the search that does not fix n (types, arc lengths, both-ends covering)
+research/agentic-math/   notes on agentic mathematics as a research field; the mutation study of verification gates
 ```
