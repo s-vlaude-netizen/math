@@ -24,13 +24,16 @@ static int K, p;
 static int cur[MAXK];                 /* chosen pairs, as codes i*32+j, increasing */
 static long long idx, printed, passing, labeled;
 static int MINF, PART_I = 0, PART_M = 1, COUNT;
-static long long byp[2 * MAXK + 1], maxF;
+static long long byp[2 * MAXK + 1], maxF, orbitsum;
 
 static int cmp_int(const void *a, const void *b) { return *(const int *)a - *(const int *)b; }
+
+static int stab;                      /* number of the 2p symmetries that fix the current pattern */
 
 static int canonical(void)
 {
     int img[MAXK];
+    stab = 1;
     for (int fl = 0; fl < 2; fl++)
         for (int t = 0; t < p; t++) {
             if (!fl && !t) continue;
@@ -41,10 +44,12 @@ static int canonical(void)
                 img[c] = u < v ? u * 32 + v : v * 32 + u;
             }
             qsort(img, K, sizeof(int), cmp_int);
-            for (int c = 0; c < K; c++) {
+            int c;
+            for (c = 0; c < K; c++) {
                 if (img[c] < cur[c]) return 0;
                 if (img[c] > cur[c]) break;
             }
+            if (c == K) stab++;
         }
     return 1;
 }
@@ -120,7 +125,7 @@ static void rec(int depth, int from_i, int from_j, unsigned covered)
     if (depth == K) {
         if (covered != (1u << p) - 1) return;
         labeled++;
-        if (canonical()) emit();
+        if (canonical()) { orbitsum += 2 * p / stab; emit(); }
         return;
     }
     int r = K - depth;
@@ -150,6 +155,8 @@ int main(int argc, char **argv)
         if (p * (p - 1) / 2 < K) continue;
         rec(0, 0, 1, 0);
     }
+    /* every labelled pattern lies in the orbit of exactly one printed type */
+    if (orbitsum != labeled) { fprintf(stderr, "orbit sizes sum to %lld, but there are %lld labelled patterns\n", orbitsum, labeled); return 3; }
     if (COUNT) {
         printf("K=%d: %lld types (%lld labelled chord patterns); with at least %d cycle forms: %lld; most cycle forms: %lld\nby number of endpoints:", K, idx, labeled, MINF, passing, maxF);
         for (int q = 2; q <= 2 * K; q++) if (byp[q]) printf(" %d:%lld", q, byp[q]);

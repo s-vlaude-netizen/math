@@ -1,0 +1,4 @@
+S 203874 107 13 7 1 1 1 2 2 26 50 4 C 0,13 0,53 13,20 20,22 21,27 22,25 23,103
+S 203874 107 7 13 1 1 1 2 2 26 50 4 C 0,7 0,53 7,20 20,22 21,27 22,25 23,103
+# types=3467 searched=3467 solutions=2 largest n=107 nodes=6982913 (largest single type 279688; branched by L 143206, by D 90540)
+# solutions per n: 107:2
