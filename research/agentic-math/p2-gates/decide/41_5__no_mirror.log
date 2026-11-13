@@ -1,0 +1,14 @@
+span=20 rc=20 n=41 k=5 nodes=10697 time=0.08s IMPOSSIBLE
+span=19 rc=20 n=41 k=5 nodes=88636 time=0.38s IMPOSSIBLE
+span=18 rc=20 n=41 k=5 nodes=302734 time=1.12s IMPOSSIBLE
+span=17 rc=20 n=41 k=5 nodes=721914 time=2.96s IMPOSSIBLE
+span=16 rc=20 n=41 k=5 nodes=1415097 time=5.38s IMPOSSIBLE
+span=15 rc=20 n=41 k=5 nodes=2451192 time=9.23s IMPOSSIBLE
+span=14 rc=20 n=41 k=5 nodes=3899116 time=15.47s IMPOSSIBLE
+span=13 rc=20 n=41 k=5 nodes=5827804 time=22.79s IMPOSSIBLE
+span=12 rc=20 n=41 k=5 nodes=8306173 time=33.93s IMPOSSIBLE
+span=11 rc=20 n=41 k=5 nodes=11403038 time=42.09s IMPOSSIBLE
+span=10 rc=20 n=41 k=5 nodes=15187522 time=60.34s IMPOSSIBLE
+span=9 rc=20 n=41 k=5 nodes=19728016 time=74.61s IMPOSSIBLE
+span=8 rc=20 n=41 k=5 nodes=25094315 time=92.34s IMPOSSIBLE
+span=7 rc=20 n=41 k=5 nodes=31353690 time=128.36s IMPOSSIBLE

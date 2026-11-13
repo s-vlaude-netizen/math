@@ -18,13 +18,15 @@ def ask(binp, n, k, limit):
     got = subprocess.run([os.path.join(HERE, "ref_enum"), "--spectrum"], input=line, capture_output=True, text=True).stdout.split()
     real = len(set(ch)) == k and all(str(L) in got for L in range(3, n + 1))
     return ("found" if real else "bogus"), ch
-out = {}
+PATH = os.path.join(HERE, "results", "beyond_published.json")
+LIMIT = int(os.environ.get("BEYOND_LIMIT", "300"))
 for m in [int(x) for x in sys.argv[1:]]:
     binp = os.path.join(HERE, "bin", f"m{m}")
     row = {}
     for n in range(23, 37):
-        row[n] = ask(binp, n, H[n], 300)[0]
-    out[m] = row
+        row[str(n)] = ask(binp, n, H[n], LIMIT)[0]
+    out = json.load(open(PATH)) if os.path.exists(PATH) else {}
+    out[str(m)] = row                       # saved after every build, so an interrupted run keeps its rows
+    json.dump(out, open(PATH, "w"), indent=1)
     wrong = [f"{n}:{v}" for n, v in row.items() if v != "found"]
     print(f"m{m:<3} wrong at: {', '.join(wrong) if wrong else '-'}", flush=True)
-json.dump(out, open(os.path.join(HERE, "results", "beyond_published.json"), "w"), indent=1)
