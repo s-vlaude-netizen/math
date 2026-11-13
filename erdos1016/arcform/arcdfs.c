@@ -75,7 +75,9 @@ static void revert(unsigned newm, Undo *u)
     for (int q = 0; q < u->nd; q++) if (--cnt[u->done[q]] == 0) distinctTotal--;
     for (int f = 0; f < F; f++) fsum[f] -= u->add[f];
     AM = u->AMold;
-    for (int i = 0; i < p; i++) if (newm >> i & 1) val[i] = 0;
+    (void)newm;        /* val[] is NOT cleared here: the frames of distribute() own their arcs and
+                          clear them after their loops; clearing here would wipe arcs whose loops
+                          are still running in outer frames */
 }
 
 static void solution(void)
@@ -168,7 +170,10 @@ int main(int argc, char **argv)
         searched++;
         AM = 0; distinctTotal = 0; nodes = 0; nsol = 0; bestn = 0;
         memset(cnt, 0, sizeof cnt); memset(val, 0, sizeof val);
-        for (int f = 0; f < F; f++) fsum[f] = fm[f];
+        for (int f = 0; f < F; f++) {
+            fsum[f] = fm[f];
+            if (fmask[f] == 0 && cnt[fm[f]]++ == 0) distinctTotal++;   /* chords only: complete from the start */
+        }
         dfs();
         total_nodes += nodes; total_sol += nsol;
         if (nodes > maxnodes) maxnodes = nodes;
