@@ -1,0 +1,1236 @@
+{"idx": 0, "p": 4, "edges": [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 2, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 3, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [0, 4], [1, 3]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 4, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [0, 4], [1, 4]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 5, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [0, 4], [2, 3]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 6, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [1, 2], [1, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 7, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [1, 2], [2, 4]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 8, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [1, 2], [3, 4]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 1, "p": 4, "edges": [[0, 1], [0, 2], [0, 3], [1, 2], [2, 3]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 10, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [1, 3], [2, 4]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 11, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [1, 3], [3, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 12, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [1, 4], [2, 3]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 13, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [1, 4], [2, 4]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 14, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [1, 4], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 15, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [2, 3], [3, 4]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 9, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [1, 3], [1, 4]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 17, "p": 5, "edges": [[0, 1], [0, 2], [0, 4], [1, 2], [1, 3]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 18, "p": 5, "edges": [[0, 1], [0, 2], [0, 4], [1, 2], [2, 3]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 19, "p": 5, "edges": [[0, 1], [0, 2], [0, 4], [1, 2], [3, 4]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 20, "p": 5, "edges": [[0, 1], [0, 2], [0, 4], [1, 3], [2, 3]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 21, "p": 5, "edges": [[0, 1], [0, 2], [0, 4], [1, 3], [2, 4]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 22, "p": 5, "edges": [[0, 1], [0, 2], [0, 4], [1, 3], [3, 4]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 23, "p": 5, "edges": [[0, 1], [0, 2], [0, 4], [1, 4], [2, 3]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 24, "p": 5, "edges": [[0, 1], [0, 2], [0, 4], [2, 3], [3, 4]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 25, "p": 5, "edges": [[0, 1], [0, 2], [0, 4], [2, 4], [3, 4]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 26, "p": 5, "edges": [[0, 1], [0, 2], [1, 3], [2, 4], [3, 4]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 27, "p": 5, "edges": [[0, 1], [0, 2], [1, 4], [2, 3], [3, 4]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 28, "p": 5, "edges": [[0, 1], [0, 4], [1, 2], [2, 3], [3, 4]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 29, "p": 5, "edges": [[0, 2], [0, 3], [1, 3], [1, 4], [2, 4]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 16, "p": 5, "edges": [[0, 1], [0, 2], [0, 3], [2, 4], [3, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 31, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [0, 4], [1, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 32, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [0, 4], [2, 5]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 33, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [0, 4], [3, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 34, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [0, 4], [4, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 35, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [0, 5], [1, 4]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 36, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [0, 5], [2, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 37, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [0, 5], [3, 4]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 38, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [0, 5], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 39, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [1, 2], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 40, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [1, 3], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 41, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [1, 4], [1, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 30, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [0, 4], [0, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 43, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [1, 4], [3, 5]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 44, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [1, 4], [4, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 45, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [1, 5], [2, 4]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 46, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [1, 5], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 47, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [1, 5], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 48, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [2, 3], [4, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 49, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [2, 4], [2, 5]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 50, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [2, 4], [3, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 51, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [2, 4], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 52, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [2, 5], [3, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 53, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [2, 5], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 54, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [3, 4], [3, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 42, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [1, 4], [2, 5]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 56, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [3, 5], [4, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 57, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [0, 5], [1, 3]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 58, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [0, 5], [2, 3]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 59, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [1, 2], [3, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 60, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [1, 3], [1, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 61, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [1, 3], [2, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 62, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [1, 3], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 63, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [1, 3], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 64, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [1, 4], [3, 5]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 65, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [1, 5], [2, 3]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 66, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [1, 5], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 67, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [1, 5], [3, 5]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 55, "p": 6, "edges": [[0, 1], [0, 2], [0, 3], [3, 4], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 69, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [2, 3], [3, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 70, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [2, 3], [4, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 71, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [2, 4], [3, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 72, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [2, 5], [3, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 73, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [2, 5], [3, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 74, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [3, 4], [3, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 75, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [3, 4], [4, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 76, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [3, 5], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 77, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [1, 2], [3, 4]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 78, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [1, 3], [1, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 79, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [1, 3], [2, 4]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 68, "p": 6, "edges": [[0, 1], [0, 2], [0, 4], [2, 3], [2, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 81, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [1, 3], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 82, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [1, 4], [2, 3]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 83, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [1, 4], [3, 4]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 84, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [1, 4], [3, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 85, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [1, 5], [3, 4]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 86, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [2, 3], [3, 4]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 87, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [2, 3], [4, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 88, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [2, 4], [3, 4]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 89, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [2, 4], [3, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 90, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [2, 5], [3, 4]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 91, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [3, 4], [3, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 92, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [3, 4], [4, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 93, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [3, 5], [4, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 94, "p": 6, "edges": [[0, 1], [0, 2], [1, 2], [1, 4], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 95, "p": 6, "edges": [[0, 1], [0, 2], [1, 2], [3, 4], [3, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 96, "p": 6, "edges": [[0, 1], [0, 2], [1, 2], [3, 4], [4, 5]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 97, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [1, 4], [2, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 98, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [1, 4], [3, 5]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 99, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [1, 4], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 100, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [2, 3], [4, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 101, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [2, 4], [2, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 102, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [2, 4], [3, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 103, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [2, 4], [4, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 80, "p": 6, "edges": [[0, 1], [0, 2], [0, 5], [1, 3], [3, 4]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 105, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [2, 5], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 104, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [2, 5], [3, 4]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 107, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [3, 5], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 108, "p": 6, "edges": [[0, 1], [0, 2], [1, 4], [2, 3], [2, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 109, "p": 6, "edges": [[0, 1], [0, 2], [1, 4], [2, 3], [3, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 110, "p": 6, "edges": [[0, 1], [0, 2], [1, 4], [2, 3], [4, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 111, "p": 6, "edges": [[0, 1], [0, 2], [1, 4], [2, 4], [3, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 112, "p": 6, "edges": [[0, 1], [0, 2], [1, 4], [2, 5], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 113, "p": 6, "edges": [[0, 1], [0, 2], [1, 4], [2, 5], [3, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 114, "p": 6, "edges": [[0, 1], [0, 2], [1, 4], [3, 4], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 106, "p": 6, "edges": [[0, 1], [0, 2], [1, 3], [3, 4], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 116, "p": 6, "edges": [[0, 1], [0, 2], [1, 4], [3, 5], [4, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 117, "p": 6, "edges": [[0, 1], [0, 2], [1, 5], [2, 3], [3, 4]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 118, "p": 6, "edges": [[0, 1], [0, 2], [1, 5], [2, 3], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 119, "p": 6, "edges": [[0, 1], [0, 2], [1, 5], [2, 4], [3, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 120, "p": 6, "edges": [[0, 1], [0, 2], [1, 5], [2, 4], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 121, "p": 6, "edges": [[0, 1], [0, 2], [1, 5], [2, 5], [3, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 122, "p": 6, "edges": [[0, 1], [0, 2], [2, 3], [2, 5], [3, 4]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 123, "p": 6, "edges": [[0, 1], [0, 2], [2, 3], [2, 5], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 115, "p": 6, "edges": [[0, 1], [0, 2], [1, 4], [3, 4], [4, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 124, "p": 6, "edges": [[0, 1], [0, 2], [2, 3], [3, 4], [4, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 126, "p": 6, "edges": [[0, 1], [0, 2], [2, 4], [2, 5], [3, 4]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 127, "p": 6, "edges": [[0, 1], [0, 2], [2, 4], [2, 5], [3, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 128, "p": 6, "edges": [[0, 1], [0, 2], [2, 5], [3, 4], [3, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 129, "p": 6, "edges": [[0, 1], [0, 2], [2, 5], [3, 4], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 130, "p": 6, "edges": [[0, 1], [0, 3], [0, 4], [1, 2], [2, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 131, "p": 6, "edges": [[0, 1], [0, 3], [0, 4], [1, 2], [3, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 125, "p": 6, "edges": [[0, 1], [0, 2], [2, 3], [3, 5], [4, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 133, "p": 6, "edges": [[0, 1], [0, 3], [0, 4], [1, 4], [2, 5]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 134, "p": 6, "edges": [[0, 1], [0, 3], [0, 4], [2, 3], [2, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 135, "p": 6, "edges": [[0, 1], [0, 3], [0, 4], [2, 3], [3, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 136, "p": 6, "edges": [[0, 1], [0, 3], [0, 4], [2, 4], [2, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 137, "p": 6, "edges": [[0, 1], [0, 3], [0, 4], [2, 4], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 138, "p": 6, "edges": [[0, 1], [0, 3], [0, 4], [2, 5], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 139, "p": 6, "edges": [[0, 1], [0, 3], [0, 4], [2, 5], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 140, "p": 6, "edges": [[0, 1], [0, 3], [0, 5], [1, 2], [1, 4]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 132, "p": 6, "edges": [[0, 1], [0, 3], [0, 4], [1, 3], [2, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 142, "p": 6, "edges": [[0, 1], [0, 3], [0, 5], [1, 2], [3, 4]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 143, "p": 6, "edges": [[0, 1], [0, 3], [0, 5], [1, 2], [4, 5]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 144, "p": 6, "edges": [[0, 1], [0, 3], [0, 5], [1, 3], [2, 4]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 145, "p": 6, "edges": [[0, 1], [0, 3], [0, 5], [1, 4], [2, 3]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 146, "p": 6, "edges": [[0, 1], [0, 3], [0, 5], [1, 4], [2, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 147, "p": 6, "edges": [[0, 1], [0, 3], [0, 5], [1, 4], [2, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 148, "p": 6, "edges": [[0, 1], [0, 3], [0, 5], [2, 3], [3, 4]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 149, "p": 6, "edges": [[0, 1], [0, 3], [1, 2], [2, 3], [4, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 150, "p": 6, "edges": [[0, 1], [0, 3], [1, 2], [2, 4], [3, 5]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 141, "p": 6, "edges": [[0, 1], [0, 3], [0, 5], [1, 2], [2, 4]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 152, "p": 6, "edges": [[0, 1], [0, 3], [1, 2], [2, 5], [3, 4]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 153, "p": 6, "edges": [[0, 1], [0, 3], [1, 2], [3, 4], [4, 5]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 154, "p": 6, "edges": [[0, 1], [0, 3], [1, 3], [2, 4], [2, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 155, "p": 6, "edges": [[0, 1], [0, 3], [1, 3], [2, 4], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 156, "p": 6, "edges": [[0, 1], [0, 3], [1, 3], [2, 4], [4, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 157, "p": 6, "edges": [[0, 1], [0, 3], [1, 3], [2, 5], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 158, "p": 6, "edges": [[0, 1], [0, 3], [1, 4], [2, 3], [2, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 159, "p": 6, "edges": [[0, 1], [0, 3], [1, 4], [2, 3], [4, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 151, "p": 6, "edges": [[0, 1], [0, 3], [1, 2], [2, 4], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 161, "p": 6, "edges": [[0, 1], [0, 3], [1, 4], [2, 4], [3, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 162, "p": 6, "edges": [[0, 1], [0, 3], [1, 4], [2, 5], [3, 4]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 163, "p": 6, "edges": [[0, 1], [0, 3], [2, 4], [2, 5], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 164, "p": 6, "edges": [[0, 1], [0, 4], [1, 2], [2, 3], [3, 5]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 165, "p": 6, "edges": [[0, 1], [0, 4], [1, 2], [2, 4], [3, 5]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 166, "p": 6, "edges": [[0, 1], [0, 4], [1, 3], [2, 4], [2, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 160, "p": 6, "edges": [[0, 1], [0, 3], [1, 4], [2, 4], [2, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 168, "p": 6, "edges": [[0, 1], [0, 4], [1, 3], [2, 5], [3, 4]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 169, "p": 6, "edges": [[0, 1], [0, 4], [2, 4], [2, 5], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 170, "p": 6, "edges": [[0, 1], [0, 5], [1, 2], [2, 3], [3, 4]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 171, "p": 6, "edges": [[0, 2], [0, 3], [0, 4], [1, 3], [1, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 172, "p": 6, "edges": [[0, 2], [0, 3], [0, 4], [1, 3], [2, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 173, "p": 6, "edges": [[0, 2], [0, 3], [0, 4], [1, 3], [3, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 174, "p": 6, "edges": [[0, 2], [0, 3], [0, 4], [1, 4], [1, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 167, "p": 6, "edges": [[0, 1], [0, 4], [1, 3], [2, 4], [3, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 176, "p": 6, "edges": [[0, 2], [0, 3], [0, 4], [1, 5], [2, 4]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 175, "p": 6, "edges": [[0, 2], [0, 3], [0, 4], [1, 4], [2, 5]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 178, "p": 6, "edges": [[0, 2], [0, 3], [1, 3], [1, 5], [2, 4]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.48}
+{"idx": 179, "p": 6, "edges": [[0, 2], [0, 3], [1, 4], [1, 5], [2, 4]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 177, "p": 6, "edges": [[0, 2], [0, 3], [1, 3], [1, 4], [2, 5]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.85}
+{"idx": 181, "p": 6, "edges": [[0, 2], [0, 3], [1, 5], [2, 4], [3, 5]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 182, "p": 6, "edges": [[0, 2], [0, 4], [1, 3], [1, 5], [2, 4]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 183, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [0, 4], [5, 6]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 184, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [0, 5], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 185, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [0, 6], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 186, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [1, 4], [5, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 187, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [1, 5], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 188, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [1, 6], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 189, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [2, 4], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 190, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [2, 5], [4, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 191, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [2, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 192, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [3, 4], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 193, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [3, 5], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 194, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [3, 6], [4, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 195, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [4, 5], [4, 6]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 196, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [4, 5], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 197, "p": 7, "edges": [[0, 1], [0, 2], [0, 3], [4, 6], [5, 6]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 198, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [0, 5], [3, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 199, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [0, 6], [3, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 200, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [1, 3], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 201, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [1, 5], [3, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 202, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [1, 6], [3, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 203, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [2, 3], [5, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 204, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [2, 5], [3, 6]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 205, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [2, 6], [3, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 206, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [3, 4], [5, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 207, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [3, 5], [3, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 208, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [3, 5], [4, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 209, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [3, 5], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 210, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [3, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 211, "p": 7, "edges": [[0, 1], [0, 2], [0, 4], [3, 6], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 212, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [0, 6], [3, 4]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 213, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [1, 3], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 214, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [1, 4], [3, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 215, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [1, 6], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 216, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [2, 3], [4, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 217, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [2, 4], [3, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 218, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [2, 6], [3, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 219, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [3, 4], [3, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 220, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [3, 4], [4, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 221, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [3, 4], [5, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 222, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [3, 5], [4, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 223, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [3, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 224, "p": 7, "edges": [[0, 1], [0, 2], [0, 5], [3, 6], [4, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 225, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [1, 3], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 226, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [1, 4], [3, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 227, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [1, 5], [3, 4]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 228, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [2, 3], [4, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 229, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [2, 4], [3, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 230, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [2, 5], [3, 4]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 231, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [3, 4], [3, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 232, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [3, 4], [4, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 233, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [3, 4], [5, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 234, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [3, 5], [4, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 235, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [3, 5], [4, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 236, "p": 7, "edges": [[0, 1], [0, 2], [0, 6], [3, 6], [4, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 237, "p": 7, "edges": [[0, 1], [0, 2], [1, 2], [3, 4], [5, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 238, "p": 7, "edges": [[0, 1], [0, 2], [1, 2], [3, 5], [4, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 239, "p": 7, "edges": [[0, 1], [0, 2], [1, 2], [3, 6], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 240, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [1, 4], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 241, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [1, 5], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 242, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [2, 4], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 243, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [2, 5], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 244, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [2, 6], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 245, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [3, 4], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 246, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [3, 5], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 247, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [3, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 248, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [4, 5], [4, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 249, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [4, 5], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 250, "p": 7, "edges": [[0, 1], [0, 2], [1, 3], [4, 6], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 251, "p": 7, "edges": [[0, 1], [0, 2], [1, 4], [1, 5], [3, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 252, "p": 7, "edges": [[0, 1], [0, 2], [1, 4], [2, 3], [5, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 180, "p": 6, "edges": [[0, 2], [0, 3], [1, 4], [2, 5], [3, 5]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.58}
+{"idx": 254, "p": 7, "edges": [[0, 1], [0, 2], [1, 4], [2, 6], [3, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 255, "p": 7, "edges": [[0, 1], [0, 2], [1, 4], [3, 4], [5, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 256, "p": 7, "edges": [[0, 1], [0, 2], [1, 4], [3, 5], [3, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 257, "p": 7, "edges": [[0, 1], [0, 2], [1, 4], [3, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 258, "p": 7, "edges": [[0, 1], [0, 2], [1, 4], [3, 5], [5, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 259, "p": 7, "edges": [[0, 1], [0, 2], [1, 4], [3, 6], [4, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 260, "p": 7, "edges": [[0, 1], [0, 2], [1, 4], [3, 6], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 261, "p": 7, "edges": [[0, 1], [0, 2], [1, 5], [2, 3], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 262, "p": 7, "edges": [[0, 1], [0, 2], [1, 5], [2, 4], [3, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 263, "p": 7, "edges": [[0, 1], [0, 2], [1, 5], [2, 6], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 264, "p": 7, "edges": [[0, 1], [0, 2], [1, 5], [3, 4], [3, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 265, "p": 7, "edges": [[0, 1], [0, 2], [1, 5], [3, 4], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 266, "p": 7, "edges": [[0, 1], [0, 2], [1, 5], [3, 4], [5, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 267, "p": 7, "edges": [[0, 1], [0, 2], [1, 5], [3, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 268, "p": 7, "edges": [[0, 1], [0, 2], [1, 5], [3, 6], [4, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 269, "p": 7, "edges": [[0, 1], [0, 2], [1, 5], [3, 6], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 270, "p": 7, "edges": [[0, 1], [0, 2], [1, 6], [2, 3], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 271, "p": 7, "edges": [[0, 1], [0, 2], [1, 6], [2, 4], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 272, "p": 7, "edges": [[0, 1], [0, 2], [1, 6], [2, 5], [3, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 273, "p": 7, "edges": [[0, 1], [0, 2], [1, 6], [3, 4], [3, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 274, "p": 7, "edges": [[0, 1], [0, 2], [1, 6], [3, 4], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 275, "p": 7, "edges": [[0, 1], [0, 2], [2, 3], [2, 5], [4, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 276, "p": 7, "edges": [[0, 1], [0, 2], [2, 3], [2, 6], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 277, "p": 7, "edges": [[0, 1], [0, 2], [2, 3], [3, 4], [5, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 278, "p": 7, "edges": [[0, 1], [0, 2], [2, 3], [3, 5], [4, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 279, "p": 7, "edges": [[0, 1], [0, 2], [2, 3], [3, 6], [4, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 280, "p": 7, "edges": [[0, 1], [0, 2], [2, 3], [4, 5], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 281, "p": 7, "edges": [[0, 1], [0, 2], [2, 3], [4, 5], [5, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 282, "p": 7, "edges": [[0, 1], [0, 2], [2, 3], [4, 6], [5, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 283, "p": 7, "edges": [[0, 1], [0, 2], [2, 4], [2, 5], [3, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 284, "p": 7, "edges": [[0, 1], [0, 2], [2, 4], [2, 6], [3, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 285, "p": 7, "edges": [[0, 1], [0, 2], [2, 4], [3, 4], [5, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 286, "p": 7, "edges": [[0, 1], [0, 2], [2, 4], [3, 5], [3, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 287, "p": 7, "edges": [[0, 1], [0, 2], [2, 4], [3, 5], [4, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 288, "p": 7, "edges": [[0, 1], [0, 2], [2, 4], [3, 5], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 289, "p": 7, "edges": [[0, 1], [0, 2], [2, 4], [3, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 290, "p": 7, "edges": [[0, 1], [0, 2], [2, 4], [3, 6], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 291, "p": 7, "edges": [[0, 1], [0, 2], [2, 5], [2, 6], [3, 4]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 292, "p": 7, "edges": [[0, 1], [0, 2], [2, 5], [3, 4], [3, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 293, "p": 7, "edges": [[0, 1], [0, 2], [2, 5], [3, 4], [4, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 294, "p": 7, "edges": [[0, 1], [0, 2], [2, 5], [3, 4], [5, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 295, "p": 7, "edges": [[0, 1], [0, 2], [2, 5], [3, 5], [4, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 296, "p": 7, "edges": [[0, 1], [0, 2], [2, 5], [3, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 297, "p": 7, "edges": [[0, 1], [0, 2], [2, 5], [3, 6], [4, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 298, "p": 7, "edges": [[0, 1], [0, 2], [2, 6], [3, 4], [3, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 299, "p": 7, "edges": [[0, 1], [0, 2], [2, 6], [3, 4], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 300, "p": 7, "edges": [[0, 1], [0, 2], [2, 6], [3, 4], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 301, "p": 7, "edges": [[0, 1], [0, 2], [2, 6], [3, 5], [4, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 302, "p": 7, "edges": [[0, 1], [0, 2], [2, 6], [3, 5], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 303, "p": 7, "edges": [[0, 1], [0, 2], [2, 6], [3, 6], [4, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 304, "p": 7, "edges": [[0, 1], [0, 2], [3, 4], [3, 6], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 305, "p": 7, "edges": [[0, 1], [0, 2], [3, 4], [3, 6], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 306, "p": 7, "edges": [[0, 1], [0, 2], [3, 4], [4, 5], [5, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 307, "p": 7, "edges": [[0, 1], [0, 2], [3, 5], [3, 6], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 308, "p": 7, "edges": [[0, 1], [0, 2], [3, 6], [4, 5], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 309, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [0, 5], [2, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 310, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [0, 6], [2, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 311, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [1, 2], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 312, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [1, 5], [2, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.08}
+{"idx": 313, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [2, 3], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 314, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [2, 4], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 315, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [2, 5], [2, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 316, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [2, 5], [3, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 317, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [2, 5], [4, 6]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 318, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [2, 5], [5, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 319, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [2, 6], [3, 5]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 320, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [2, 6], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 321, "p": 7, "edges": [[0, 1], [0, 3], [0, 4], [2, 6], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 322, "p": 7, "edges": [[0, 1], [0, 3], [0, 5], [1, 2], [4, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 253, "p": 7, "edges": [[0, 1], [0, 2], [1, 4], [2, 5], [3, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.86}
+{"idx": 324, "p": 7, "edges": [[0, 1], [0, 3], [0, 5], [2, 3], [4, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 325, "p": 7, "edges": [[0, 1], [0, 3], [0, 5], [2, 4], [2, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 326, "p": 7, "edges": [[0, 1], [0, 3], [0, 5], [2, 4], [3, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 327, "p": 7, "edges": [[0, 1], [0, 3], [0, 5], [2, 4], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 328, "p": 7, "edges": [[0, 1], [0, 3], [0, 5], [2, 5], [4, 6]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 329, "p": 7, "edges": [[0, 1], [0, 3], [0, 5], [2, 6], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 330, "p": 7, "edges": [[0, 1], [0, 3], [0, 5], [2, 6], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 331, "p": 7, "edges": [[0, 1], [0, 3], [0, 5], [2, 6], [4, 6]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 332, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [1, 2], [4, 5]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 333, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [1, 4], [2, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 334, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [1, 5], [2, 4]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 335, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [2, 3], [4, 5]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 336, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [2, 4], [2, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 337, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [2, 4], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 338, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [2, 4], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 339, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [2, 4], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 340, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [2, 5], [3, 4]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 341, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [2, 5], [4, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 342, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [2, 5], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 343, "p": 7, "edges": [[0, 1], [0, 3], [0, 6], [2, 6], [4, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 344, "p": 7, "edges": [[0, 1], [0, 3], [1, 2], [2, 4], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 345, "p": 7, "edges": [[0, 1], [0, 3], [1, 2], [2, 5], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 346, "p": 7, "edges": [[0, 1], [0, 3], [1, 2], [2, 6], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 347, "p": 7, "edges": [[0, 1], [0, 3], [1, 2], [3, 4], [5, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 348, "p": 7, "edges": [[0, 1], [0, 3], [1, 2], [3, 5], [4, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 349, "p": 7, "edges": [[0, 1], [0, 3], [1, 2], [3, 6], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 350, "p": 7, "edges": [[0, 1], [0, 3], [1, 2], [4, 5], [5, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 351, "p": 7, "edges": [[0, 1], [0, 3], [1, 3], [2, 4], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 352, "p": 7, "edges": [[0, 1], [0, 3], [1, 3], [2, 5], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 353, "p": 7, "edges": [[0, 1], [0, 3], [1, 3], [2, 6], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 354, "p": 7, "edges": [[0, 1], [0, 3], [1, 4], [2, 3], [5, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 355, "p": 7, "edges": [[0, 1], [0, 3], [1, 4], [2, 4], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 323, "p": 7, "edges": [[0, 1], [0, 3], [0, 5], [1, 4], [2, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.12}
+{"idx": 356, "p": 7, "edges": [[0, 1], [0, 3], [1, 4], [2, 5], [2, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.48}
+{"idx": 357, "p": 7, "edges": [[0, 1], [0, 3], [1, 4], [2, 5], [3, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 4.01}
+{"idx": 359, "p": 7, "edges": [[0, 1], [0, 3], [1, 4], [2, 5], [5, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 358, "p": 7, "edges": [[0, 1], [0, 3], [1, 4], [2, 5], [4, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 2.9}
+{"idx": 361, "p": 7, "edges": [[0, 1], [0, 3], [1, 4], [2, 6], [4, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 362, "p": 7, "edges": [[0, 1], [0, 3], [1, 4], [2, 6], [5, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 363, "p": 7, "edges": [[0, 1], [0, 3], [1, 5], [2, 3], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 360, "p": 7, "edges": [[0, 1], [0, 3], [1, 4], [2, 6], [3, 5]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.19}
+{"idx": 364, "p": 7, "edges": [[0, 1], [0, 3], [1, 5], [2, 4], [2, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 2.7}
+{"idx": 366, "p": 7, "edges": [[0, 1], [0, 3], [1, 5], [2, 4], [4, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 367, "p": 7, "edges": [[0, 1], [0, 3], [1, 5], [2, 6], [3, 4]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 368, "p": 7, "edges": [[0, 1], [0, 3], [2, 3], [4, 5], [5, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 369, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [2, 5], [2, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 370, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [2, 5], [3, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 371, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [2, 5], [4, 6]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 372, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [2, 5], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 373, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [2, 6], [3, 5]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 374, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [2, 6], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 375, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [2, 6], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 376, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [3, 5], [3, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 377, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [3, 5], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 378, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [3, 5], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 379, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [3, 6], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 380, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [3, 6], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 381, "p": 7, "edges": [[0, 1], [0, 3], [2, 4], [4, 5], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 382, "p": 7, "edges": [[0, 1], [0, 3], [2, 5], [2, 6], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 383, "p": 7, "edges": [[0, 1], [0, 3], [2, 5], [2, 6], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 384, "p": 7, "edges": [[0, 1], [0, 3], [2, 5], [2, 6], [4, 6]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 385, "p": 7, "edges": [[0, 1], [0, 3], [2, 5], [3, 4], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 386, "p": 7, "edges": [[0, 1], [0, 3], [2, 5], [3, 4], [5, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 387, "p": 7, "edges": [[0, 1], [0, 3], [2, 5], [3, 5], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 388, "p": 7, "edges": [[0, 1], [0, 3], [2, 5], [3, 6], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 389, "p": 7, "edges": [[0, 1], [0, 3], [2, 6], [3, 4], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 390, "p": 7, "edges": [[0, 1], [0, 3], [2, 6], [3, 4], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 391, "p": 7, "edges": [[0, 1], [0, 3], [2, 6], [3, 5], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 392, "p": 7, "edges": [[0, 1], [0, 3], [2, 6], [3, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 393, "p": 7, "edges": [[0, 1], [0, 3], [2, 6], [4, 5], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 394, "p": 7, "edges": [[0, 1], [0, 4], [0, 5], [1, 2], [3, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 395, "p": 7, "edges": [[0, 1], [0, 4], [0, 5], [1, 3], [2, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 396, "p": 7, "edges": [[0, 1], [0, 4], [0, 5], [2, 3], [2, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 397, "p": 7, "edges": [[0, 1], [0, 4], [0, 5], [2, 3], [3, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 398, "p": 7, "edges": [[0, 1], [0, 4], [0, 5], [2, 3], [4, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 399, "p": 7, "edges": [[0, 1], [0, 4], [0, 5], [2, 4], [3, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 400, "p": 7, "edges": [[0, 1], [0, 4], [0, 5], [2, 5], [3, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 401, "p": 7, "edges": [[0, 1], [0, 4], [0, 5], [2, 6], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 402, "p": 7, "edges": [[0, 1], [0, 4], [0, 5], [2, 6], [3, 5]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 403, "p": 7, "edges": [[0, 1], [0, 4], [0, 5], [2, 6], [3, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 404, "p": 7, "edges": [[0, 1], [0, 4], [1, 2], [2, 3], [5, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 365, "p": 7, "edges": [[0, 1], [0, 3], [1, 5], [2, 4], [3, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.88}
+{"idx": 406, "p": 7, "edges": [[0, 1], [0, 4], [1, 2], [3, 4], [5, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 407, "p": 7, "edges": [[0, 1], [0, 4], [1, 2], [3, 5], [3, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 408, "p": 7, "edges": [[0, 1], [0, 4], [1, 2], [3, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 409, "p": 7, "edges": [[0, 1], [0, 4], [1, 2], [3, 5], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 410, "p": 7, "edges": [[0, 1], [0, 4], [1, 3], [2, 4], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 405, "p": 7, "edges": [[0, 1], [0, 4], [1, 2], [2, 5], [3, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 2.77}
+{"idx": 411, "p": 7, "edges": [[0, 1], [0, 4], [1, 3], [2, 5], [2, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.08}
+{"idx": 412, "p": 7, "edges": [[0, 1], [0, 4], [1, 3], [2, 5], [3, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 3.49}
+{"idx": 414, "p": 7, "edges": [[0, 1], [0, 4], [1, 3], [2, 5], [5, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 413, "p": 7, "edges": [[0, 1], [0, 4], [1, 3], [2, 5], [4, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.96}
+{"idx": 416, "p": 7, "edges": [[0, 1], [0, 4], [1, 3], [2, 6], [5, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 417, "p": 7, "edges": [[0, 1], [0, 4], [1, 4], [2, 3], [5, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 415, "p": 7, "edges": [[0, 1], [0, 4], [1, 3], [2, 6], [3, 5]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.25}
+{"idx": 419, "p": 7, "edges": [[0, 1], [0, 4], [1, 4], [2, 6], [3, 5]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 420, "p": 7, "edges": [[0, 1], [0, 4], [2, 3], [2, 6], [5, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 421, "p": 7, "edges": [[0, 1], [0, 4], [2, 3], [3, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 422, "p": 7, "edges": [[0, 1], [0, 4], [2, 3], [3, 5], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 423, "p": 7, "edges": [[0, 1], [0, 4], [2, 4], [2, 5], [3, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 424, "p": 7, "edges": [[0, 1], [0, 4], [2, 4], [2, 6], [3, 5]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 425, "p": 7, "edges": [[0, 1], [0, 4], [2, 4], [3, 5], [3, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 426, "p": 7, "edges": [[0, 1], [0, 4], [2, 4], [3, 5], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 427, "p": 7, "edges": [[0, 1], [0, 4], [2, 4], [3, 5], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 428, "p": 7, "edges": [[0, 1], [0, 4], [2, 5], [2, 6], [3, 4]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 429, "p": 7, "edges": [[0, 1], [0, 4], [2, 5], [2, 6], [3, 5]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 430, "p": 7, "edges": [[0, 1], [0, 4], [2, 5], [2, 6], [3, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 431, "p": 7, "edges": [[0, 1], [0, 4], [2, 5], [3, 5], [3, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 432, "p": 7, "edges": [[0, 1], [0, 4], [2, 5], [3, 5], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 433, "p": 7, "edges": [[0, 1], [0, 4], [2, 5], [3, 6], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 434, "p": 7, "edges": [[0, 1], [0, 4], [2, 6], [3, 5], [3, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 435, "p": 7, "edges": [[0, 1], [0, 4], [2, 6], [3, 5], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 436, "p": 7, "edges": [[0, 1], [0, 5], [1, 2], [2, 3], [4, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 418, "p": 7, "edges": [[0, 1], [0, 4], [1, 4], [2, 5], [3, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 5.11}
+{"idx": 438, "p": 7, "edges": [[0, 1], [0, 5], [1, 2], [3, 4], [4, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 439, "p": 7, "edges": [[0, 1], [0, 5], [1, 2], [3, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 440, "p": 7, "edges": [[0, 1], [0, 5], [1, 2], [3, 6], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 441, "p": 7, "edges": [[0, 1], [0, 5], [1, 2], [3, 6], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 437, "p": 7, "edges": [[0, 1], [0, 5], [1, 2], [2, 4], [3, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.49}
+{"idx": 442, "p": 7, "edges": [[0, 1], [0, 5], [1, 3], [2, 4], [2, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.0}
+{"idx": 443, "p": 7, "edges": [[0, 1], [0, 5], [1, 3], [2, 4], [3, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.13}
+{"idx": 445, "p": 7, "edges": [[0, 1], [0, 5], [1, 3], [2, 6], [3, 4]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 446, "p": 7, "edges": [[0, 1], [0, 5], [2, 3], [3, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 447, "p": 7, "edges": [[0, 1], [0, 5], [2, 4], [2, 5], [3, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 448, "p": 7, "edges": [[0, 1], [0, 5], [2, 4], [2, 6], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 449, "p": 7, "edges": [[0, 1], [0, 5], [2, 4], [2, 6], [3, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 450, "p": 7, "edges": [[0, 1], [0, 5], [2, 4], [3, 5], [3, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 451, "p": 7, "edges": [[0, 1], [0, 5], [2, 4], [3, 5], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 452, "p": 7, "edges": [[0, 1], [0, 5], [2, 4], [3, 6], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 453, "p": 7, "edges": [[0, 1], [0, 5], [2, 5], [2, 6], [3, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 454, "p": 7, "edges": [[0, 1], [0, 5], [2, 5], [3, 4], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 455, "p": 7, "edges": [[0, 1], [0, 5], [2, 5], [3, 5], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 456, "p": 7, "edges": [[0, 1], [0, 5], [2, 5], [3, 6], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 457, "p": 7, "edges": [[0, 1], [0, 5], [2, 6], [3, 5], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 458, "p": 7, "edges": [[0, 1], [0, 5], [2, 6], [3, 6], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 459, "p": 7, "edges": [[0, 1], [0, 5], [2, 6], [3, 6], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 460, "p": 7, "edges": [[0, 1], [0, 6], [1, 2], [2, 3], [4, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 461, "p": 7, "edges": [[0, 1], [0, 6], [1, 2], [3, 4], [4, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 462, "p": 7, "edges": [[0, 1], [0, 6], [2, 4], [2, 5], [3, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 463, "p": 7, "edges": [[0, 1], [2, 4], [2, 5], [2, 6], [3, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 464, "p": 7, "edges": [[0, 1], [2, 4], [2, 5], [2, 6], [3, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 465, "p": 7, "edges": [[0, 1], [2, 4], [2, 5], [3, 5], [3, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 466, "p": 7, "edges": [[0, 1], [2, 4], [2, 5], [3, 5], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 467, "p": 7, "edges": [[0, 1], [2, 4], [2, 5], [3, 6], [4, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 468, "p": 7, "edges": [[0, 1], [2, 4], [2, 6], [3, 5], [3, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 469, "p": 7, "edges": [[0, 1], [2, 4], [2, 6], [3, 5], [4, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 470, "p": 7, "edges": [[0, 2], [0, 3], [0, 4], [0, 5], [1, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 471, "p": 7, "edges": [[0, 2], [0, 3], [0, 4], [1, 5], [1, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 472, "p": 7, "edges": [[0, 2], [0, 3], [0, 4], [1, 5], [2, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 473, "p": 7, "edges": [[0, 2], [0, 3], [0, 4], [1, 5], [3, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 474, "p": 7, "edges": [[0, 2], [0, 3], [0, 4], [1, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 475, "p": 7, "edges": [[0, 2], [0, 3], [0, 4], [1, 6], [2, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 476, "p": 7, "edges": [[0, 2], [0, 3], [0, 4], [1, 6], [3, 5]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 477, "p": 7, "edges": [[0, 2], [0, 3], [0, 5], [1, 3], [4, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 478, "p": 7, "edges": [[0, 2], [0, 3], [0, 5], [1, 4], [1, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 479, "p": 7, "edges": [[0, 2], [0, 3], [0, 5], [1, 4], [2, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 480, "p": 7, "edges": [[0, 2], [0, 3], [0, 5], [1, 4], [3, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 481, "p": 7, "edges": [[0, 2], [0, 3], [0, 5], [1, 4], [4, 6]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 482, "p": 7, "edges": [[0, 2], [0, 3], [0, 5], [1, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 483, "p": 7, "edges": [[0, 2], [0, 3], [0, 5], [1, 6], [2, 4]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 484, "p": 7, "edges": [[0, 2], [0, 3], [0, 5], [1, 6], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 485, "p": 7, "edges": [[0, 2], [0, 3], [1, 3], [1, 5], [4, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 444, "p": 7, "edges": [[0, 1], [0, 5], [1, 3], [2, 4], [4, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.53}
+{"idx": 487, "p": 7, "edges": [[0, 2], [0, 3], [1, 4], [1, 5], [3, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 4.6}
+{"idx": 488, "p": 7, "edges": [[0, 2], [0, 3], [1, 4], [1, 5], [4, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 486, "p": 7, "edges": [[0, 2], [0, 3], [1, 4], [1, 5], [2, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 9.37}
+{"idx": 490, "p": 7, "edges": [[0, 2], [0, 3], [1, 4], [1, 6], [3, 5]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 6.36}
+{"idx": 489, "p": 7, "edges": [[0, 2], [0, 3], [1, 4], [1, 6], [2, 5]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 9.45}
+{"idx": 492, "p": 7, "edges": [[0, 2], [0, 3], [1, 4], [2, 5], [4, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 5.32}
+{"idx": 491, "p": 7, "edges": [[0, 2], [0, 3], [1, 4], [2, 5], [3, 6]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 8.07}
+{"idx": 494, "p": 7, "edges": [[0, 2], [0, 3], [1, 4], [3, 5], [4, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 495, "p": 7, "edges": [[0, 2], [0, 3], [1, 5], [1, 6], [2, 4]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.14}
+{"idx": 493, "p": 7, "edges": [[0, 2], [0, 3], [1, 4], [2, 6], [3, 5]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 7.43}
+{"idx": 497, "p": 7, "edges": [[0, 2], [0, 3], [1, 5], [2, 4], [4, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.3}
+{"idx": 496, "p": 7, "edges": [[0, 2], [0, 3], [1, 5], [2, 4], [3, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 7.69}
+{"idx": 499, "p": 7, "edges": [[0, 2], [0, 3], [1, 5], [3, 5], [4, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 498, "p": 7, "edges": [[0, 2], [0, 3], [1, 5], [2, 5], [4, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.71}
+{"idx": 500, "p": 7, "edges": [[0, 2], [0, 3], [1, 5], [3, 6], [4, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.99}
+{"idx": 501, "p": 7, "edges": [[0, 2], [0, 3], [1, 6], [2, 4], [3, 5]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.62}
+{"idx": 503, "p": 7, "edges": [[0, 2], [0, 3], [1, 6], [3, 5], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 504, "p": 7, "edges": [[0, 2], [0, 4], [1, 3], [1, 5], [3, 6]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 3.15}
+{"idx": 502, "p": 7, "edges": [[0, 2], [0, 3], [1, 6], [2, 5], [4, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 6.02}
+{"idx": 505, "p": 7, "edges": [[0, 2], [0, 4], [1, 3], [1, 6], [2, 5]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 6.11}
+{"idx": 506, "p": 7, "edges": [[0, 2], [0, 4], [1, 3], [1, 6], [3, 5]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 6.24}
+{"idx": 508, "p": 7, "edges": [[0, 2], [0, 4], [1, 4], [1, 6], [3, 5]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 6.17}
+{"idx": 509, "p": 7, "edges": [[0, 2], [0, 4], [1, 4], [2, 5], [3, 6]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 3.05}
+{"idx": 507, "p": 7, "edges": [[0, 2], [0, 4], [1, 4], [1, 5], [3, 6]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 11.66}
+{"idx": 511, "p": 7, "edges": [[0, 2], [0, 4], [1, 6], [2, 4], [3, 5]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 4.49}
+{"idx": 512, "p": 7, "edges": [[0, 2], [0, 5], [1, 3], [1, 6], [2, 4]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 4.3}
+{"idx": 513, "p": 7, "edges": [[0, 2], [0, 5], [1, 3], [2, 4], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 510, "p": 7, "edges": [[0, 2], [0, 4], [1, 5], [2, 4], [3, 6]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 11.53}
+{"idx": 515, "p": 7, "edges": [[0, 3], [0, 4], [1, 4], [2, 5], [2, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 4.67}
+{"idx": 516, "p": 8, "edges": [[0, 1], [0, 2], [0, 3], [4, 5], [6, 7]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 517, "p": 8, "edges": [[0, 1], [0, 2], [0, 3], [4, 6], [5, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 518, "p": 8, "edges": [[0, 1], [0, 2], [0, 3], [4, 7], [5, 6]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 519, "p": 8, "edges": [[0, 1], [0, 2], [0, 4], [3, 5], [6, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 520, "p": 8, "edges": [[0, 1], [0, 2], [0, 4], [3, 6], [5, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 521, "p": 8, "edges": [[0, 1], [0, 2], [0, 4], [3, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 522, "p": 8, "edges": [[0, 1], [0, 2], [0, 5], [3, 4], [6, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 523, "p": 8, "edges": [[0, 1], [0, 2], [0, 5], [3, 6], [4, 7]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 524, "p": 8, "edges": [[0, 1], [0, 2], [0, 5], [3, 7], [4, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 525, "p": 8, "edges": [[0, 1], [0, 2], [0, 6], [3, 4], [5, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 526, "p": 8, "edges": [[0, 1], [0, 2], [0, 6], [3, 5], [4, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 527, "p": 8, "edges": [[0, 1], [0, 2], [0, 6], [3, 7], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 528, "p": 8, "edges": [[0, 1], [0, 2], [0, 7], [3, 4], [5, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 529, "p": 8, "edges": [[0, 1], [0, 2], [0, 7], [3, 5], [4, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 530, "p": 8, "edges": [[0, 1], [0, 2], [0, 7], [3, 6], [4, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 531, "p": 8, "edges": [[0, 1], [0, 2], [1, 3], [4, 5], [6, 7]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 532, "p": 8, "edges": [[0, 1], [0, 2], [1, 3], [4, 6], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 533, "p": 8, "edges": [[0, 1], [0, 2], [1, 3], [4, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 534, "p": 8, "edges": [[0, 1], [0, 2], [1, 4], [3, 5], [6, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 535, "p": 8, "edges": [[0, 1], [0, 2], [1, 4], [3, 6], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.6}
+{"idx": 536, "p": 8, "edges": [[0, 1], [0, 2], [1, 4], [3, 7], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 537, "p": 8, "edges": [[0, 1], [0, 2], [1, 5], [3, 4], [6, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 514, "p": 7, "edges": [[0, 3], [0, 4], [1, 4], [1, 5], [2, 6]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 11.5}
+{"idx": 539, "p": 8, "edges": [[0, 1], [0, 2], [1, 5], [3, 7], [4, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.72}
+{"idx": 540, "p": 8, "edges": [[0, 1], [0, 2], [1, 6], [3, 4], [5, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 541, "p": 8, "edges": [[0, 1], [0, 2], [1, 6], [3, 5], [4, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.3}
+{"idx": 542, "p": 8, "edges": [[0, 1], [0, 2], [1, 6], [3, 7], [4, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 543, "p": 8, "edges": [[0, 1], [0, 2], [1, 7], [3, 4], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 544, "p": 8, "edges": [[0, 1], [0, 2], [1, 7], [3, 5], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 545, "p": 8, "edges": [[0, 1], [0, 2], [1, 7], [3, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 546, "p": 8, "edges": [[0, 1], [0, 2], [2, 3], [4, 5], [6, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 547, "p": 8, "edges": [[0, 1], [0, 2], [2, 3], [4, 6], [5, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 548, "p": 8, "edges": [[0, 1], [0, 2], [2, 3], [4, 7], [5, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 549, "p": 8, "edges": [[0, 1], [0, 2], [2, 4], [3, 5], [6, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 550, "p": 8, "edges": [[0, 1], [0, 2], [2, 4], [3, 6], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 551, "p": 8, "edges": [[0, 1], [0, 2], [2, 4], [3, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 552, "p": 8, "edges": [[0, 1], [0, 2], [2, 5], [3, 4], [6, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 553, "p": 8, "edges": [[0, 1], [0, 2], [2, 5], [3, 6], [4, 7]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 554, "p": 8, "edges": [[0, 1], [0, 2], [2, 5], [3, 7], [4, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 555, "p": 8, "edges": [[0, 1], [0, 2], [2, 6], [3, 4], [5, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 556, "p": 8, "edges": [[0, 1], [0, 2], [2, 6], [3, 5], [4, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 557, "p": 8, "edges": [[0, 1], [0, 2], [2, 6], [3, 7], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 558, "p": 8, "edges": [[0, 1], [0, 2], [2, 7], [3, 4], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 559, "p": 8, "edges": [[0, 1], [0, 2], [2, 7], [3, 5], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 560, "p": 8, "edges": [[0, 1], [0, 2], [2, 7], [3, 6], [4, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 561, "p": 8, "edges": [[0, 1], [0, 2], [3, 4], [3, 5], [6, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 562, "p": 8, "edges": [[0, 1], [0, 2], [3, 4], [3, 6], [5, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 563, "p": 8, "edges": [[0, 1], [0, 2], [3, 4], [3, 7], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 564, "p": 8, "edges": [[0, 1], [0, 2], [3, 4], [4, 5], [6, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 565, "p": 8, "edges": [[0, 1], [0, 2], [3, 4], [4, 6], [5, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 566, "p": 8, "edges": [[0, 1], [0, 2], [3, 4], [4, 7], [5, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 567, "p": 8, "edges": [[0, 1], [0, 2], [3, 4], [5, 6], [6, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 568, "p": 8, "edges": [[0, 1], [0, 2], [3, 4], [5, 7], [6, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 569, "p": 8, "edges": [[0, 1], [0, 2], [3, 5], [3, 6], [4, 7]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 570, "p": 8, "edges": [[0, 1], [0, 2], [3, 5], [3, 7], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 571, "p": 8, "edges": [[0, 1], [0, 2], [3, 5], [4, 5], [6, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 572, "p": 8, "edges": [[0, 1], [0, 2], [3, 5], [4, 6], [4, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 573, "p": 8, "edges": [[0, 1], [0, 2], [3, 5], [4, 6], [5, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 574, "p": 8, "edges": [[0, 1], [0, 2], [3, 5], [4, 6], [6, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 575, "p": 8, "edges": [[0, 1], [0, 2], [3, 5], [4, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 576, "p": 8, "edges": [[0, 1], [0, 2], [3, 5], [4, 7], [6, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 577, "p": 8, "edges": [[0, 1], [0, 2], [3, 6], [3, 7], [4, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 578, "p": 8, "edges": [[0, 1], [0, 2], [3, 6], [4, 5], [4, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 579, "p": 8, "edges": [[0, 1], [0, 2], [3, 6], [4, 5], [5, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 580, "p": 8, "edges": [[0, 1], [0, 2], [3, 6], [4, 5], [6, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 581, "p": 8, "edges": [[0, 1], [0, 2], [3, 6], [4, 6], [5, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 582, "p": 8, "edges": [[0, 1], [0, 2], [3, 6], [4, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 583, "p": 8, "edges": [[0, 1], [0, 2], [3, 6], [4, 7], [5, 7]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 584, "p": 8, "edges": [[0, 1], [0, 2], [3, 7], [4, 5], [4, 6]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 585, "p": 8, "edges": [[0, 1], [0, 2], [3, 7], [4, 5], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 586, "p": 8, "edges": [[0, 1], [0, 2], [3, 7], [4, 5], [6, 7]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 587, "p": 8, "edges": [[0, 1], [0, 2], [3, 7], [4, 6], [5, 6]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 588, "p": 8, "edges": [[0, 1], [0, 2], [3, 7], [4, 6], [5, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 589, "p": 8, "edges": [[0, 1], [0, 2], [3, 7], [4, 7], [5, 6]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 538, "p": 8, "edges": [[0, 1], [0, 2], [1, 5], [3, 6], [4, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 8.78}
+{"idx": 590, "p": 8, "edges": [[0, 1], [0, 3], [0, 4], [2, 5], [6, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 591, "p": 8, "edges": [[0, 1], [0, 3], [0, 4], [2, 6], [5, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 592, "p": 8, "edges": [[0, 1], [0, 3], [0, 4], [2, 7], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 593, "p": 8, "edges": [[0, 1], [0, 3], [0, 5], [2, 4], [6, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 594, "p": 8, "edges": [[0, 1], [0, 3], [0, 5], [2, 6], [4, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 595, "p": 8, "edges": [[0, 1], [0, 3], [0, 5], [2, 7], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 596, "p": 8, "edges": [[0, 1], [0, 3], [0, 6], [2, 4], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 598, "p": 8, "edges": [[0, 1], [0, 3], [0, 6], [2, 7], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 597, "p": 8, "edges": [[0, 1], [0, 3], [0, 6], [2, 5], [4, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 599, "p": 8, "edges": [[0, 1], [0, 3], [0, 7], [2, 4], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 600, "p": 8, "edges": [[0, 1], [0, 3], [0, 7], [2, 5], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 601, "p": 8, "edges": [[0, 1], [0, 3], [0, 7], [2, 6], [4, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 603, "p": 8, "edges": [[0, 1], [0, 3], [1, 2], [4, 6], [5, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 602, "p": 8, "edges": [[0, 1], [0, 3], [1, 2], [4, 5], [6, 7]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 604, "p": 8, "edges": [[0, 1], [0, 3], [1, 2], [4, 7], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 605, "p": 8, "edges": [[0, 1], [0, 3], [1, 4], [2, 5], [6, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 607, "p": 8, "edges": [[0, 1], [0, 3], [1, 4], [2, 7], [5, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 608, "p": 8, "edges": [[0, 1], [0, 3], [1, 5], [2, 4], [6, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 609, "p": 8, "edges": [[0, 1], [0, 3], [1, 5], [2, 6], [4, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 2.37}
+{"idx": 606, "p": 8, "edges": [[0, 1], [0, 3], [1, 4], [2, 6], [5, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 5.33}
+{"idx": 610, "p": 8, "edges": [[0, 1], [0, 3], [1, 5], [2, 7], [4, 6]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 4.82}
+{"idx": 611, "p": 8, "edges": [[0, 1], [0, 3], [1, 6], [2, 4], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 5.43}
+{"idx": 613, "p": 8, "edges": [[0, 1], [0, 3], [1, 6], [2, 7], [4, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 614, "p": 8, "edges": [[0, 1], [0, 3], [2, 3], [4, 5], [6, 7]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 615, "p": 8, "edges": [[0, 1], [0, 3], [2, 3], [4, 6], [5, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 616, "p": 8, "edges": [[0, 1], [0, 3], [2, 3], [4, 7], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 617, "p": 8, "edges": [[0, 1], [0, 3], [2, 4], [2, 5], [6, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 618, "p": 8, "edges": [[0, 1], [0, 3], [2, 4], [2, 6], [5, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 619, "p": 8, "edges": [[0, 1], [0, 3], [2, 4], [2, 7], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 620, "p": 8, "edges": [[0, 1], [0, 3], [2, 4], [3, 5], [6, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 621, "p": 8, "edges": [[0, 1], [0, 3], [2, 4], [3, 6], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 622, "p": 8, "edges": [[0, 1], [0, 3], [2, 4], [3, 7], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 623, "p": 8, "edges": [[0, 1], [0, 3], [2, 4], [4, 5], [6, 7]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 624, "p": 8, "edges": [[0, 1], [0, 3], [2, 4], [4, 6], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 625, "p": 8, "edges": [[0, 1], [0, 3], [2, 4], [4, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 626, "p": 8, "edges": [[0, 1], [0, 3], [2, 4], [5, 6], [6, 7]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 627, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [2, 6], [4, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 628, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [2, 7], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 629, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [3, 4], [6, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 612, "p": 8, "edges": [[0, 1], [0, 3], [1, 6], [2, 5], [4, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 3.63}
+{"idx": 631, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [3, 7], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 632, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [4, 5], [6, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 633, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [4, 6], [4, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 634, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [4, 6], [5, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 635, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [4, 6], [6, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 636, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [4, 7], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 637, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [4, 7], [6, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 638, "p": 8, "edges": [[0, 1], [0, 3], [2, 6], [2, 7], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 639, "p": 8, "edges": [[0, 1], [0, 3], [2, 6], [3, 4], [5, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 640, "p": 8, "edges": [[0, 1], [0, 3], [2, 6], [3, 5], [4, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 641, "p": 8, "edges": [[0, 1], [0, 3], [2, 6], [3, 7], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 642, "p": 8, "edges": [[0, 1], [0, 3], [2, 6], [4, 5], [4, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 643, "p": 8, "edges": [[0, 1], [0, 3], [2, 6], [4, 5], [5, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 644, "p": 8, "edges": [[0, 1], [0, 3], [2, 6], [4, 5], [6, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 645, "p": 8, "edges": [[0, 1], [0, 3], [2, 6], [4, 6], [5, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 646, "p": 8, "edges": [[0, 1], [0, 3], [2, 6], [4, 7], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 647, "p": 8, "edges": [[0, 1], [0, 3], [2, 6], [4, 7], [5, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 648, "p": 8, "edges": [[0, 1], [0, 3], [2, 7], [3, 4], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 649, "p": 8, "edges": [[0, 1], [0, 3], [2, 7], [3, 5], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 650, "p": 8, "edges": [[0, 1], [0, 3], [2, 7], [3, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 651, "p": 8, "edges": [[0, 1], [0, 3], [2, 7], [4, 5], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 652, "p": 8, "edges": [[0, 1], [0, 3], [2, 7], [4, 5], [6, 7]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 653, "p": 8, "edges": [[0, 1], [0, 3], [2, 7], [4, 6], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 654, "p": 8, "edges": [[0, 1], [0, 3], [2, 7], [4, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 655, "p": 8, "edges": [[0, 1], [0, 4], [0, 5], [2, 3], [6, 7]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 630, "p": 8, "edges": [[0, 1], [0, 3], [2, 5], [3, 6], [4, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 1.93}
+{"idx": 657, "p": 8, "edges": [[0, 1], [0, 4], [0, 5], [2, 7], [3, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 658, "p": 8, "edges": [[0, 1], [0, 4], [0, 6], [2, 3], [5, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 656, "p": 8, "edges": [[0, 1], [0, 4], [0, 5], [2, 6], [3, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.03}
+{"idx": 660, "p": 8, "edges": [[0, 1], [0, 4], [0, 6], [2, 7], [3, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 661, "p": 8, "edges": [[0, 1], [0, 4], [0, 7], [2, 3], [5, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 662, "p": 8, "edges": [[0, 1], [0, 4], [0, 7], [2, 5], [3, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 663, "p": 8, "edges": [[0, 1], [0, 4], [0, 7], [2, 6], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 664, "p": 8, "edges": [[0, 1], [0, 4], [1, 2], [3, 5], [6, 7]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 665, "p": 8, "edges": [[0, 1], [0, 4], [1, 2], [3, 6], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 666, "p": 8, "edges": [[0, 1], [0, 4], [1, 2], [3, 7], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 667, "p": 8, "edges": [[0, 1], [0, 4], [1, 3], [2, 5], [6, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 659, "p": 8, "edges": [[0, 1], [0, 4], [0, 6], [2, 5], [3, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.32}
+{"idx": 669, "p": 8, "edges": [[0, 1], [0, 4], [1, 3], [2, 7], [5, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 670, "p": 8, "edges": [[0, 1], [0, 4], [1, 5], [2, 3], [6, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 671, "p": 8, "edges": [[0, 1], [0, 4], [1, 5], [2, 6], [3, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 4.16}
+{"idx": 668, "p": 8, "edges": [[0, 1], [0, 4], [1, 3], [2, 6], [5, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 5.66}
+{"idx": 673, "p": 8, "edges": [[0, 1], [0, 4], [2, 3], [2, 6], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 674, "p": 8, "edges": [[0, 1], [0, 4], [2, 3], [2, 7], [5, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 675, "p": 8, "edges": [[0, 1], [0, 4], [2, 3], [3, 5], [6, 7]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 676, "p": 8, "edges": [[0, 1], [0, 4], [2, 3], [3, 6], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 677, "p": 8, "edges": [[0, 1], [0, 4], [2, 3], [3, 7], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 678, "p": 8, "edges": [[0, 1], [0, 4], [2, 3], [4, 5], [6, 7]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 679, "p": 8, "edges": [[0, 1], [0, 4], [2, 3], [4, 6], [5, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 680, "p": 8, "edges": [[0, 1], [0, 4], [2, 3], [4, 7], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 681, "p": 8, "edges": [[0, 1], [0, 4], [2, 3], [5, 6], [6, 7]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 682, "p": 8, "edges": [[0, 1], [0, 4], [2, 4], [3, 5], [6, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 683, "p": 8, "edges": [[0, 1], [0, 4], [2, 4], [3, 6], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 684, "p": 8, "edges": [[0, 1], [0, 4], [2, 4], [3, 7], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 685, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [2, 6], [3, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.63}
+{"idx": 686, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [2, 7], [3, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 687, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [3, 4], [6, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 688, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [3, 5], [6, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 672, "p": 8, "edges": [[0, 1], [0, 4], [1, 5], [2, 7], [3, 6]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 4.66}
+{"idx": 689, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [3, 6], [3, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 4.47}
+{"idx": 690, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [3, 6], [4, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 4.53}
+{"idx": 692, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [3, 6], [6, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 691, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [3, 6], [5, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.56}
+{"idx": 694, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [3, 7], [5, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 695, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [3, 7], [6, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 696, "p": 8, "edges": [[0, 1], [0, 4], [2, 6], [2, 7], [3, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 697, "p": 8, "edges": [[0, 1], [0, 4], [2, 6], [3, 4], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 693, "p": 8, "edges": [[0, 1], [0, 4], [2, 5], [3, 7], [4, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.1}
+{"idx": 699, "p": 8, "edges": [[0, 1], [0, 4], [2, 6], [3, 5], [4, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.42}
+{"idx": 700, "p": 8, "edges": [[0, 1], [0, 4], [2, 6], [3, 5], [5, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 698, "p": 8, "edges": [[0, 1], [0, 4], [2, 6], [3, 5], [3, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.79}
+{"idx": 702, "p": 8, "edges": [[0, 1], [0, 4], [2, 6], [3, 7], [4, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 703, "p": 8, "edges": [[0, 1], [0, 4], [2, 6], [3, 7], [5, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 701, "p": 8, "edges": [[0, 1], [0, 4], [2, 6], [3, 6], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.44}
+{"idx": 705, "p": 8, "edges": [[0, 1], [0, 4], [2, 7], [3, 5], [3, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 706, "p": 8, "edges": [[0, 1], [0, 4], [2, 7], [3, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 707, "p": 8, "edges": [[0, 1], [0, 4], [2, 7], [3, 5], [5, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 708, "p": 8, "edges": [[0, 1], [0, 4], [2, 7], [3, 5], [6, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 709, "p": 8, "edges": [[0, 1], [0, 4], [2, 7], [3, 6], [4, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 710, "p": 8, "edges": [[0, 1], [0, 4], [2, 7], [3, 6], [5, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 711, "p": 8, "edges": [[0, 1], [0, 4], [2, 7], [3, 7], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 712, "p": 8, "edges": [[0, 1], [0, 5], [0, 6], [2, 3], [4, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 713, "p": 8, "edges": [[0, 1], [0, 5], [0, 6], [2, 4], [3, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 714, "p": 8, "edges": [[0, 1], [0, 5], [0, 6], [2, 7], [3, 4]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 715, "p": 8, "edges": [[0, 1], [0, 5], [1, 2], [3, 4], [6, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 704, "p": 8, "edges": [[0, 1], [0, 4], [2, 6], [3, 7], [5, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.33}
+{"idx": 717, "p": 8, "edges": [[0, 1], [0, 5], [1, 2], [3, 7], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 718, "p": 8, "edges": [[0, 1], [0, 5], [1, 3], [2, 4], [6, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 716, "p": 8, "edges": [[0, 1], [0, 5], [1, 2], [3, 6], [4, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 1.98}
+{"idx": 719, "p": 8, "edges": [[0, 1], [0, 5], [1, 3], [2, 6], [4, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 4.33}
+{"idx": 721, "p": 8, "edges": [[0, 1], [0, 5], [1, 4], [2, 3], [6, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 720, "p": 8, "edges": [[0, 1], [0, 5], [1, 3], [2, 7], [4, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 4.42}
+{"idx": 722, "p": 8, "edges": [[0, 1], [0, 5], [1, 4], [2, 6], [3, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 3.68}
+{"idx": 724, "p": 8, "edges": [[0, 1], [0, 5], [2, 3], [2, 7], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 725, "p": 8, "edges": [[0, 1], [0, 5], [2, 3], [3, 4], [6, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 723, "p": 8, "edges": [[0, 1], [0, 5], [1, 4], [2, 7], [3, 6]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 4.54}
+{"idx": 727, "p": 8, "edges": [[0, 1], [0, 5], [2, 3], [4, 5], [6, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 728, "p": 8, "edges": [[0, 1], [0, 5], [2, 3], [4, 6], [4, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 729, "p": 8, "edges": [[0, 1], [0, 5], [2, 3], [4, 6], [5, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 730, "p": 8, "edges": [[0, 1], [0, 5], [2, 3], [4, 6], [6, 7]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 726, "p": 8, "edges": [[0, 1], [0, 5], [2, 3], [3, 6], [4, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 2.29}
+{"idx": 732, "p": 8, "edges": [[0, 1], [0, 5], [2, 4], [2, 7], [3, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 733, "p": 8, "edges": [[0, 1], [0, 5], [2, 4], [3, 5], [6, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 731, "p": 8, "edges": [[0, 1], [0, 5], [2, 4], [2, 6], [3, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.08}
+{"idx": 734, "p": 8, "edges": [[0, 1], [0, 5], [2, 4], [3, 6], [3, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.28}
+{"idx": 736, "p": 8, "edges": [[0, 1], [0, 5], [2, 4], [3, 6], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.22}
+{"idx": 735, "p": 8, "edges": [[0, 1], [0, 5], [2, 4], [3, 6], [4, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 2.98}
+{"idx": 738, "p": 8, "edges": [[0, 1], [0, 5], [2, 5], [3, 4], [6, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 739, "p": 8, "edges": [[0, 1], [0, 5], [2, 5], [3, 6], [4, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 2.77}
+{"idx": 740, "p": 8, "edges": [[0, 1], [0, 5], [2, 5], [3, 7], [4, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 741, "p": 8, "edges": [[0, 1], [0, 5], [2, 6], [2, 7], [3, 4]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 742, "p": 8, "edges": [[0, 1], [0, 5], [2, 6], [3, 4], [4, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 743, "p": 8, "edges": [[0, 1], [0, 5], [2, 6], [3, 4], [5, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 737, "p": 8, "edges": [[0, 1], [0, 5], [2, 4], [3, 7], [4, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.53}
+{"idx": 744, "p": 8, "edges": [[0, 1], [0, 5], [2, 6], [3, 5], [4, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.83}
+{"idx": 746, "p": 8, "edges": [[0, 1], [0, 5], [2, 6], [3, 7], [4, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 745, "p": 8, "edges": [[0, 1], [0, 5], [2, 6], [3, 6], [4, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 6.41}
+{"idx": 747, "p": 8, "edges": [[0, 1], [0, 5], [2, 6], [3, 7], [4, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 3.42}
+{"idx": 749, "p": 8, "edges": [[0, 1], [0, 5], [2, 7], [3, 4], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 750, "p": 8, "edges": [[0, 1], [0, 5], [2, 7], [3, 4], [6, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 751, "p": 8, "edges": [[0, 1], [0, 5], [2, 7], [3, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 752, "p": 8, "edges": [[0, 1], [0, 5], [2, 7], [3, 6], [4, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 753, "p": 8, "edges": [[0, 1], [0, 5], [2, 7], [3, 6], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 754, "p": 8, "edges": [[0, 1], [0, 5], [2, 7], [3, 6], [4, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 1.52}
+{"idx": 755, "p": 8, "edges": [[0, 1], [0, 5], [2, 7], [3, 7], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 756, "p": 8, "edges": [[0, 1], [0, 6], [1, 2], [3, 4], [5, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 757, "p": 8, "edges": [[0, 1], [0, 6], [1, 2], [3, 5], [4, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 2.03}
+{"idx": 758, "p": 8, "edges": [[0, 1], [0, 6], [1, 2], [3, 7], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 748, "p": 8, "edges": [[0, 1], [0, 5], [2, 6], [3, 7], [4, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 4.28}
+{"idx": 759, "p": 8, "edges": [[0, 1], [0, 6], [1, 3], [2, 4], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.43}
+{"idx": 761, "p": 8, "edges": [[0, 1], [0, 6], [1, 3], [2, 7], [4, 5]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 762, "p": 8, "edges": [[0, 1], [0, 6], [2, 3], [3, 4], [5, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 763, "p": 8, "edges": [[0, 1], [0, 6], [2, 3], [3, 5], [4, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 2.49}
+{"idx": 764, "p": 8, "edges": [[0, 1], [0, 6], [2, 3], [4, 5], [5, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 765, "p": 8, "edges": [[0, 1], [0, 6], [2, 3], [4, 6], [5, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 766, "p": 8, "edges": [[0, 1], [0, 6], [2, 3], [4, 7], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 767, "p": 8, "edges": [[0, 1], [0, 6], [2, 3], [4, 7], [5, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 768, "p": 8, "edges": [[0, 1], [0, 6], [2, 4], [2, 5], [3, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 769, "p": 8, "edges": [[0, 1], [0, 6], [2, 4], [2, 7], [3, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 760, "p": 8, "edges": [[0, 1], [0, 6], [1, 3], [2, 5], [4, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 6.87}
+{"idx": 770, "p": 8, "edges": [[0, 1], [0, 6], [2, 4], [3, 5], [3, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.73}
+{"idx": 771, "p": 8, "edges": [[0, 1], [0, 6], [2, 4], [3, 5], [4, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 4.56}
+{"idx": 772, "p": 8, "edges": [[0, 1], [0, 6], [2, 4], [3, 5], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.48}
+{"idx": 774, "p": 8, "edges": [[0, 1], [0, 6], [2, 4], [3, 7], [4, 5]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 775, "p": 8, "edges": [[0, 1], [0, 6], [2, 4], [3, 7], [5, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 773, "p": 8, "edges": [[0, 1], [0, 6], [2, 4], [3, 6], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 4.37}
+{"idx": 777, "p": 8, "edges": [[0, 1], [0, 6], [2, 5], [2, 7], [3, 4]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 778, "p": 8, "edges": [[0, 1], [0, 6], [2, 5], [3, 4], [5, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 776, "p": 8, "edges": [[0, 1], [0, 6], [2, 4], [3, 7], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 4.52}
+{"idx": 779, "p": 8, "edges": [[0, 1], [0, 6], [2, 5], [3, 5], [4, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 3.5}
+{"idx": 781, "p": 8, "edges": [[0, 1], [0, 6], [2, 5], [3, 7], [4, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.79}
+{"idx": 780, "p": 8, "edges": [[0, 1], [0, 6], [2, 5], [3, 6], [4, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 4.85}
+{"idx": 783, "p": 8, "edges": [[0, 1], [0, 6], [2, 6], [3, 4], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 784, "p": 8, "edges": [[0, 1], [0, 6], [2, 6], [3, 5], [4, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 785, "p": 8, "edges": [[0, 1], [0, 6], [2, 6], [3, 7], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 786, "p": 8, "edges": [[0, 1], [0, 6], [2, 7], [3, 4], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 787, "p": 8, "edges": [[0, 1], [0, 6], [2, 7], [3, 4], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 788, "p": 8, "edges": [[0, 1], [0, 6], [2, 7], [3, 5], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 789, "p": 8, "edges": [[0, 1], [0, 6], [2, 7], [3, 5], [4, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 790, "p": 8, "edges": [[0, 1], [0, 6], [2, 7], [3, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 791, "p": 8, "edges": [[0, 1], [0, 6], [2, 7], [3, 7], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 792, "p": 8, "edges": [[0, 1], [0, 7], [1, 2], [3, 4], [5, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 793, "p": 8, "edges": [[0, 1], [0, 7], [1, 2], [3, 5], [4, 6]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 794, "p": 8, "edges": [[0, 1], [0, 7], [1, 2], [3, 6], [4, 5]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 795, "p": 8, "edges": [[0, 1], [0, 7], [2, 3], [3, 4], [5, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 796, "p": 8, "edges": [[0, 1], [0, 7], [2, 4], [2, 5], [3, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 797, "p": 8, "edges": [[0, 1], [0, 7], [2, 4], [2, 6], [3, 5]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 798, "p": 8, "edges": [[0, 1], [0, 7], [2, 4], [3, 5], [3, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 799, "p": 8, "edges": [[0, 1], [0, 7], [2, 4], [3, 5], [4, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 800, "p": 8, "edges": [[0, 1], [0, 7], [2, 5], [2, 6], [3, 4]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 801, "p": 8, "edges": [[0, 1], [0, 7], [2, 6], [3, 4], [4, 5]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 802, "p": 8, "edges": [[0, 1], [2, 3], [4, 6], [4, 7], [5, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 803, "p": 8, "edges": [[0, 1], [2, 4], [2, 5], [2, 6], [3, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 804, "p": 8, "edges": [[0, 1], [2, 4], [2, 5], [2, 7], [3, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 805, "p": 8, "edges": [[0, 1], [2, 4], [2, 5], [3, 6], [3, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 806, "p": 8, "edges": [[0, 1], [2, 4], [2, 5], [3, 6], [4, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 807, "p": 8, "edges": [[0, 1], [2, 4], [2, 5], [3, 6], [5, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 808, "p": 8, "edges": [[0, 1], [2, 4], [2, 5], [3, 7], [4, 6]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 809, "p": 8, "edges": [[0, 1], [2, 4], [2, 6], [2, 7], [3, 5]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 810, "p": 8, "edges": [[0, 1], [2, 4], [2, 6], [3, 5], [3, 7]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 811, "p": 8, "edges": [[0, 1], [2, 4], [2, 6], [3, 5], [4, 7]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 812, "p": 8, "edges": [[0, 1], [2, 4], [2, 6], [3, 5], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 813, "p": 8, "edges": [[0, 1], [2, 4], [2, 6], [3, 6], [5, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 814, "p": 8, "edges": [[0, 1], [2, 4], [2, 6], [3, 7], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 815, "p": 8, "edges": [[0, 1], [2, 4], [2, 7], [3, 5], [3, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 816, "p": 8, "edges": [[0, 1], [2, 4], [2, 7], [3, 5], [4, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 817, "p": 8, "edges": [[0, 1], [2, 4], [2, 7], [3, 6], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 818, "p": 8, "edges": [[0, 1], [2, 4], [2, 7], [3, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 819, "p": 8, "edges": [[0, 1], [2, 4], [3, 5], [3, 6], [3, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 820, "p": 8, "edges": [[0, 1], [2, 4], [3, 5], [3, 6], [4, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 821, "p": 8, "edges": [[0, 1], [2, 4], [3, 5], [3, 6], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 822, "p": 8, "edges": [[0, 1], [2, 4], [3, 5], [3, 7], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 823, "p": 8, "edges": [[0, 1], [2, 4], [3, 5], [4, 6], [4, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 824, "p": 8, "edges": [[0, 1], [2, 4], [3, 5], [4, 6], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 825, "p": 8, "edges": [[0, 1], [2, 5], [2, 6], [2, 7], [3, 4]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 826, "p": 8, "edges": [[0, 1], [2, 5], [2, 6], [3, 5], [4, 7]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 827, "p": 8, "edges": [[0, 1], [2, 5], [2, 6], [3, 6], [4, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 828, "p": 8, "edges": [[0, 1], [2, 5], [2, 6], [3, 7], [4, 6]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 829, "p": 8, "edges": [[0, 1], [2, 5], [2, 6], [3, 7], [4, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 830, "p": 8, "edges": [[0, 1], [2, 5], [2, 7], [3, 5], [4, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 831, "p": 8, "edges": [[0, 1], [2, 5], [2, 7], [3, 6], [4, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 832, "p": 8, "edges": [[0, 1], [2, 5], [2, 7], [3, 6], [4, 7]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 833, "p": 8, "edges": [[0, 1], [2, 5], [2, 7], [3, 7], [4, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 834, "p": 8, "edges": [[0, 1], [2, 5], [3, 5], [3, 6], [4, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 835, "p": 8, "edges": [[0, 1], [2, 5], [3, 5], [3, 7], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 836, "p": 8, "edges": [[0, 1], [2, 5], [3, 5], [4, 6], [4, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 837, "p": 8, "edges": [[0, 1], [2, 5], [3, 6], [3, 7], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 838, "p": 8, "edges": [[0, 1], [2, 6], [2, 7], [3, 5], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 839, "p": 8, "edges": [[0, 1], [2, 6], [2, 7], [3, 6], [4, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 840, "p": 8, "edges": [[0, 1], [2, 6], [2, 7], [3, 7], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 841, "p": 8, "edges": [[0, 1], [2, 6], [3, 5], [3, 7], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 842, "p": 8, "edges": [[0, 1], [2, 7], [3, 5], [3, 6], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 843, "p": 8, "edges": [[0, 2], [0, 3], [0, 4], [1, 6], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 782, "p": 8, "edges": [[0, 1], [0, 6], [2, 5], [3, 7], [4, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.97}
+{"idx": 845, "p": 8, "edges": [[0, 2], [0, 3], [0, 5], [1, 7], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 846, "p": 8, "edges": [[0, 2], [0, 3], [0, 6], [1, 4], [5, 7]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 844, "p": 8, "edges": [[0, 2], [0, 3], [0, 5], [1, 6], [4, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 7.36}
+{"idx": 848, "p": 8, "edges": [[0, 2], [0, 3], [1, 3], [4, 6], [5, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 847, "p": 8, "edges": [[0, 2], [0, 3], [0, 6], [1, 5], [4, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 5.13}
+{"idx": 849, "p": 8, "edges": [[0, 2], [0, 3], [1, 4], [1, 6], [5, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 11.04}
+{"idx": 850, "p": 8, "edges": [[0, 2], [0, 3], [1, 4], [2, 6], [5, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 18.37}
+{"idx": 852, "p": 8, "edges": [[0, 2], [0, 3], [1, 4], [4, 6], [5, 7]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 851, "p": 8, "edges": [[0, 2], [0, 3], [1, 4], [3, 6], [5, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 8.69}
+{"idx": 853, "p": 8, "edges": [[0, 2], [0, 3], [1, 5], [1, 6], [4, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 10.32}
+{"idx": 854, "p": 8, "edges": [[0, 2], [0, 3], [1, 5], [1, 7], [4, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 14.31}
+{"idx": 855, "p": 8, "edges": [[0, 2], [0, 3], [1, 5], [2, 6], [4, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 16.36}
+{"idx": 856, "p": 8, "edges": [[0, 2], [0, 3], [1, 5], [2, 7], [4, 6]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 21.17}
+{"idx": 857, "p": 8, "edges": [[0, 2], [0, 3], [1, 5], [3, 6], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 14.4}
+{"idx": 859, "p": 8, "edges": [[0, 2], [0, 3], [1, 5], [4, 6], [4, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 4.78}
+{"idx": 858, "p": 8, "edges": [[0, 2], [0, 3], [1, 5], [3, 7], [4, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 10.26}
+{"idx": 860, "p": 8, "edges": [[0, 2], [0, 3], [1, 5], [4, 6], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 7.86}
+{"idx": 861, "p": 8, "edges": [[0, 2], [0, 3], [1, 6], [2, 4], [5, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 12.29}
+{"idx": 862, "p": 8, "edges": [[0, 2], [0, 3], [1, 6], [2, 5], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 15.53}
+{"idx": 863, "p": 8, "edges": [[0, 2], [0, 3], [1, 6], [3, 5], [4, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 10.9}
+{"idx": 864, "p": 8, "edges": [[0, 2], [0, 3], [1, 6], [4, 6], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 7.08}
+{"idx": 865, "p": 8, "edges": [[0, 2], [0, 3], [1, 6], [4, 7], [5, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 7.13}
+{"idx": 867, "p": 8, "edges": [[0, 2], [0, 3], [1, 7], [3, 5], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 868, "p": 8, "edges": [[0, 2], [0, 3], [1, 7], [4, 6], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 869, "p": 8, "edges": [[0, 2], [0, 4], [0, 5], [1, 6], [3, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 10.3}
+{"idx": 866, "p": 8, "edges": [[0, 2], [0, 3], [1, 7], [2, 5], [4, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 13.73}
+{"idx": 871, "p": 8, "edges": [[0, 2], [0, 4], [0, 6], [1, 3], [5, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 870, "p": 8, "edges": [[0, 2], [0, 4], [0, 5], [1, 7], [3, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 4.92}
+{"idx": 873, "p": 8, "edges": [[0, 2], [0, 4], [0, 6], [1, 7], [3, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 874, "p": 8, "edges": [[0, 2], [0, 4], [1, 3], [1, 6], [5, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 7.61}
+{"idx": 872, "p": 8, "edges": [[0, 2], [0, 4], [0, 6], [1, 5], [3, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 10.43}
+{"idx": 876, "p": 8, "edges": [[0, 2], [0, 4], [1, 3], [3, 6], [5, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 877, "p": 8, "edges": [[0, 2], [0, 4], [1, 3], [4, 6], [5, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 878, "p": 8, "edges": [[0, 2], [0, 4], [1, 4], [3, 6], [5, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 6.21}
+{"idx": 875, "p": 8, "edges": [[0, 2], [0, 4], [1, 3], [2, 6], [5, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 9.42}
+{"idx": 880, "p": 8, "edges": [[0, 2], [0, 4], [1, 5], [1, 7], [3, 6]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 7.97}
+{"idx": 879, "p": 8, "edges": [[0, 2], [0, 4], [1, 5], [1, 6], [3, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 12.26}
+{"idx": 881, "p": 8, "edges": [[0, 2], [0, 4], [1, 5], [2, 6], [3, 7]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 4.48}
+{"idx": 882, "p": 8, "edges": [[0, 2], [0, 4], [1, 5], [3, 6], [3, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 10.29}
+{"idx": 883, "p": 8, "edges": [[0, 2], [0, 4], [1, 5], [3, 6], [4, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 11.2}
+{"idx": 884, "p": 8, "edges": [[0, 2], [0, 4], [1, 5], [3, 6], [5, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 6.46}
+{"idx": 885, "p": 8, "edges": [[0, 2], [0, 4], [1, 5], [3, 7], [4, 6]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 7.16}
+{"idx": 886, "p": 8, "edges": [[0, 2], [0, 4], [1, 6], [2, 5], [3, 7]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 4.88}
+{"idx": 888, "p": 8, "edges": [[0, 2], [0, 4], [1, 6], [3, 5], [5, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 6.24}
+{"idx": 887, "p": 8, "edges": [[0, 2], [0, 4], [1, 6], [3, 5], [4, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 11.45}
+{"idx": 889, "p": 8, "edges": [[0, 2], [0, 4], [1, 6], [3, 6], [5, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 5.77}
+{"idx": 890, "p": 8, "edges": [[0, 2], [0, 4], [1, 6], [3, 7], [5, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 4.53}
+{"idx": 891, "p": 8, "edges": [[0, 2], [0, 4], [1, 7], [2, 5], [3, 6]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 7.95}
+{"idx": 892, "p": 8, "edges": [[0, 2], [0, 4], [1, 7], [3, 5], [4, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 12.33}
+{"idx": 893, "p": 8, "edges": [[0, 2], [0, 4], [1, 7], [3, 6], [5, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 10.06}
+{"idx": 894, "p": 8, "edges": [[0, 2], [0, 5], [1, 3], [1, 6], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 6.1}
+{"idx": 896, "p": 8, "edges": [[0, 2], [0, 5], [1, 3], [3, 6], [4, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 3.22}
+{"idx": 897, "p": 8, "edges": [[0, 2], [0, 5], [1, 4], [1, 6], [3, 7]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 3.47}
+{"idx": 895, "p": 8, "edges": [[0, 2], [0, 5], [1, 3], [1, 7], [4, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 11.12}
+{"idx": 898, "p": 8, "edges": [[0, 2], [0, 5], [1, 4], [1, 7], [3, 6]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 7.92}
+{"idx": 900, "p": 8, "edges": [[0, 2], [0, 5], [1, 4], [3, 6], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 2.12}
+{"idx": 899, "p": 8, "edges": [[0, 2], [0, 5], [1, 4], [3, 6], [3, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 9.85}
+{"idx": 901, "p": 8, "edges": [[0, 2], [0, 5], [1, 4], [3, 7], [4, 6]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 6.07}
+{"idx": 902, "p": 8, "edges": [[0, 2], [0, 5], [1, 5], [3, 6], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 6.73}
+{"idx": 903, "p": 8, "edges": [[0, 2], [0, 5], [1, 5], [3, 7], [4, 6]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 7.08}
+{"idx": 904, "p": 8, "edges": [[0, 2], [0, 5], [1, 6], [2, 4], [3, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 11.82}
+{"idx": 906, "p": 8, "edges": [[0, 2], [0, 5], [1, 6], [3, 6], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 2.39}
+{"idx": 905, "p": 8, "edges": [[0, 2], [0, 5], [1, 6], [3, 5], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 9.17}
+{"idx": 907, "p": 8, "edges": [[0, 2], [0, 5], [1, 6], [3, 7], [4, 6]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 5.72}
+{"idx": 908, "p": 8, "edges": [[0, 2], [0, 5], [1, 6], [3, 7], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 10.93}
+{"idx": 909, "p": 8, "edges": [[0, 2], [0, 5], [1, 7], [2, 4], [3, 6]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 10.84}
+{"idx": 911, "p": 8, "edges": [[0, 2], [0, 6], [1, 3], [2, 4], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 910, "p": 8, "edges": [[0, 2], [0, 5], [1, 7], [3, 5], [4, 6]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 11.34}
+{"idx": 912, "p": 8, "edges": [[0, 2], [0, 6], [1, 3], [3, 5], [4, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 7.07}
+{"idx": 914, "p": 8, "edges": [[0, 2], [0, 6], [1, 4], [3, 5], [4, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 8.59}
+{"idx": 913, "p": 8, "edges": [[0, 2], [0, 6], [1, 4], [1, 5], [3, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 11.39}
+{"idx": 916, "p": 8, "edges": [[0, 2], [1, 4], [1, 5], [1, 6], [3, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 4.61}
+{"idx": 915, "p": 8, "edges": [[0, 2], [0, 6], [1, 5], [2, 4], [3, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 11.51}
+{"idx": 917, "p": 8, "edges": [[0, 2], [1, 4], [1, 5], [3, 6], [3, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 7.75}
+{"idx": 919, "p": 8, "edges": [[0, 2], [1, 4], [1, 6], [3, 5], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 5.6}
+{"idx": 918, "p": 8, "edges": [[0, 2], [1, 4], [1, 5], [3, 6], [4, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 12.77}
+{"idx": 920, "p": 8, "edges": [[0, 2], [1, 5], [3, 6], [3, 7], [4, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 10.39}
+{"idx": 921, "p": 8, "edges": [[0, 3], [0, 4], [0, 5], [1, 6], [2, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 8.02}
+{"idx": 923, "p": 8, "edges": [[0, 3], [0, 4], [1, 5], [2, 6], [2, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 9.61}
+{"idx": 922, "p": 8, "edges": [[0, 3], [0, 4], [1, 5], [1, 6], [2, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 11.79}
+{"idx": 924, "p": 8, "edges": [[0, 3], [0, 4], [1, 5], [2, 6], [3, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 15.54}
+{"idx": 925, "p": 8, "edges": [[0, 3], [0, 4], [1, 5], [2, 6], [4, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 15.94}
+{"idx": 927, "p": 8, "edges": [[0, 3], [0, 4], [1, 6], [2, 5], [2, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 4.28}
+{"idx": 926, "p": 8, "edges": [[0, 3], [0, 4], [1, 5], [2, 7], [3, 6]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 5.57}
+{"idx": 929, "p": 8, "edges": [[0, 3], [0, 4], [1, 6], [2, 5], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 11.82}
+{"idx": 930, "p": 8, "edges": [[0, 3], [0, 5], [1, 4], [1, 6], [2, 7]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 931, "p": 8, "edges": [[0, 3], [0, 5], [1, 4], [2, 6], [4, 7]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 932, "p": 8, "edges": [[0, 3], [0, 5], [1, 4], [2, 7], [3, 6]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 933, "p": 9, "edges": [[0, 1], [0, 2], [3, 4], [5, 6], [7, 8]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 934, "p": 9, "edges": [[0, 1], [0, 2], [3, 4], [5, 7], [6, 8]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 935, "p": 9, "edges": [[0, 1], [0, 2], [3, 4], [5, 8], [6, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 936, "p": 9, "edges": [[0, 1], [0, 2], [3, 5], [4, 6], [7, 8]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 937, "p": 9, "edges": [[0, 1], [0, 2], [3, 5], [4, 7], [6, 8]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 938, "p": 9, "edges": [[0, 1], [0, 2], [3, 5], [4, 8], [6, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 939, "p": 9, "edges": [[0, 1], [0, 2], [3, 6], [4, 5], [7, 8]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 940, "p": 9, "edges": [[0, 1], [0, 2], [3, 6], [4, 7], [5, 8]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 941, "p": 9, "edges": [[0, 1], [0, 2], [3, 6], [4, 8], [5, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 942, "p": 9, "edges": [[0, 1], [0, 2], [3, 7], [4, 5], [6, 8]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 943, "p": 9, "edges": [[0, 1], [0, 2], [3, 7], [4, 6], [5, 8]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 944, "p": 9, "edges": [[0, 1], [0, 2], [3, 7], [4, 8], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 945, "p": 9, "edges": [[0, 1], [0, 2], [3, 8], [4, 5], [6, 7]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 946, "p": 9, "edges": [[0, 1], [0, 2], [3, 8], [4, 6], [5, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 947, "p": 9, "edges": [[0, 1], [0, 2], [3, 8], [4, 7], [5, 6]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 948, "p": 9, "edges": [[0, 1], [0, 3], [2, 4], [5, 6], [7, 8]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 949, "p": 9, "edges": [[0, 1], [0, 3], [2, 4], [5, 7], [6, 8]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 950, "p": 9, "edges": [[0, 1], [0, 3], [2, 4], [5, 8], [6, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 951, "p": 9, "edges": [[0, 1], [0, 3], [2, 5], [4, 6], [7, 8]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 928, "p": 8, "edges": [[0, 3], [0, 4], [1, 6], [2, 5], [3, 7]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 14.45}
+{"idx": 953, "p": 9, "edges": [[0, 1], [0, 3], [2, 5], [4, 8], [6, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 954, "p": 9, "edges": [[0, 1], [0, 3], [2, 6], [4, 5], [7, 8]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 952, "p": 9, "edges": [[0, 1], [0, 3], [2, 5], [4, 7], [6, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.46}
+{"idx": 955, "p": 9, "edges": [[0, 1], [0, 3], [2, 6], [4, 7], [5, 8]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 1.6}
+{"idx": 957, "p": 9, "edges": [[0, 1], [0, 3], [2, 7], [4, 5], [6, 8]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 956, "p": 9, "edges": [[0, 1], [0, 3], [2, 6], [4, 8], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.75}
+{"idx": 959, "p": 9, "edges": [[0, 1], [0, 3], [2, 7], [4, 8], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 960, "p": 9, "edges": [[0, 1], [0, 3], [2, 8], [4, 5], [6, 7]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 961, "p": 9, "edges": [[0, 1], [0, 3], [2, 8], [4, 6], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 962, "p": 9, "edges": [[0, 1], [0, 3], [2, 8], [4, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 963, "p": 9, "edges": [[0, 1], [0, 4], [2, 3], [5, 6], [7, 8]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 964, "p": 9, "edges": [[0, 1], [0, 4], [2, 3], [5, 7], [6, 8]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 965, "p": 9, "edges": [[0, 1], [0, 4], [2, 3], [5, 8], [6, 7]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 966, "p": 9, "edges": [[0, 1], [0, 4], [2, 5], [3, 6], [7, 8]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 958, "p": 9, "edges": [[0, 1], [0, 3], [2, 7], [4, 6], [5, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.78}
+{"idx": 968, "p": 9, "edges": [[0, 1], [0, 4], [2, 5], [3, 8], [6, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 969, "p": 9, "edges": [[0, 1], [0, 4], [2, 6], [3, 5], [7, 8]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 967, "p": 9, "edges": [[0, 1], [0, 4], [2, 5], [3, 7], [6, 8]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 1.35}
+{"idx": 970, "p": 9, "edges": [[0, 1], [0, 4], [2, 6], [3, 7], [5, 8]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 1.12}
+{"idx": 971, "p": 9, "edges": [[0, 1], [0, 4], [2, 6], [3, 8], [5, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 1.43}
+{"idx": 972, "p": 9, "edges": [[0, 1], [0, 4], [2, 7], [3, 5], [6, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.44}
+{"idx": 974, "p": 9, "edges": [[0, 1], [0, 4], [2, 7], [3, 8], [5, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 975, "p": 9, "edges": [[0, 1], [0, 4], [2, 8], [3, 5], [6, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 973, "p": 9, "edges": [[0, 1], [0, 4], [2, 7], [3, 6], [5, 8]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 1.73}
+{"idx": 977, "p": 9, "edges": [[0, 1], [0, 4], [2, 8], [3, 7], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 978, "p": 9, "edges": [[0, 1], [0, 5], [2, 3], [4, 6], [7, 8]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 979, "p": 9, "edges": [[0, 1], [0, 5], [2, 3], [4, 7], [6, 8]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 980, "p": 9, "edges": [[0, 1], [0, 5], [2, 3], [4, 8], [6, 7]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 981, "p": 9, "edges": [[0, 1], [0, 5], [2, 4], [3, 6], [7, 8]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 976, "p": 9, "edges": [[0, 1], [0, 4], [2, 8], [3, 6], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.08}
+{"idx": 983, "p": 9, "edges": [[0, 1], [0, 5], [2, 4], [3, 8], [6, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 984, "p": 9, "edges": [[0, 1], [0, 5], [2, 6], [3, 4], [7, 8]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 985, "p": 9, "edges": [[0, 1], [0, 5], [2, 6], [3, 7], [4, 8]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 1.93}
+{"idx": 982, "p": 9, "edges": [[0, 1], [0, 5], [2, 4], [3, 7], [6, 8]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 3.1}
+{"idx": 987, "p": 9, "edges": [[0, 1], [0, 5], [2, 7], [3, 4], [6, 8]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 986, "p": 9, "edges": [[0, 1], [0, 5], [2, 6], [3, 8], [4, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 0.99}
+{"idx": 988, "p": 9, "edges": [[0, 1], [0, 5], [2, 7], [3, 6], [4, 8]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 1.11}
+{"idx": 990, "p": 9, "edges": [[0, 1], [0, 5], [2, 8], [3, 4], [6, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 989, "p": 9, "edges": [[0, 1], [0, 5], [2, 7], [3, 8], [4, 6]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 1.47}
+{"idx": 991, "p": 9, "edges": [[0, 1], [0, 5], [2, 8], [3, 6], [4, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 1.55}
+{"idx": 993, "p": 9, "edges": [[0, 1], [0, 6], [2, 3], [4, 5], [7, 8]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 994, "p": 9, "edges": [[0, 1], [0, 6], [2, 3], [4, 7], [5, 8]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 0.68}
+{"idx": 995, "p": 9, "edges": [[0, 1], [0, 6], [2, 3], [4, 8], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 996, "p": 9, "edges": [[0, 1], [0, 6], [2, 4], [3, 5], [7, 8]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 992, "p": 9, "edges": [[0, 1], [0, 5], [2, 8], [3, 7], [4, 6]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.51}
+{"idx": 997, "p": 9, "edges": [[0, 1], [0, 6], [2, 4], [3, 7], [5, 8]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 2.13}
+{"idx": 999, "p": 9, "edges": [[0, 1], [0, 6], [2, 5], [3, 4], [7, 8]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 998, "p": 9, "edges": [[0, 1], [0, 6], [2, 4], [3, 8], [5, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 2.11}
+{"idx": 1000, "p": 9, "edges": [[0, 1], [0, 6], [2, 5], [3, 7], [4, 8]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 0.72}
+{"idx": 1002, "p": 9, "edges": [[0, 1], [0, 6], [2, 7], [3, 4], [5, 8]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1001, "p": 9, "edges": [[0, 1], [0, 6], [2, 5], [3, 8], [4, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 1.24}
+{"idx": 1004, "p": 9, "edges": [[0, 1], [0, 6], [2, 7], [3, 8], [4, 5]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1005, "p": 9, "edges": [[0, 1], [0, 6], [2, 8], [3, 4], [5, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 1003, "p": 9, "edges": [[0, 1], [0, 6], [2, 7], [3, 5], [4, 8]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 1.69}
+{"idx": 1007, "p": 9, "edges": [[0, 1], [0, 6], [2, 8], [3, 7], [4, 5]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1008, "p": 9, "edges": [[0, 1], [0, 7], [2, 3], [4, 5], [6, 8]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 1009, "p": 9, "edges": [[0, 1], [0, 7], [2, 3], [4, 6], [5, 8]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 0.89}
+{"idx": 1010, "p": 9, "edges": [[0, 1], [0, 7], [2, 3], [4, 8], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 1006, "p": 9, "edges": [[0, 1], [0, 6], [2, 8], [3, 5], [4, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 2.09}
+{"idx": 1011, "p": 9, "edges": [[0, 1], [0, 7], [2, 4], [3, 5], [6, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.88}
+{"idx": 1013, "p": 9, "edges": [[0, 1], [0, 7], [2, 4], [3, 8], [5, 6]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 1014, "p": 9, "edges": [[0, 1], [0, 7], [2, 5], [3, 4], [6, 8]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 1012, "p": 9, "edges": [[0, 1], [0, 7], [2, 4], [3, 6], [5, 8]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 2.99}
+{"idx": 1015, "p": 9, "edges": [[0, 1], [0, 7], [2, 5], [3, 6], [4, 8]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 2.4}
+{"idx": 1017, "p": 9, "edges": [[0, 1], [0, 7], [2, 6], [3, 4], [5, 8]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 1016, "p": 9, "edges": [[0, 1], [0, 7], [2, 5], [3, 8], [4, 6]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 3.13}
+{"idx": 1019, "p": 9, "edges": [[0, 1], [0, 7], [2, 6], [3, 8], [4, 5]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 1020, "p": 9, "edges": [[0, 1], [0, 7], [2, 8], [3, 4], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 1021, "p": 9, "edges": [[0, 1], [0, 7], [2, 8], [3, 5], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1022, "p": 9, "edges": [[0, 1], [0, 7], [2, 8], [3, 6], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 1023, "p": 9, "edges": [[0, 1], [0, 8], [2, 3], [4, 5], [6, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1024, "p": 9, "edges": [[0, 1], [0, 8], [2, 3], [4, 6], [5, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 1025, "p": 9, "edges": [[0, 1], [0, 8], [2, 3], [4, 7], [5, 6]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 1018, "p": 9, "edges": [[0, 1], [0, 7], [2, 6], [3, 5], [4, 8]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 2.83}
+{"idx": 1027, "p": 9, "edges": [[0, 1], [0, 8], [2, 4], [3, 7], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 1026, "p": 9, "edges": [[0, 1], [0, 8], [2, 4], [3, 6], [5, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 1.09}
+{"idx": 1029, "p": 9, "edges": [[0, 1], [0, 8], [2, 5], [3, 7], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1030, "p": 9, "edges": [[0, 1], [0, 8], [2, 6], [3, 7], [4, 5]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 1031, "p": 9, "edges": [[0, 1], [0, 8], [2, 7], [3, 4], [5, 6]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 1032, "p": 9, "edges": [[0, 1], [0, 8], [2, 7], [3, 5], [4, 6]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 1033, "p": 9, "edges": [[0, 1], [0, 8], [2, 7], [3, 6], [4, 5]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 1034, "p": 9, "edges": [[0, 1], [2, 3], [4, 6], [4, 7], [5, 8]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1035, "p": 9, "edges": [[0, 1], [2, 3], [4, 6], [4, 8], [5, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 1036, "p": 9, "edges": [[0, 1], [2, 3], [4, 6], [5, 7], [5, 8]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 1037, "p": 9, "edges": [[0, 1], [2, 3], [4, 6], [5, 7], [6, 8]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 1038, "p": 9, "edges": [[0, 1], [2, 3], [4, 7], [4, 8], [5, 6]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 1039, "p": 9, "edges": [[0, 1], [2, 4], [2, 5], [3, 7], [6, 8]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1040, "p": 9, "edges": [[0, 1], [2, 4], [2, 5], [3, 8], [6, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 1028, "p": 9, "edges": [[0, 1], [0, 8], [2, 5], [3, 6], [4, 7]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 1.22}
+{"idx": 1042, "p": 9, "edges": [[0, 1], [2, 4], [2, 6], [3, 8], [5, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 1043, "p": 9, "edges": [[0, 1], [2, 4], [2, 7], [3, 5], [6, 8]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1044, "p": 9, "edges": [[0, 1], [2, 4], [2, 7], [3, 6], [5, 8]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1045, "p": 9, "edges": [[0, 1], [2, 4], [2, 7], [3, 8], [5, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 1046, "p": 9, "edges": [[0, 1], [2, 4], [2, 8], [3, 5], [6, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 1047, "p": 9, "edges": [[0, 1], [2, 4], [2, 8], [3, 6], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1048, "p": 9, "edges": [[0, 1], [2, 4], [2, 8], [3, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 1041, "p": 9, "edges": [[0, 1], [2, 4], [2, 6], [3, 7], [5, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.27}
+{"idx": 1050, "p": 9, "edges": [[0, 1], [2, 4], [3, 5], [3, 8], [6, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1049, "p": 9, "edges": [[0, 1], [2, 4], [3, 5], [3, 7], [6, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.78}
+{"idx": 1051, "p": 9, "edges": [[0, 1], [2, 4], [3, 5], [4, 7], [6, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.85}
+{"idx": 1052, "p": 9, "edges": [[0, 1], [2, 4], [3, 5], [5, 7], [6, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.33}
+{"idx": 1054, "p": 9, "edges": [[0, 1], [2, 4], [3, 6], [3, 8], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1053, "p": 9, "edges": [[0, 1], [2, 4], [3, 6], [3, 7], [5, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.18}
+{"idx": 1056, "p": 9, "edges": [[0, 1], [2, 4], [3, 6], [4, 8], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1057, "p": 9, "edges": [[0, 1], [2, 4], [3, 6], [5, 7], [5, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.73}
+{"idx": 1058, "p": 9, "edges": [[0, 1], [2, 4], [3, 7], [3, 8], [5, 6]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 1055, "p": 9, "edges": [[0, 1], [2, 4], [3, 6], [4, 7], [5, 8]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 2.43}
+{"idx": 1060, "p": 9, "edges": [[0, 1], [2, 4], [3, 8], [4, 6], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1061, "p": 9, "edges": [[0, 1], [2, 4], [3, 8], [5, 8], [6, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 1062, "p": 9, "edges": [[0, 1], [2, 5], [2, 6], [3, 7], [4, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 0.92}
+{"idx": 1063, "p": 9, "edges": [[0, 1], [2, 5], [2, 6], [3, 8], [4, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1064, "p": 9, "edges": [[0, 1], [2, 5], [2, 7], [3, 6], [4, 8]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 1065, "p": 9, "edges": [[0, 1], [2, 5], [2, 7], [3, 8], [4, 6]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 1066, "p": 9, "edges": [[0, 1], [2, 5], [2, 8], [3, 4], [6, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 1067, "p": 9, "edges": [[0, 1], [2, 5], [2, 8], [3, 6], [4, 7]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 1068, "p": 9, "edges": [[0, 1], [2, 5], [2, 8], [3, 7], [4, 6]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 1059, "p": 9, "edges": [[0, 1], [2, 4], [3, 7], [4, 6], [5, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.22}
+{"idx": 1070, "p": 9, "edges": [[0, 1], [2, 5], [3, 6], [3, 8], [4, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 0.6}
+{"idx": 1069, "p": 9, "edges": [[0, 1], [2, 5], [3, 6], [3, 7], [4, 8]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 1.42}
+{"idx": 1072, "p": 9, "edges": [[0, 1], [2, 5], [3, 6], [4, 7], [5, 8]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 0.89}
+{"idx": 1071, "p": 9, "edges": [[0, 1], [2, 5], [3, 6], [4, 7], [4, 8]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 1.63}
+{"idx": 1074, "p": 9, "edges": [[0, 1], [2, 5], [3, 7], [3, 8], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1075, "p": 9, "edges": [[0, 1], [2, 5], [3, 7], [4, 6], [4, 8]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 0.87}
+{"idx": 1076, "p": 9, "edges": [[0, 1], [2, 5], [3, 7], [4, 6], [5, 8]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 1077, "p": 9, "edges": [[0, 1], [2, 5], [3, 8], [4, 6], [4, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 1078, "p": 9, "edges": [[0, 1], [2, 5], [3, 8], [4, 6], [5, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 1079, "p": 9, "edges": [[0, 1], [2, 5], [3, 8], [4, 8], [6, 7]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 1080, "p": 9, "edges": [[0, 1], [2, 6], [2, 7], [3, 5], [4, 8]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 1081, "p": 9, "edges": [[0, 1], [2, 6], [2, 7], [3, 8], [4, 5]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 1082, "p": 9, "edges": [[0, 1], [2, 6], [2, 8], [3, 5], [4, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 1083, "p": 9, "edges": [[0, 1], [2, 6], [2, 8], [3, 7], [4, 5]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 1073, "p": 9, "edges": [[0, 1], [2, 5], [3, 6], [4, 8], [5, 7]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 1.24}
+{"idx": 1085, "p": 9, "edges": [[0, 1], [2, 6], [3, 5], [3, 8], [4, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 1086, "p": 9, "edges": [[0, 1], [2, 6], [3, 5], [4, 7], [4, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 1.38}
+{"idx": 1087, "p": 9, "edges": [[0, 1], [2, 6], [3, 5], [4, 8], [5, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 1088, "p": 9, "edges": [[0, 1], [2, 6], [3, 8], [4, 6], [5, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 1089, "p": 9, "edges": [[0, 1], [2, 6], [3, 8], [4, 7], [5, 7]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 1090, "p": 9, "edges": [[0, 1], [2, 7], [2, 8], [3, 5], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 1091, "p": 9, "edges": [[0, 1], [2, 7], [2, 8], [3, 6], [4, 5]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 1092, "p": 9, "edges": [[0, 1], [2, 7], [3, 5], [3, 8], [4, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1093, "p": 9, "edges": [[0, 1], [2, 8], [3, 5], [3, 6], [4, 7]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 1094, "p": 9, "edges": [[0, 1], [2, 8], [3, 5], [3, 7], [4, 6]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 1095, "p": 9, "edges": [[0, 1], [2, 8], [3, 5], [4, 6], [4, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 1096, "p": 9, "edges": [[0, 1], [2, 8], [3, 5], [4, 6], [5, 7]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 1097, "p": 9, "edges": [[0, 2], [0, 3], [1, 4], [5, 7], [6, 8]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 1084, "p": 9, "edges": [[0, 1], [2, 6], [3, 5], [3, 7], [4, 8]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 1.64}
+{"idx": 1099, "p": 9, "edges": [[0, 2], [0, 3], [1, 6], [4, 7], [5, 8]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 6.92}
+{"idx": 1098, "p": 9, "edges": [[0, 2], [0, 3], [1, 5], [4, 7], [6, 8]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 7.42}
+{"idx": 1100, "p": 9, "edges": [[0, 2], [0, 3], [1, 6], [4, 8], [5, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 7.41}
+{"idx": 1102, "p": 9, "edges": [[0, 2], [0, 3], [1, 8], [4, 6], [5, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1103, "p": 9, "edges": [[0, 2], [0, 4], [1, 3], [5, 7], [6, 8]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 1101, "p": 9, "edges": [[0, 2], [0, 3], [1, 7], [4, 6], [5, 8]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 7.26}
+{"idx": 1105, "p": 9, "edges": [[0, 2], [0, 4], [1, 6], [3, 7], [5, 8]], "forms": 48, "status": "INFEASIBLE", "n": null, "secs": 1.37}
+{"idx": 1104, "p": 9, "edges": [[0, 2], [0, 4], [1, 5], [3, 7], [6, 8]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 4.5}
+{"idx": 1106, "p": 9, "edges": [[0, 2], [0, 4], [1, 6], [3, 8], [5, 7]], "forms": 46, "status": "INFEASIBLE", "n": null, "secs": 5.2}
+{"idx": 1108, "p": 9, "edges": [[0, 2], [0, 4], [1, 7], [3, 6], [5, 8]], "forms": 46, "status": "INFEASIBLE", "n": null, "secs": 1.69}
+{"idx": 1107, "p": 9, "edges": [[0, 2], [0, 4], [1, 7], [3, 5], [6, 8]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 6.64}
+{"idx": 1110, "p": 9, "edges": [[0, 2], [0, 5], [1, 3], [4, 7], [6, 8]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 1109, "p": 9, "edges": [[0, 2], [0, 4], [1, 8], [3, 6], [5, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 6.91}
+{"idx": 1111, "p": 9, "edges": [[0, 2], [0, 5], [1, 4], [3, 7], [6, 8]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 6.52}
+{"idx": 1112, "p": 9, "edges": [[0, 2], [0, 5], [1, 6], [3, 7], [4, 8]], "forms": 48, "status": "INFEASIBLE", "n": null, "secs": 3.61}
+{"idx": 1113, "p": 9, "edges": [[0, 2], [0, 5], [1, 6], [3, 8], [4, 7]], "forms": 47, "status": "INFEASIBLE", "n": null, "secs": 3.0}
+{"idx": 1114, "p": 9, "edges": [[0, 2], [0, 5], [1, 7], [3, 6], [4, 8]], "forms": 48, "status": "INFEASIBLE", "n": null, "secs": 1.53}
+{"idx": 1115, "p": 9, "edges": [[0, 2], [0, 5], [1, 7], [3, 8], [4, 6]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 4.1}
+{"idx": 1116, "p": 9, "edges": [[0, 2], [0, 5], [1, 8], [3, 6], [4, 7]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 5.34}
+{"idx": 1118, "p": 9, "edges": [[0, 2], [0, 6], [1, 3], [4, 7], [5, 8]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 3.29}
+{"idx": 1119, "p": 9, "edges": [[0, 2], [0, 6], [1, 3], [4, 8], [5, 7]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 1120, "p": 9, "edges": [[0, 2], [0, 6], [1, 4], [3, 7], [5, 8]], "forms": 47, "status": "INFEASIBLE", "n": null, "secs": 1.61}
+{"idx": 1117, "p": 9, "edges": [[0, 2], [0, 5], [1, 8], [3, 7], [4, 6]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 6.62}
+{"idx": 1122, "p": 9, "edges": [[0, 2], [0, 6], [1, 5], [3, 7], [4, 8]], "forms": 48, "status": "INFEASIBLE", "n": null, "secs": 1.93}
+{"idx": 1121, "p": 9, "edges": [[0, 2], [0, 6], [1, 4], [3, 8], [5, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 4.41}
+{"idx": 1123, "p": 9, "edges": [[0, 2], [0, 6], [1, 5], [3, 8], [4, 7]], "forms": 46, "status": "INFEASIBLE", "n": null, "secs": 2.1}
+{"idx": 1124, "p": 9, "edges": [[0, 2], [0, 6], [1, 7], [3, 5], [4, 8]], "forms": 46, "status": "INFEASIBLE", "n": null, "secs": 5.38}
+{"idx": 1125, "p": 9, "edges": [[0, 2], [0, 6], [1, 8], [3, 5], [4, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 6.28}
+{"idx": 1127, "p": 9, "edges": [[0, 2], [0, 7], [1, 4], [3, 6], [5, 8]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 4.01}
+{"idx": 1126, "p": 9, "edges": [[0, 2], [0, 7], [1, 3], [4, 6], [5, 8]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 5.32}
+{"idx": 1128, "p": 9, "edges": [[0, 2], [0, 7], [1, 5], [3, 6], [4, 8]], "forms": 48, "status": "INFEASIBLE", "n": null, "secs": 2.66}
+{"idx": 1130, "p": 9, "edges": [[0, 2], [0, 7], [1, 8], [3, 5], [4, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1129, "p": 9, "edges": [[0, 2], [0, 7], [1, 5], [3, 8], [4, 6]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 5.88}
+{"idx": 1132, "p": 9, "edges": [[0, 2], [1, 4], [1, 6], [3, 7], [5, 8]], "forms": 48, "status": "INFEASIBLE", "n": null, "secs": 1.06}
+{"idx": 1131, "p": 9, "edges": [[0, 2], [1, 4], [1, 5], [3, 7], [6, 8]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 5.51}
+{"idx": 1133, "p": 9, "edges": [[0, 2], [1, 4], [1, 6], [3, 8], [5, 7]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 5.69}
+{"idx": 1135, "p": 9, "edges": [[0, 2], [1, 4], [1, 7], [3, 6], [5, 8]], "forms": 47, "status": "INFEASIBLE", "n": null, "secs": 1.69}
+{"idx": 1134, "p": 9, "edges": [[0, 2], [1, 4], [1, 7], [3, 5], [6, 8]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 7.09}
+{"idx": 1136, "p": 9, "edges": [[0, 2], [1, 4], [3, 6], [3, 7], [5, 8]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 5.3}
+{"idx": 1138, "p": 9, "edges": [[0, 2], [1, 4], [3, 6], [4, 7], [5, 8]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 1.4}
+{"idx": 1137, "p": 9, "edges": [[0, 2], [1, 4], [3, 6], [3, 8], [5, 7]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 6.96}
+{"idx": 1139, "p": 9, "edges": [[0, 2], [1, 5], [1, 6], [3, 7], [4, 8]], "forms": 48, "status": "INFEASIBLE", "n": null, "secs": 3.84}
+{"idx": 1140, "p": 9, "edges": [[0, 2], [1, 5], [1, 6], [3, 8], [4, 7]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 5.1}
+{"idx": 1142, "p": 9, "edges": [[0, 2], [1, 5], [3, 6], [3, 8], [4, 7]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 1.63}
+{"idx": 1141, "p": 9, "edges": [[0, 2], [1, 5], [3, 6], [3, 7], [4, 8]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 5.62}
+{"idx": 1144, "p": 9, "edges": [[0, 2], [1, 5], [3, 6], [4, 7], [5, 8]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 2.95}
+{"idx": 1143, "p": 9, "edges": [[0, 2], [1, 5], [3, 6], [4, 7], [4, 8]], "forms": 46, "status": "INFEASIBLE", "n": null, "secs": 7.53}
+{"idx": 1146, "p": 9, "edges": [[0, 3], [0, 4], [1, 6], [2, 7], [5, 8]], "forms": 47, "status": "INFEASIBLE", "n": null, "secs": 3.46}
+{"idx": 1145, "p": 9, "edges": [[0, 2], [1, 5], [3, 7], [3, 8], [4, 6]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 6.36}
+{"idx": 1148, "p": 9, "edges": [[0, 3], [0, 5], [1, 6], [2, 7], [4, 8]], "forms": 49, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1149, "p": 9, "edges": [[0, 3], [0, 5], [1, 6], [2, 8], [4, 7]], "forms": 49, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1150, "p": 9, "edges": [[0, 3], [0, 5], [1, 7], [2, 6], [4, 8]], "forms": 49, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1151, "p": 9, "edges": [[0, 3], [0, 6], [1, 4], [2, 7], [5, 8]], "forms": 49, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1152, "p": 9, "edges": [[0, 3], [0, 6], [1, 5], [2, 7], [4, 8]], "forms": 50, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1153, "p": 9, "edges": [[0, 3], [0, 6], [1, 5], [2, 8], [4, 7]], "forms": 49, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1154, "p": 9, "edges": [[0, 3], [1, 4], [2, 6], [2, 7], [5, 8]], "forms": 47, "status": "INFEASIBLE", "n": null, "secs": 2.41}
+{"idx": 1147, "p": 9, "edges": [[0, 3], [0, 4], [1, 7], [2, 6], [5, 8]], "forms": 46, "status": "INFEASIBLE", "n": null, "secs": 4.27}
+{"idx": 1155, "p": 9, "edges": [[0, 3], [1, 5], [1, 6], [2, 7], [4, 8]], "forms": 48, "status": "INFEASIBLE", "n": null, "secs": 3.64}
+{"idx": 1157, "p": 10, "edges": [[0, 1], [2, 3], [4, 5], [6, 7], [8, 9]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1158, "p": 10, "edges": [[0, 1], [2, 3], [4, 5], [6, 8], [7, 9]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 1159, "p": 10, "edges": [[0, 1], [2, 3], [4, 5], [6, 9], [7, 8]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 1160, "p": 10, "edges": [[0, 1], [2, 3], [4, 6], [5, 8], [7, 9]], "forms": 39, "status": "INFEASIBLE", "n": null, "secs": 0.56}
+{"idx": 1161, "p": 10, "edges": [[0, 1], [2, 3], [4, 6], [5, 9], [7, 8]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 1162, "p": 10, "edges": [[0, 1], [2, 3], [4, 7], [5, 8], [6, 9]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 0.45}
+{"idx": 1163, "p": 10, "edges": [[0, 1], [2, 3], [4, 7], [5, 9], [6, 8]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1164, "p": 10, "edges": [[0, 1], [2, 3], [4, 8], [5, 9], [6, 7]], "forms": 31, "status": "SKIP", "n": null}
+{"idx": 1165, "p": 10, "edges": [[0, 1], [2, 3], [4, 9], [5, 6], [7, 8]], "forms": 27, "status": "SKIP", "n": null}
+{"idx": 1166, "p": 10, "edges": [[0, 1], [2, 3], [4, 9], [5, 7], [6, 8]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 1167, "p": 10, "edges": [[0, 1], [2, 3], [4, 9], [5, 8], [6, 7]], "forms": 23, "status": "SKIP", "n": null}
+{"idx": 1168, "p": 10, "edges": [[0, 1], [2, 4], [3, 5], [6, 8], [7, 9]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 0.51}
+{"idx": 1169, "p": 10, "edges": [[0, 1], [2, 4], [3, 5], [6, 9], [7, 8]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 1156, "p": 9, "edges": [[0, 4], [0, 5], [1, 6], [2, 7], [3, 8]], "forms": 47, "status": "INFEASIBLE", "n": null, "secs": 5.2}
+{"idx": 1171, "p": 10, "edges": [[0, 1], [2, 4], [3, 6], [5, 9], [7, 8]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 1170, "p": 10, "edges": [[0, 1], [2, 4], [3, 6], [5, 8], [7, 9]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 1.52}
+{"idx": 1172, "p": 10, "edges": [[0, 1], [2, 4], [3, 7], [5, 8], [6, 9]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 0.73}
+{"idx": 1174, "p": 10, "edges": [[0, 1], [2, 4], [3, 8], [5, 6], [7, 9]], "forms": 35, "status": "SKIP", "n": null}
+{"idx": 1173, "p": 10, "edges": [[0, 1], [2, 4], [3, 7], [5, 9], [6, 8]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 0.81}
+{"idx": 1176, "p": 10, "edges": [[0, 1], [2, 4], [3, 8], [5, 9], [6, 7]], "forms": 34, "status": "SKIP", "n": null}
+{"idx": 1177, "p": 10, "edges": [[0, 1], [2, 4], [3, 9], [5, 7], [6, 8]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1178, "p": 10, "edges": [[0, 1], [2, 4], [3, 9], [5, 8], [6, 7]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 1179, "p": 10, "edges": [[0, 1], [2, 5], [3, 4], [6, 9], [7, 8]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 1180, "p": 10, "edges": [[0, 1], [2, 5], [3, 6], [4, 9], [7, 8]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1181, "p": 10, "edges": [[0, 1], [2, 5], [3, 7], [4, 8], [6, 9]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 0.45}
+{"idx": 1175, "p": 10, "edges": [[0, 1], [2, 4], [3, 8], [5, 7], [6, 9]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 0.95}
+{"idx": 1182, "p": 10, "edges": [[0, 1], [2, 5], [3, 7], [4, 9], [6, 8]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 0.63}
+{"idx": 1184, "p": 10, "edges": [[0, 1], [2, 5], [3, 8], [4, 9], [6, 7]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1183, "p": 10, "edges": [[0, 1], [2, 5], [3, 8], [4, 7], [6, 9]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 0.41}
+{"idx": 1186, "p": 10, "edges": [[0, 1], [2, 5], [3, 9], [4, 8], [6, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1187, "p": 10, "edges": [[0, 1], [2, 6], [3, 4], [5, 9], [7, 8]], "forms": 28, "status": "SKIP", "n": null}
+{"idx": 1188, "p": 10, "edges": [[0, 1], [2, 6], [3, 5], [4, 9], [7, 8]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1189, "p": 10, "edges": [[0, 1], [2, 6], [3, 7], [4, 8], [5, 9]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 0.47}
+{"idx": 1185, "p": 10, "edges": [[0, 1], [2, 5], [3, 9], [4, 7], [6, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 0.81}
+{"idx": 1190, "p": 10, "edges": [[0, 1], [2, 6], [3, 7], [4, 9], [5, 8]], "forms": 44, "status": "INFEASIBLE", "n": null, "secs": 0.41}
+{"idx": 1191, "p": 10, "edges": [[0, 1], [2, 6], [3, 8], [4, 7], [5, 9]], "forms": 43, "status": "INFEASIBLE", "n": null, "secs": 0.29}
+{"idx": 1193, "p": 10, "edges": [[0, 1], [2, 6], [3, 9], [4, 7], [5, 8]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 0.44}
+{"idx": 1192, "p": 10, "edges": [[0, 1], [2, 6], [3, 8], [4, 9], [5, 7]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 0.65}
+{"idx": 1194, "p": 10, "edges": [[0, 1], [2, 6], [3, 9], [4, 8], [5, 7]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 0.67}
+{"idx": 1195, "p": 10, "edges": [[0, 1], [2, 7], [3, 5], [4, 9], [6, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 0.58}
+{"idx": 1197, "p": 10, "edges": [[0, 1], [2, 7], [3, 8], [4, 9], [5, 6]], "forms": 36, "status": "SKIP", "n": null}
+{"idx": 1196, "p": 10, "edges": [[0, 1], [2, 7], [3, 6], [4, 9], [5, 8]], "forms": 42, "status": "INFEASIBLE", "n": null, "secs": 0.51}
+{"idx": 1199, "p": 10, "edges": [[0, 1], [2, 7], [3, 9], [4, 8], [5, 6]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1200, "p": 10, "edges": [[0, 1], [2, 8], [3, 9], [4, 6], [5, 7]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1201, "p": 10, "edges": [[0, 1], [2, 8], [3, 9], [4, 7], [5, 6]], "forms": 26, "status": "SKIP", "n": null}
+{"idx": 1202, "p": 10, "edges": [[0, 1], [2, 9], [3, 5], [4, 7], [6, 8]], "forms": 32, "status": "SKIP", "n": null}
+{"idx": 1203, "p": 10, "edges": [[0, 1], [2, 9], [3, 6], [4, 7], [5, 8]], "forms": 33, "status": "SKIP", "n": null}
+{"idx": 1204, "p": 10, "edges": [[0, 1], [2, 9], [3, 6], [4, 8], [5, 7]], "forms": 30, "status": "SKIP", "n": null}
+{"idx": 1205, "p": 10, "edges": [[0, 1], [2, 9], [3, 8], [4, 6], [5, 7]], "forms": 24, "status": "SKIP", "n": null}
+{"idx": 1206, "p": 10, "edges": [[0, 1], [2, 9], [3, 8], [4, 7], [5, 6]], "forms": 20, "status": "SKIP", "n": null}
+{"idx": 1198, "p": 10, "edges": [[0, 1], [2, 7], [3, 9], [4, 6], [5, 8]], "forms": 38, "status": "INFEASIBLE", "n": null, "secs": 0.82}
+{"idx": 1208, "p": 10, "edges": [[0, 2], [1, 3], [4, 7], [5, 8], [6, 9]], "forms": 41, "status": "INFEASIBLE", "n": null, "secs": 1.14}
+{"idx": 1209, "p": 10, "edges": [[0, 2], [1, 3], [4, 7], [5, 9], [6, 8]], "forms": 37, "status": "SKIP", "n": null}
+{"idx": 1210, "p": 10, "edges": [[0, 2], [1, 3], [4, 9], [5, 7], [6, 8]], "forms": 29, "status": "SKIP", "n": null}
+{"idx": 1207, "p": 10, "edges": [[0, 2], [1, 3], [4, 6], [5, 8], [7, 9]], "forms": 40, "status": "INFEASIBLE", "n": null, "secs": 3.22}
+{"idx": 1212, "p": 10, "edges": [[0, 2], [1, 4], [3, 7], [5, 8], [6, 9]], "forms": 49, "status": "INFEASIBLE", "n": null, "secs": 1.85}
+{"idx": 1211, "p": 10, "edges": [[0, 2], [1, 4], [3, 6], [5, 8], [7, 9]], "forms": 46, "status": "INFEASIBLE", "n": null, "secs": 4.42}
+{"idx": 1213, "p": 10, "edges": [[0, 2], [1, 4], [3, 7], [5, 9], [6, 8]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 4.05}
+{"idx": 1214, "p": 10, "edges": [[0, 2], [1, 4], [3, 8], [5, 7], [6, 9]], "forms": 45, "status": "INFEASIBLE", "n": null, "secs": 3.61}
+{"idx": 1215, "p": 10, "edges": [[0, 2], [1, 5], [3, 6], [4, 8], [7, 9]], "forms": 50, "status": "INFEASIBLE", "n": null, "secs": 1.29}
+{"idx": 1216, "p": 10, "edges": [[0, 2], [1, 5], [3, 7], [4, 8], [6, 9]], "forms": 51, "status": "INFEASIBLE", "n": null, "secs": 1.21}
+{"idx": 1217, "p": 10, "edges": [[0, 2], [1, 5], [3, 7], [4, 9], [6, 8]], "forms": 49, "status": "INFEASIBLE", "n": null, "secs": 0.52}
+{"idx": 1219, "p": 10, "edges": [[0, 2], [1, 5], [3, 8], [4, 7], [6, 9]], "forms": 49, "status": "INFEASIBLE", "n": null, "secs": 1.07}
+{"idx": 1220, "p": 10, "edges": [[0, 2], [1, 6], [3, 7], [4, 8], [5, 9]], "forms": 51, "status": "INFEASIBLE", "n": null, "secs": 1.78}
+{"idx": 1218, "p": 10, "edges": [[0, 2], [1, 5], [3, 8], [4, 6], [7, 9]], "forms": 46, "status": "INFEASIBLE", "n": null, "secs": 3.73}
+{"idx": 1221, "p": 10, "edges": [[0, 2], [1, 6], [3, 7], [4, 9], [5, 8]], "forms": 51, "status": "INFEASIBLE", "n": null, "secs": 0.74}
+{"idx": 1223, "p": 10, "edges": [[0, 2], [1, 6], [3, 9], [4, 7], [5, 8]], "forms": 49, "status": "INFEASIBLE", "n": null, "secs": 1.36}
+{"idx": 1222, "p": 10, "edges": [[0, 2], [1, 6], [3, 8], [4, 9], [5, 7]], "forms": 50, "status": "INFEASIBLE", "n": null, "secs": 1.87}
+{"idx": 1225, "p": 10, "edges": [[0, 3], [1, 4], [2, 7], [5, 8], [6, 9]], "forms": 53, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1226, "p": 10, "edges": [[0, 3], [1, 5], [2, 7], [4, 8], [6, 9]], "forms": 55, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1227, "p": 10, "edges": [[0, 3], [1, 5], [2, 8], [4, 7], [6, 9]], "forms": 54, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1228, "p": 10, "edges": [[0, 3], [1, 6], [2, 7], [4, 8], [5, 9]], "forms": 54, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1229, "p": 10, "edges": [[0, 3], [1, 6], [2, 7], [4, 9], [5, 8]], "forms": 52, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1230, "p": 10, "edges": [[0, 3], [1, 7], [2, 6], [4, 8], [5, 9]], "forms": 54, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1231, "p": 10, "edges": [[0, 3], [1, 7], [2, 6], [4, 9], [5, 8]], "forms": 51, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1232, "p": 10, "edges": [[0, 3], [1, 8], [2, 5], [4, 7], [6, 9]], "forms": 52, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1233, "p": 10, "edges": [[0, 4], [1, 6], [2, 7], [3, 8], [5, 9]], "forms": 54, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1234, "p": 10, "edges": [[0, 4], [1, 6], [2, 8], [3, 7], [5, 9]], "forms": 55, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1235, "p": 10, "edges": [[0, 5], [1, 6], [2, 7], [3, 8], [4, 9]], "forms": 52, "status": "INFEASIBLE", "n": null, "secs": 0.0}
+{"idx": 1224, "p": 10, "edges": [[0, 2], [1, 6], [3, 9], [4, 8], [5, 7]], "forms": 46, "status": "INFEASIBLE", "n": null, "secs": 4.83}
