@@ -36,8 +36,10 @@ Not finished:
 * The second solver (`arcdfs`, version 1) is re-deriving "no 6 chords for
   n >= 68" in `arcform/xcheck/v1_k6_min68/`: resumable, about 12 core-hours in
   total. Restart with `cd erdos1016/arcform && ./runchunks.sh ./arcdfs 6 68 400 2 xcheck/v1_k6_min68`
-  (needs `types_6.txt`: `./gentypes 6 > types_6.txt`, or `python3 arcform.py dump 6`
-  for the order the finished parts used; the set of types is the same). When all
+  (needs `types_6.txt`, which is not in git: regenerate it with
+  `python3 arcform.py dump 6 > types_6.txt` and NOT with `gentypes`, because the
+  parts are split by line number and the two generators list the same types in a
+  different order). When all
   400 parts are present and contain no line starting with `S`, the k = 6 row is
   confirmed by two solvers.
 * k = 7 ("no 7 chords for n >= 115", hence N(7) = 114 and h(n) >= 8 from 115 on)

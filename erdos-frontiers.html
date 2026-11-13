@@ -204,7 +204,7 @@
 <div class="frame">
 
   <header class="mast">
-    <span class="eyebrow">Computational note · September 2026</span>
+    <span class="eyebrow">Computational note · September 2026, extended November 2026</span>
     <h1>Two Erdős Frontiers</h1>
     <p class="standfirst">Neither conjecture is settled. What moved is the exact data behind them — because each problem has a reformulation that turns an unbounded search into a finite one.</p>
     <div class="tags">
@@ -218,7 +218,7 @@
 
   <div class="facts">
     <div class="fact">
-      <span class="n">25</span>
+      <span class="n">99</span>
       <span class="t">new exact terms, none previously published</span>
     </div>
     <div class="fact">
@@ -409,7 +409,7 @@
 
     <div class="col" style="margin-top:30px">
       <h3>New terms</h3>
-      <p style="font-size:.97rem;color:var(--ink2);margin-top:8px">A105206 was known for <span class="mono">n = 3…22</span>. <span class="mono">h(n)</span> is now determined for <span class="mono">n = 23…40</span> as well.</p>
+      <p style="font-size:.97rem;color:var(--ink2);margin-top:8px">A105206 was known for <span class="mono">n = 3…22</span>. <span class="mono">h(n)</span> is now determined for <span class="mono">n = 23…114</span>: the first eighteen values by searching chord sets on <span class="mono">C<sub>n</sub></span>, shown here, the other seventy-four by the method further down.</p>
     </div>
     <div class="strip" aria-label="New values of A105206">
       n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40<br>
@@ -446,23 +446,88 @@
     <div class="col" style="margin-top:26px">
       <p>Up to <span class="mono">n = 33</span> the lower bound had to be earned: every chord set one size smaller was refuted, up to rotation. The hardest was <span class="mono">n = 25</span> with four chords — 233 829 950 nodes without the symmetry reduction, 10 997 097 with it. From <span class="mono">n = 34</span> on it is free, because <span class="mono">2⁵ − 1 = 31 &lt; n − 2</span>: four chords simply cannot make enough cycles, and only a witness is needed.</p>
     </div>
+
+    <div class="col" style="margin-top:34px">
+      <h3>Past n = 40: stop fixing n</h3>
+      <p style="margin-top:8px">Placing chords on <span class="mono">C<sub>n</sub></span> for one <span class="mono">n</span> at a time stalls. Ruling out five chords at the single value <span class="mono">n = 41</span> took 22.8 core-minutes, and it says nothing about <span class="mono">n = 42</span>.</p>
+      <p class="claim">Fix only the number of chords. Record the cyclic pattern of the chord endpoints, the <strong>type</strong>, and the lengths of the arcs between endpoints. Then every cycle length is <strong>the number of chords it uses plus the lengths of the arcs it uses</strong>, a fixed formula for each cycle of the type. Pancyclic means: these formulas take every value from 3 to n − 1. The number of types depends only on the number of chords: 1, 3, 14, 103, 1 236, 21 878, 496 875 for one to seven.</p>
+    </div>
+
+    <figure>
+      <div class="figbox">
+        <div class="fig-split">
+          <svg viewBox="0 0 320 320" role="img" aria-label="A fourteen-vertex cycle with three chords. The chords have five endpoints, which cut the cycle into arcs of lengths 3, 2, 1, 1 and 7.">
+            <polygon class="sv-ink2" points="160.0,60.0 203.4,69.9 238.2,97.7 257.5,137.7 257.5,182.3 238.2,222.3 203.4,250.1 160.0,260.0 116.6,250.1 81.8,222.3 62.5,182.3 62.5,137.7 81.8,97.7 116.6,69.9" fill="none" stroke-width="1.5"/>
+            <g class="sv-b" stroke-width="2.5">
+              <line x1="160.0" y1="60.0" x2="257.5" y2="137.7"/>
+              <line x1="160.0" y1="60.0" x2="203.4" y2="250.1"/>
+              <line x1="238.2" y1="222.3" x2="160.0" y2="260.0"/>
+            </g>
+            <g class="sv-dot"><circle cx="203.4" cy="69.9" r="2.2"/><circle cx="238.2" cy="97.7" r="2.2"/><circle cx="257.5" cy="182.3" r="2.2"/><circle cx="116.6" cy="250.1" r="2.2"/><circle cx="81.8" cy="222.3" r="2.2"/><circle cx="62.5" cy="182.3" r="2.2"/><circle cx="62.5" cy="137.7" r="2.2"/><circle cx="81.8" cy="97.7" r="2.2"/><circle cx="116.6" cy="69.9" r="2.2"/></g>
+            <g class="sv-bf"><circle cx="160.0" cy="60.0" r="4.5"/><circle cx="257.5" cy="137.7" r="4.5"/><circle cx="238.2" cy="222.3" r="4.5"/><circle cx="203.4" cy="250.1" r="4.5"/><circle cx="160.0" cy="260.0" r="4.5"/></g>
+            <g class="sv-tx" text-anchor="middle" dominant-baseline="middle"><text x="239.8" y="59.9">a₀ = 3</text><text x="284.8" y="188.5">a₁ = 2</text><text x="239.8" y="260.1">a₂ = 1</text><text x="188.5" y="284.8">a₃ = 1</text><text x="32.0" y="160.0">a₄ = 7</text></g>
+          </svg>
+          <table style="font-size:.86rem">
+            <thead><tr><th>a cycle uses</th><th class="num">length</th></tr></thead>
+            <tbody>
+              <tr><td class="seq">1 chord + a₂ + a₃</td><td class="num">3</td></tr>
+              <tr><td class="seq">1 chord + a₀</td><td class="num">4</td></tr>
+              <tr><td class="seq">2 chords + a₁ + a₂</td><td class="num">5</td></tr>
+              <tr><td class="seq">3 chords + a₁ + a₃</td><td class="num">6</td></tr>
+              <tr><td class="seq">1 chord + a₀ + a₁ + a₂</td><td class="num">7</td></tr>
+              <tr><td class="seq">2 chords + a₀ + a₁ + a₃</td><td class="num">8</td></tr>
+              <tr><td class="seq">1 chord + a₃ + a₄</td><td class="num">9</td></tr>
+              <tr><td class="seq">2 chords + a₂ + a₄</td><td class="num">10</td></tr>
+              <tr><td class="seq">2 chords + a₁ + a₄</td><td class="num">11</td></tr>
+              <tr><td class="seq">1 chord + a₁ + a₂ + a₃ + a₄</td><td class="num">12</td></tr>
+              <tr><td class="seq">1 chord + a₀ + a₁ + a₄</td><td class="num">13</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <figcaption>One of the six extremal graphs for three chords: <span class="mono">C₁₄</span> plus <span class="mono">(0,3)</span>, <span class="mono">(0,6)</span>, <span class="mono">(5,7)</span>. The five chord endpoints cut the cycle into arcs of lengths <span class="mono">3, 2, 1, 1, 7</span>. Besides the outer cycle there are eleven cycles, and with these arc lengths their formulas give <span class="mono">3, 4, …, 13</span>, each once. The formulas belong to the type; the search is over arc lengths, and <span class="mono">n</span> is only their sum.</figcaption>
+    </figure>
+
+    <div class="col" style="margin-top:26px">
+      <p>Short cycles use few short arcs, and long cycles skip few short arcs. So the lengths can be covered from both ends, <span class="mono">3, 4, 5, …</span> from below and <span class="mono">n − 1, n − 2, …</span> from above, and each step fixes a few small arcs. One run decides every <span class="mono">n</span> at once.</p>
+    </div>
+
+    <div class="tablewrap" style="margin-top:8px">
+      <table>
+        <caption>Largest <span class="mono">n</span> for which a pancyclic graph “cycle plus <span class="mono">k</span> chords” exists, from a complete search of all types.</caption>
+        <thead><tr><th class="num">chords</th><th class="num">types</th><th class="num">largest n</th><th>the search above that n</th><th>confirmed by</th></tr></thead>
+        <tbody>
+          <tr><td class="num">5</td><td class="num">1 236</td><td class="num">40</td><td class="seq">17 378 nodes, 0.03 s</td><td>a second solver, CP-SAT, and the search on <span class="mono">C<sub>n</sub></span> for <span class="mono">n = 41…44</span></td></tr>
+          <tr><td class="num">6</td><td class="num">21 878</td><td class="num newval">67</td><td class="seq">935 795 nodes, 2.7 s</td><td>a second solver, still running when this was written</td></tr>
+          <tr><td class="num">7</td><td class="num">496 875</td><td class="num newval">114</td><td class="seq">408 827 398 nodes, 1.2 core-hours</td><td>nothing yet: one program</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col" style="margin-top:26px">
+      <p>With one witness for every <span class="mono">n</span> in between, each checked by enumerating all its cycles, this gives <span class="mono">h(n) = 6</span> for <span class="mono">41 ≤ n ≤ 67</span> and <span class="mono">h(n) = 7</span> for <span class="mono">68 ≤ n ≤ 114</span>. The second of these needs only the six-chord row. The seven-chord row adds <span class="mono">h(n) ≥ 8</span> for <span class="mono">n ≥ 115</span>.</p>
+    </div>
+    <div class="strip" aria-label="All values of h(n) now known">
+      n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;4–5&nbsp;&nbsp;6–8&nbsp;&nbsp;9–14&nbsp;&nbsp;15–24&nbsp;&nbsp;25–40&nbsp;&nbsp;41–67&nbsp;&nbsp;68–114<br>
+      h(n)&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>6</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>7</b>
+    </div>
   </section>
 
   <section>
     <div class="col">
       <span class="eyebrow">What the data says</span>
       <h2>Evidence on Erdős's own question</h2>
-      <p class="lede">Write <span class="mono">N(k)</span> for the largest <span class="mono">n</span> with <span class="mono">h(n) = k</span> — the point where <span class="mono">h</span> falls furthest below <span class="mono">log₂ n</span>. If <span class="mono">N(k)/2<sup>k</sup></span> keeps falling, then <span class="mono">h(n) − log₂ n → ∞</span>, which is what Erdős believed and could not prove.</p>
+      <p class="lede">Write <span class="mono">N(k)</span> for the largest <span class="mono">n</span> that <span class="mono">k</span> chords can do, the point where <span class="mono">h</span> falls furthest below <span class="mono">log₂ n</span>. If <span class="mono">N(k)/2<sup>k</sup></span> tends to zero, then <span class="mono">h(n) − log₂ n → ∞</span>, which is what Erdős believed and could not prove.</p>
     </div>
 
     <figure>
       <div class="figbox">
-        <svg viewBox="0 0 620 300" role="img" aria-label="The ratio N(k) over 2 to the k falls from 3 to 1.5 across k equals 0 to 4, and for k equals 5 is only known to lie between 1.25 and 2.03.">
+        <svg viewBox="0 0 620 300" role="img" aria-label="The ratio N(k) over 2 to the k falls at every step from 3 at k equals 0 to 0.89 at k equals 7.">
           <!-- grid -->
           <g class="sv-rule" stroke-width="1">
-            <line x1="70" y1="250" x2="575" y2="250"/>
-            <line x1="70" y1="190.6" x2="575" y2="190.6" opacity=".55"/>
-            <line x1="70" y1="71.9" x2="575" y2="71.9" opacity=".55"/>
+            <line x1="70" y1="250" x2="590" y2="250"/>
+            <line x1="70" y1="190.6" x2="590" y2="190.6" opacity=".55"/>
+            <line x1="70" y1="71.9" x2="590" y2="71.9" opacity=".55"/>
           </g>
           <g class="sv-tx2" text-anchor="end">
             <text x="58" y="254">0</text>
@@ -473,60 +538,56 @@
           <text class="sv-tx2" x="70" y="44">N(k) / 2ᵏ</text>
 
           <!-- reference: what the counting bound alone permits -->
-          <line x1="70" y1="131.25" x2="575" y2="131.25" class="sv-ink2" stroke-width="1.5" stroke-dasharray="5 4"/>
-          <text class="sv-tx2" x="575" y="117" text-anchor="end">counting bound alone permits ≈ 2 forever</text>
-
-          <!-- uncertainty band for k = 5 -->
-          <rect x="536" y="129.5" width="18" height="46.3" class="sv-paper" opacity="0"/>
-          <g class="sv-b" stroke-width="2" fill="none" opacity=".5" stroke-dasharray="4 4">
-            <line x1="450" y1="160.9" x2="545" y2="129.5"/>
-            <line x1="450" y1="160.9" x2="545" y2="175.8"/>
-          </g>
-          <g class="sv-b" stroke-width="2.5" fill="none">
-            <line x1="545" y1="129.5" x2="545" y2="175.8"/>
-            <line x1="538" y1="129.5" x2="552" y2="129.5"/>
-            <line x1="538" y1="175.8" x2="552" y2="175.8"/>
-          </g>
+          <line x1="70" y1="131.25" x2="590" y2="131.25" class="sv-ink2" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <text class="sv-tx2" x="590" y="117" text-anchor="end">counting cycles alone permits ≈ 2 forever</text>
 
           <!-- measured series -->
-          <polyline points="70,71.9 165,101.6 260,131.25 355,146.1 450,160.9" fill="none" class="sv-b" stroke-width="2.5"/>
+          <polyline points="70,71.9 142,101.6 214,131.3 286,146.1 358,160.9 430,175.8 502,187.8 574,197.1" fill="none" class="sv-b" stroke-width="2.5"/>
           <g class="sv-bf">
             <circle cx="70" cy="71.9" r="5" stroke="var(--panel)" stroke-width="2"/>
-            <circle cx="165" cy="101.6" r="5" stroke="var(--panel)" stroke-width="2"/>
-            <circle cx="260" cy="131.25" r="5" stroke="var(--panel)" stroke-width="2"/>
-            <circle cx="355" cy="146.1" r="5" stroke="var(--panel)" stroke-width="2"/>
-            <circle cx="450" cy="160.9" r="5" stroke="var(--panel)" stroke-width="2"/>
+            <circle cx="142" cy="101.6" r="5" stroke="var(--panel)" stroke-width="2"/>
+            <circle cx="214" cy="131.3" r="5" stroke="var(--panel)" stroke-width="2"/>
+            <circle cx="286" cy="146.1" r="5" stroke="var(--panel)" stroke-width="2"/>
+            <circle cx="358" cy="160.9" r="5" stroke="var(--panel)" stroke-width="2"/>
+            <circle cx="430" cy="175.8" r="5" stroke="var(--panel)" stroke-width="2"/>
+            <circle cx="502" cy="187.8" r="5" stroke="var(--panel)" stroke-width="2"/>
           </g>
+          <circle cx="574" cy="197.1" r="5" class="sv-b sv-paper" stroke-width="2.5"/>
           <text class="sv-tx" x="86" y="68" text-anchor="start">3</text>
-          <text class="sv-tx" x="450" y="182" text-anchor="middle">1.5</text>
-          <text class="sv-tx2" x="545" y="199" text-anchor="middle">not settled</text>
+          <text class="sv-tx" x="430" y="197.8" text-anchor="middle">1.25</text>
+          <text class="sv-tx" x="502" y="209.8" text-anchor="middle">1.05</text>
+          <text class="sv-tx" x="574" y="219.1" text-anchor="middle">0.89</text>
 
           <!-- x axis -->
           <g class="sv-tx" text-anchor="middle">
-            <text x="70" y="270">0</text><text x="165" y="270">1</text><text x="260" y="270">2</text>
-            <text x="355" y="270">3</text><text x="450" y="270">4</text><text x="545" y="270">5</text>
+            <text x="70" y="270">0</text><text x="142" y="270">1</text><text x="214" y="270">2</text><text x="286" y="270">3</text><text x="358" y="270">4</text><text x="430" y="270">5</text><text x="502" y="270">6</text><text x="574" y="270">7</text>
           </g>
-          <text class="sv-tx2" x="307" y="290" text-anchor="middle">k</text>
+          <text class="sv-tx2" x="322" y="290" text-anchor="middle">k</text>
         </svg>
       </div>
-      <figcaption>Measured and exact for <span class="mono">k ≤ 4</span>; falling at every one of those four steps. For <span class="mono">k = 5</span> only the range is known, and the fan shows both ways it can go.</figcaption>
+      <figcaption>Exact for <span class="mono">k ≤ 7</span> and falling at every step. The open marker at <span class="mono">k = 7</span> is the one value that rests on a single program.</figcaption>
     </figure>
 
     <div class="tablewrap" style="margin-top:18px">
       <table>
-        <thead><tr><th>k</th><th class="num">0</th><th class="num">1</th><th class="num">2</th><th class="num">3</th><th class="num">4</th><th class="num">5</th></tr></thead>
+        <thead><tr><th>k</th><th class="num">0</th><th class="num">1</th><th class="num">2</th><th class="num">3</th><th class="num">4</th><th class="num">5</th><th class="num">6</th><th class="num">7</th></tr></thead>
         <tbody>
-          <tr><td>N(k)</td><td class="num">3</td><td class="num">5</td><td class="num">8</td><td class="num">14</td><td class="num">24</td><td class="num">[40, 65]</td></tr>
-          <tr><td>Bondy's counting bound 2<sup>k+1</sup>+1</td><td class="num">3</td><td class="num">5</td><td class="num">9</td><td class="num">17</td><td class="num">33</td><td class="num">65</td></tr>
-          <tr><td>N(k) / 2<sup>k</sup></td><td class="num">3</td><td class="num">2.5</td><td class="num">2</td><td class="num">1.75</td><td class="num">1.5</td><td class="num">[1.25, 2.03]</td></tr>
+          <tr><td>N(k)</td><td class="num">3</td><td class="num">5</td><td class="num">8</td><td class="num">14</td><td class="num">24</td><td class="num">40</td><td class="num">67</td><td class="num">114</td></tr>
+          <tr><td>Counting bound 2<sup>k+1</sup>+1</td><td class="num">3</td><td class="num">5</td><td class="num">9</td><td class="num">17</td><td class="num">33</td><td class="num">65</td><td class="num">129</td><td class="num">257</td></tr>
+          <tr><td>Same bound with the true maximum number of cycle lengths of a type</td><td class="num">3</td><td class="num">5</td><td class="num">9</td><td class="num">17</td><td class="num">31</td><td class="num">58</td><td class="num">111</td><td class="num">215</td></tr>
+          <tr><td>N(k) / 2<sup>k</sup></td><td class="num">3</td><td class="num">2.5</td><td class="num">2</td><td class="num">1.75</td><td class="num">1.5</td><td class="num">1.25</td><td class="num">1.05</td><td class="num">0.89</td></tr>
+          <tr><td>N(k) / N(k−1)</td><td class="num"></td><td class="num">1.67</td><td class="num">1.60</td><td class="num">1.75</td><td class="num">1.71</td><td class="num">1.67</td><td class="num">1.68</td><td class="num">1.70</td></tr>
+          <tr><td>Extremal graphs, up to symmetry</td><td class="num">1</td><td class="num">1</td><td class="num">3</td><td class="num">6</td><td class="num">2</td><td class="num">5</td><td class="num">3</td><td class="num">2</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="col" style="margin-top:26px">
       <div class="note">
-        <h3>The caveat, stated plainly</h3>
-        <p style="margin-bottom:0"><span class="mono">h(40) = 5</span> gives only <span class="mono">N(5) ≥ 40</span>, that is <span class="mono">N(5)/2⁵ ≥ 1.25</span> — a <em>lower</em> bound, which on its own does not continue the fall. The fall continues if and only if <span class="mono">N(5) &lt; 48</span>. Deciding it means deciding <span class="mono">h(41)</span>: if no five-chord witness exists at <span class="mono">n = 41</span>, then <span class="mono">N(5) = 40</span> and the ratio drops to 1.25; if one does, the question moves to <span class="mono">n = 42</span>. That is a finite computation — roughly 6.5 × 10¹⁰ search nodes, about 22 core-hours — and it was started but not finished here.</p>
+        <h3>What this does and does not show</h3>
+        <p>Eight exact values, and the ratio falls at every one of the seven steps. Counting cycles cannot explain it: even with the true maximum number of cycles a type can have, the bound stays far above <span class="mono">N(k)</span>. The obstruction is in the lengths.</p>
+        <p>The fall is slowing. The formula <span class="mono">2<sup>k−2</sup>(10 − k)</span> fits <span class="mono">k = 2…5</span> exactly and predicts 64 and 96; the true values are 67 and 114. Each step multiplies <span class="mono">N</span> by about 1.7. The known upper bound <span class="mono">h(n) ≤ log₂ n + log* n + O(1)</span> forces that factor towards 2 eventually, so these values are far from the asymptotic regime.</p>
+        <p style="margin-bottom:0">None of this is a proof of anything about the limit. And <span class="mono">N(7) = 114</span> comes from one program; the search for eight chords has 13.5 million types and was not attempted.</p>
       </div>
     </div>
   </section>
@@ -542,6 +603,8 @@
         <li><strong>The Golomb witnesses are re-expanded</strong> into all <span class="mono">k(k+1)/2</span> consecutive sums, which are then tested for distinctness.</li>
         <li><strong>The symmetry reduction was checked against the unreduced search.</strong> At <span class="mono">n = 25</span>: 233 829 950 nodes versus 10 997 097, same verdict. At <span class="mono">n = 26</span>: 311 112 744 versus 13 906 189, same verdict.</li>
         <li><strong>Work-splitting was checked to partition exactly.</strong> Four slices of one branch sum to the unsliced node count, to the three repeated root entries.</li>
+        <li><strong>The search that does not fix n was compared on complete solution sets, not on answers.</strong> Against a naive enumeration on 49 small cases (2 427 201 chord sets), against the search on <span class="mono">C<sub>n</sub></span> for four chords at <span class="mono">n = 17…24</span> and five chords at <span class="mono">n = 38, 39, 40</span>, and against an integer-programming solver. Every witness for <span class="mono">n = 41…114</span> was re-checked with networkx.</li>
+        <li><strong>Reproducing known answers was not enough, and that was measured.</strong> The first version of the new solver returned the four known maxima 5, 8, 14, 24 with two bugs in it. Comparing complete solution sets exposed both. A separate study with 39 planted bugs in the older searcher found the same: 16 of 33 defective variants reproduced all 20 published terms.</li>
       </ul>
     </div>
   </section>
@@ -556,7 +619,11 @@ python3 verify_all.py       # re-derive every claimed term
 
 gcc -O3 -march=native -o pancyclic pancyclic.c
 ./scan.sh 30 6              # h(30), witness + refutation
-python3 verify_pancyclic.py crosscheck</pre>
+python3 verify_pancyclic.py crosscheck
+
+cd arcform && gcc -O2 -o gentypes gentypes.c && gcc -O2 -o arcdfs2 arcdfs2.c
+./gentypes 5 | ./arcdfs2 41          # five chords: nothing for n ≥ 41
+./gentypes 6 | ./arcdfs2 57 --print  # six chords: everything from n = 57, largest 67</pre>
       <p style="font-size:.95rem;color:var(--ink2)">Each new term is recorded in a <span class="mono">certificates.json</span> alongside its witness and the bounds that were refuted, and <span class="mono">SUBMISSIONS.md</span> holds the text ready to file with the OEIS.</p>
     </div>
   </section>
