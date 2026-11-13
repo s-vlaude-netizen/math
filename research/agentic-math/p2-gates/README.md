@@ -171,6 +171,32 @@ established way to get one is a solver with proof logging for symmetry breaking
 LeanCSP, 2607.28459; all read at abstract level only). Encoding this problem for
 such a solver is the natural next step.
 
+## A second data point, from a new solver (added 2026-11-13)
+
+After this study I wrote a different solver for the same problem
+(`erdos1016/arcform/`), one that does not fix n. Its development repeated the
+finding on fresh code, without planted mutants:
+
+* The first working version returned the four known maxima (largest n with
+  k = 1..4 chords: 5, 8, 14, 24). It contained two real bugs: an undo step
+  cleared values still owned by outer loops, and cycles made of chords only were
+  never counted. Both lost solutions and one also produced invalid ones.
+* The G2-style check (complete solution sets, closed under symmetry, against the
+  naive reference) failed in 11 of 46 cells, all with four chords. Cells with
+  one to three chords passed.
+* A third failure was in the run script, not the solver: two killed processes
+  were recorded as finished. A count comparison (types searched against types
+  generated: 201,095 against 208,031) exposed it.
+
+So here "reproduces the known answers" passed with two bugs present, the
+enumeration comparison caught both, and a bookkeeping check caught a failure
+that no check of the solver could see. The fixed solver then agreed with the
+per-n searcher of this study on complete solution sets (k = 4, n = 17..24; k = 5,
+n = 38..40), which checks both programs against each other.
+
+The new solver also supersedes the per-n decisions below: "no 5 chords for any
+n >= 41" is one run of 17,378 search nodes.
+
 ## Limits
 
 * One program. The same agent wrote the program, the mutants, the gates and the
