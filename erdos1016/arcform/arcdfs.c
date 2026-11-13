@@ -21,7 +21,10 @@
  * With NMIN > 0 only solutions with n >= NMIN are wanted; a branch is cut when even with every
  * incomplete form supplying a new length n cannot reach NMIN.
  *
- * Usage: arcdfs NMIN [--print] < types      (NMIN = 0: all solutions)
+ * With --max NMAX only solutions with n <= NMAX are wanted; a branch is cut when the arcs assigned
+ * so far plus the minimum of the others already exceed NMAX.
+ *
+ * Usage: arcdfs NMIN [--print] [--max NMAX] < types      (NMIN = 0: all solutions)
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,7 +42,7 @@ static int fsum[MAXF];                 /* m_j + assigned arcs of form j */
 static int cnt[MAXL];                  /* complete forms with this value */
 static int chosen[MAXL];               /* form branched on for this length, or -1 */
 static int distinctTotal;              /* number of values v with cnt[v] > 0 */
-static int NMIN, PRINT, typeidx;
+static int NMIN, NMAX = 1 << 30, PRINT, typeidx;
 static long long nodes, nsol, hist[MAXL];
 static int bestn;
 
@@ -84,7 +87,7 @@ static void solution(void)
 {
     int n = 0;
     for (int i = 0; i < p; i++) n += val[i];
-    if (n < NMIN) return;
+    if (n < NMIN || n > NMAX) return;
     nsol++; if (n < MAXL) hist[n]++; if (n > bestn) bestn = n;
     if (PRINT) { printf("S %d %d", typeidx, n); for (int i = 0; i < p; i++) printf(" %d", val[i]); printf("\n"); }
 }
@@ -127,6 +130,8 @@ static void dfs(void)
     int free_arcs[MAXP], nfree = 0, minfree = 0;
     for (int i = 0; i < p; i++) if (!(AM >> i & 1)) { free_arcs[nfree++] = i; minfree += lo[i]; }
 
+    if (total + minfree > NMAX) return;              /* every completion has n > NMAX */
+
     /* stop: n <= L and no form takes the value L */
     if (L >= NMIN && total + minfree <= L)
         distribute(free_arcs, nfree, 0, L - total, minfree, FULL & ~AM, L, 1);
@@ -153,7 +158,11 @@ static void dfs(void)
 int main(int argc, char **argv)
 {
     NMIN = argc > 1 ? atoi(argv[1]) : 0;
-    PRINT = argc > 2 && !strcmp(argv[2], "--print");
+    for (int i = 2; i < argc; i++) {
+        if (!strcmp(argv[i], "--print")) PRINT = 1;
+        else if (!strcmp(argv[i], "--max") && i + 1 < argc) NMAX = atoi(argv[++i]);
+        else { fprintf(stderr, "usage: arcdfs NMIN [--print] [--max NMAX] < types\n"); return 2; }
+    }
     static char line[1 << 17];
     long long types = 0, searched = 0, total_nodes = 0, total_sol = 0, maxnodes = 0;
     int overall = 0;
