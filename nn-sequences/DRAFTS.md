@@ -53,9 +53,9 @@ print([a(n) for n in range(1, 5)])  # ~~~~
 
 **COMMENTS**
 ```
-Equivalently, subsets of the vertices of the n-cube that are the intersection of the vertex set with two closed half-spaces. For n = 3 the 10 functions that are not counted are the 2 parity functions and the 8 functions whose true points are a tetrahedron-plus-one-vertex pattern (the complements of the 8 functions that are ANDs of two threshold functions for n = 3 are counted in A064436-style complements; see README).
+Equivalently, subsets of the vertices of the n-cube that are cut out by two closed half-spaces: the vertex set intersected with two half-spaces.
+a(3) = 246: the 10 functions not counted are the two parity functions (4 true points) and 8 functions with exactly 5 true points. a(4) = 32506 = 65536 - 33030.
 ```
-(Replace the n=3 comment sentence by a plain statement when submitting: "a(3) = 246 = 256 - 10".)
 
 **PROG**
 ```
