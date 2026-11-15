@@ -5,8 +5,8 @@ Submit via https://oeis.org/Submit.html, option 1. A "threshold function" of n v
 A "one-hidden-layer threshold network with k hidden neurons" computes g(h_1,...,h_k) where every h_i is a threshold
 function of the n inputs and g is a threshold function of the k hidden outputs.
 
-How the numbers were obtained and checked: `README.md` in this folder. The n = 5 terms are marked: they come from
-one C program (a table of 2^32 bits) and an independent random-sample check; see the status line of each draft.
+How the numbers were obtained and checked: `README.md` in this folder. The n = 5 terms come from
+one C program (a table of 2^32 bits), run twice, plus an independent random-sample check with no mismatch.
 
 ---
 
@@ -41,7 +41,7 @@ def a(n):  # functions computable with two hidden neurons: AND of two threshold 
 print([a(n) for n in range(1, 5)])  # ~~~~
 ```
 
-**CROSSREFS** Cf. A000609, A064436.   **KEYWORD** nonn,hard,more,   **STATUS of n=5 term:** see README.
+**CROSSREFS** Cf. A000609, A064436.   **KEYWORD** nonn,hard,more
 
 ---
 
