@@ -87,3 +87,14 @@ print([a(k) for k in range(1, 6)])  # ~~~~
 ```
 
 **CROSSREFS** A121251.   **KEYWORD** nonn,more
+
+---
+
+## More drafts (added 2026-11-15)
+
+* `nn-sequences/DRAFTS.md`: Boolean functions computable by one-hidden-layer threshold networks with two hidden neurons
+  (4, 16, 254, 41614, 74986552), ANDs of two threshold functions (4, 16, 246, 32506, 44642388), and the irregular triangle
+  "how many hidden neurons are needed" for n <= 4.
+* `threshold-graphs/DRAFTS.md`: graphs with threshold dimension at most 2, labeled (1, 2, 8, 64, 1012, 28084, 1169611,
+  65535747) and unlabeled (1, 2, 4, 11, 33, 133, 660, 4090).
+* `oeis-programs/PROGRAMS.md`: Python programs for 14 existing entries that had none.
