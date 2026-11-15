@@ -12,10 +12,10 @@ Largest n such that there is a pancyclic graph with n vertices and n+k edges.
 
 **DATA** (offset 0)
 ```
-3, 5, 8, 14, 24, 40
+3, 5, 8, 14, 24, 40, 67
 ```
-Further known terms: a(6) = 67 (second solver confirming: see
-`erdos1016/arcform/xcheck/`), a(7) = 114 (one program only). Add them only once confirmed.
+a(6) = 67 is confirmed by two independently written solvers (`erdos1016/arcform/xcheck/`). a(7) = 114 comes from
+one program only; add it only once a second program has confirmed it.
 
 **COMMENTS**
 ```

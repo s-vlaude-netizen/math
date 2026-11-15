@@ -98,7 +98,7 @@ not mention $n$. Searching all types:
 | chords | largest $n$ found | search |
 |---:|---:|---|
 | 5 | 40 | 17,378 nodes for "$n\ge 41$"; confirmed by a second solver, by CP-SAT, and by the per-$n$ searcher at $n=41,42,43,44$ |
-| 6 | 67 | 0.94 million nodes for "$n\ge 68$"; a second solver is still running the same question |
+| 6 | 67 | 0.94 million nodes for "$n\ge 68$"; confirmed by a second solver (all 6,346 types) |
 | 7 | 114 | 409 million nodes for "$n\ge 115$"; one program only |
 
 Method, checks and their limits: `arcform/README.md`.

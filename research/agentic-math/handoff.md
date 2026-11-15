@@ -33,8 +33,8 @@ Open item 1 of the first handoff (decide h(41)) is closed, in two ways.
 
 Not finished:
 
-* The second solver (`arcdfs`, version 1) is re-deriving "no 6 chords for
-  n >= 68" in `arcform/xcheck/v1_k6_min68/`: resumable, about 12 core-hours in
+* DONE 2026-11-15: the second solver (`arcdfs`, version 1) re-derived "no 6 chords for
+  n >= 68" in `arcform/xcheck/v1_k6_min68/` (400 of 400 parts, 6,346 types, no solution). How it was run: resumable, about 12 core-hours in
   total. Restart with `cd erdos1016/arcform && ./runchunks.sh ./arcdfs 6 68 400 2 xcheck/v1_k6_min68`
   (needs `types_6.txt`, which is not in git: regenerate it with
   `python3 arcform.py dump 6 > types_6.txt` and NOT with `gentypes`, because the

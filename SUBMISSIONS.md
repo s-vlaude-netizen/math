@@ -37,12 +37,12 @@ How each range was obtained:
   comment 2; confirmed by two further solvers and, for n = 41..44, by the
   per-n search).
 * n = 68..114: a witness for each n; no pancyclic graph "cycle plus 6 chords"
-  exists for any n >= 68 (search over the 21878 chord patterns; a second solver
-  had confirmed part of this run when this file was written, see
-  `erdos1016/arcform/xcheck/`).
+  exists for any n >= 68 (search over the 21878 chord patterns, confirmed by a
+  second, independently written solver; see `erdos1016/arcform/xcheck/`).
 
-A cautious first submission would stop at n = 67, where the lower bound has been
-confirmed four ways, and add n = 68..114 once the second solver has finished.
+Both ranges (to n = 67 and to n = 114) now rest on lower bounds confirmed by two
+solvers. Only the 7-chord row (terms of the new sequence beyond a(6) = 67, and
+"h(n) >= 8 for n >= 115") comes from a single program.
 
 **Suggested comment 1.** A pancyclic graph contains an n-cycle, hence is
 Hamiltonian, hence is C_n plus a(n)-n chords; and its cycle space has dimension

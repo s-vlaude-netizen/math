@@ -50,9 +50,8 @@ print([a(n) for n in range(1, 6)])  # ~~~~
 **COMMENTS**
 ```
 a(n) = A000088(n) for n <= 4. a(5) = A000088(5) - 1: the 5-cycle is the only graph on 5 nodes with threshold dimension 3. a(6) = 156 - 23 = 133.
-Counting isomorphism classes of the graphs in A(labeled version); computed with Burnside's lemma over the cycle types of the symmetric group.
+Number of isomorphism classes of the graphs counted by the labeled version of this sequence; computed with Burnside's lemma over the cycle types of the symmetric group.
 ```
-(Before submitting, replace the second comment line by: "Isomorphism classes of the graphs counted by the labeled version (link to it)".)
 
 **PROG**
 ```

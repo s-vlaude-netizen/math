@@ -31,8 +31,8 @@ The OEIS entry has 20 terms (n = 3..22). The earlier work here reached n = 40.
 This reaches n = 114.
 
 How far each statement is checked is in "What is established" below. In short:
-the row k = 5 is confirmed four ways, the row k = 6 by this program and partly by
-a second one, the row k = 7 by this program only.
+the row k = 5 is confirmed four ways, the row k = 6 by this program and by a
+second solver (complete), the row k = 7 by this program only.
 
 ## The idea
 
@@ -79,7 +79,7 @@ is counted.
 |---|---:|---:|
 | 5 chords, any n ≥ 41? | 3.5 million nodes, 6.6 s | 17,378 nodes, 0.03 s |
 | 5 chords, all solutions with n ≥ 30 | 36.4 million nodes, 41 s | 2.2 million nodes, 4.3 s |
-| 6 chords, any n ≥ 68? | about 12 core-hours (still running) | 0.94 million nodes, 2.7 s |
+| 6 chords, any n ≥ 68? | several core-hours (complete, 6,346 types, none) | 0.94 million nodes, 2.7 s |
 | 6 chords, all solutions with n ≥ 57 | not run | 31.4 million nodes, 125 s |
 | 7 chords, all solutions with n ≥ 107 | not feasible | 409 million nodes, about 1.2 core-hours |
 
@@ -162,7 +162,7 @@ What each row of the table therefore rests on:
 | claim | checked by |
 |---|---|
 | no 5 chords for n ≥ 41 | `arcdfs2`, `arcdfs`, CP-SAT, and the per-n searcher for n = 41..44 |
-| no 6 chords for n ≥ 68 | `arcdfs2`; `arcdfs` on the parts finished so far (see `xcheck/`) |
+| no 6 chords for n ≥ 68 | `arcdfs2` and `arcdfs` (the latter complete: all 6,346 types with enough cycles, 400 parts in `xcheck/`, none with n ≥ 68) |
 | no 7 chords for n ≥ 115 | `arcdfs2` only |
 
 The k = 7 row has not been reproduced by a second program. Treat N(7) = 114 and
