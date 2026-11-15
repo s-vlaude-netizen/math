@@ -20,7 +20,7 @@ Further known terms: a(6) = 67 (second solver confirming: see
 **COMMENTS**
 ```
 Finite by Bondy's counting bound: a pancyclic graph on n vertices with n+k edges is a Hamiltonian cycle plus k chords and has at most 2^(k+1)-1 cycles, so a(k) <= 2^(k+1)+1.
-a(n) = A105206(m) - m holds for N(k-1) < m <= a(k); i.e. a(k)+k+1 are exactly the integers missing from A105206.
+Equivalently, a(k) is the largest m with A105206(m) - m <= k (for the known terms h = A105206(m) - m is nondecreasing).
 Terms were computed by exhaustive computer search over all cyclic patterns of the chord endpoints, which decides all n at once.
 ```
 
