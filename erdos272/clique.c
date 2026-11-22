@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdint.h>
 typedef uint64_t u64;
-static int *perm; static int n, V, W, best, *bestset, cur[4096];
+static int *perm; static int n, V, W, best, *bestset, cur[16384];
 static u64 *adj; static long long nodes;
 static int isap(unsigned m){            /* m nonzero bitmask: is the set an arithmetic progression (size<=2 always) */
     int c=__builtin_popcount(m); if(c<=2) return 1;
@@ -16,7 +16,7 @@ static int isap(unsigned m){            /* m nonzero bitmask: is the set an arit
 static void expand(u64 *P,int depth){
     nodes++;
     /* order vertices by greedy colouring */
-    int order[4096],col[4096],cnt=0;
+    int order[16384],col[16384],cnt=0;
     u64 U[W>0?W:1]; memcpy(U,P,W*8);
     u64 Q[W]; int k=0;
     int nonempty=1;
@@ -44,7 +44,7 @@ static void expand(u64 *P,int depth){
 }
 int main(int argc,char**argv){
     n=atoi(argv[1]); int lb=argc>2?atoi(argv[2]):0; V=(1<<n)-1; W=(V+63)/64;
-    adj=calloc((size_t)V*W,8); bestset=malloc(4096*sizeof(int));
+    adj=calloc((size_t)V*W,8); bestset=malloc(16384*sizeof(int));
     /* vertex order: decreasing degree; vertex v represents set mask perm[v] */
     int *deg=calloc(V,sizeof(int)); perm=malloc(V*sizeof(int));
     for(int i=0;i<V;i++) for(int j=0;j<V;j++) if(i!=j){ unsigned m=(i+1)&(j+1); if(m&&isap(m)) deg[i]++; }
