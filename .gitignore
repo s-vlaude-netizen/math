@@ -33,3 +33,4 @@ nn-sequences/*.bin
 nn-sequences/andpairs
 nn-sequences/andverify
 threshold-graphs/unions
+erdos272/clique
