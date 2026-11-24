@@ -41,6 +41,31 @@ insight-limited) the switch happens earlier.  For the real world the sign of the
 quantities worth measuring: e.g. how the success rate on a fixed benchmark of open-problem
 extensions scales with model size and with test-time compute.
 
+## Numerical illustration (toy parameters, `allocation_model.py`)
+
+Planner model with dA/dt = c (fB)^alpha - delta A, output (1-f) B A^beta, discount rho, horizon T
+(default alpha 0.5, delta 0.3, beta 1, rho 0.1, T 10 years, 10 yearly intervals, coordinate
+descent). Optimal share f of compute spent on building capability, per year:
+
+| case | f(t), year 1 .. 10 | value |
+|---|---|--:|
+| default | .50 .35 .30 .30 .25 .25 .25 .20 .10 .05 | 6.91 |
+| never build (f = 0) | 0 | 2.47 |
+| build for 5 years, then use | 1 x5, 0 x5 | 3.72 |
+| strongly diminishing returns, alpha 0.2 | .25 .20 .15 .15 .15 .10 .10 .10 .05 .05 | 9.76 |
+| nearly linear, alpha 0.9 | .75 .45 .40 .40 .40 .40 .40 .30 .10 .00 | 5.14 |
+| no depreciation | 1.0 .80 .45 .30 .20 .15 .10 .05 .05 0 | 17.54 |
+| output barely depends on capability, beta 0.3 | .10 throughout, then 0 | 5.79 |
+| impatient, rho 0.5 | .20 .20 .20 .15 .15 .15 .15 .15 .10 .05 | 1.90 |
+| long horizon T = 30 (first 10 years shown) | .40 .30 .25 .30 .25 .30 .25 .25 .25 .10 | 10.84 |
+
+Reading: with diminishing returns the optimum is **interior, not bang-bang**, and declines
+over time; it never pays to put 0 into capability in the first years (f = 0 is worth 36% of the
+optimum here), nor all of it forever. The share is highest when returns are nearly linear
+(alpha 0.9) or models do not depreciate, and lowest when the output hardly depends on
+capability (beta 0.3) or the planner is impatient. These are illustrations of the mechanism,
+not estimates of the real alpha, beta, delta, which are what would have to be measured.
+
 ## Where it belongs
 
 The optimisation itself is control theory / economics (a subfield of applied mathematics).
