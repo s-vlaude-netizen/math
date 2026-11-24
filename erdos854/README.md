@@ -53,9 +53,10 @@ exhaustive search over which prime covers which position. Two independent solver
 | 21 | 73 | **182** | 190 | **yes** |
 | 22 | 79 | **194** | 200 | **yes** |
 | 23 | 83 | **218** | 216 | no |
+| 24 | 89 | **230** | 234 | **yes** |
 
 When `a(n) = A048670(n) + 2` every even number up to the largest gap occurs (Erdős's first
-guess); otherwise it fails. It fails for n = 6, 8, 14, 15, 19, 20, 21, 22 (and, from Ziller's table, 24, 25, 27, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38, 40, 42, 43).
+guess); otherwise it fails. It fails for n = 6, 8, 14, 15, 19, 20, 21, 22, 24 (and, from Ziller's table, 25, 27, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38, 40, 42, 43).
 
 ## How the results were checked
 
@@ -70,8 +71,8 @@ guess); otherwise it fails. It fails for n = 6, 8, 14, 15, 19, 20, 21, 22 (and, 
 * `gaps2` (different branching) agrees with `gaps3w` for n = 13..16; larger n rest on
   `gaps3w` alone plus the checks above.
 
-Agreement with Ziller's Table 1 (arXiv:2007.01808): for every n from 13 to 23 the smallest
+Agreement with Ziller's Table 1 (arXiv:2007.01808): for every n from 13 to 24 the smallest
 non-existent difference listed there (or `h(n)+2` where the table lists none) equals the `a(n)`
 above, and the missing sets I enumerated for n = 14 ({86, 88}) and n = 15 ({98}) are his.
 
-Run: `gcc -O2 -march=native -o gaps3w gaps3w.c && ./gaps3w 2 22`.
+Run: `gcc -O2 -march=native -o gaps3w gaps3w.c && ./gaps3w 2 24`.

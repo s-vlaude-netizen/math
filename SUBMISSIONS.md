@@ -157,15 +157,15 @@ Current entry: offset 2, 11 terms `6, 8, 12, 16, 20, 28, 32, 42, 48, 60, 68`.
 
 **Where the terms come from — say this in the submission.**
 
-* a(13)..a(23) (76 .. 218): computed here with an exhaustive covering search
+* a(13)..a(24) (76 .. 230): computed here with an exhaustive covering search
   (`erdos854/gaps3w.c`, cross-checked by a second solver with a different search tree for
   n <= 16, by direct sieving for n <= 9, and with every smaller attained gap verified by an
   explicit integer `x` and real gcds, n <= 17). They agree with Table 1 of the paper below.
-* a(24)..a(44) (230 .. 618): **not computed here**; read off Table 1 of Mario Ziller,
+* a(25)..a(44) (254 .. 618): **not computed here**; read off Table 1 of Mario Ziller,
   "On differences between consecutive numbers coprime to primorials", arXiv:2007.01808
   (2020): a(n) is the smallest non-existent difference listed for k = n, or h(n)+2 when
-  the table lists none (h = A048670). The n = 24 term (230) is being re-derived here, see
-  `erdos854/run3w.out` for how far the run got.
+  the table lists none (h = A048670). The solver's run for n = 25 (expected 254) was still going
+  at the time of writing; `erdos854/run3w.out` shows how far it got.
 
 **Suggested comments.**
 

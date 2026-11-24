@@ -20,3 +20,4 @@ n=20 prime=71 a(n)=166 total_nodes=4420749
 n=21 prime=73 a(n)=182 total_nodes=28854526
 n=22 prime=79 a(n)=194 total_nodes=116765290
 n=23 prime=83 a(n)=218 total_nodes=166389479
+n=24 prime=89 a(n)=230 total_nodes=802998525
