@@ -144,7 +144,8 @@ being complete. The checks:
 3. *Complete solution sets against a naive reference.* `arcdfs.c`, closed under
    the symmetries of the cycle, equals the reference enumeration on all 49 cells
    of the gate grid (k ≤ 5, 2,427,201 chord sets). `arcdfs2.c` against the
-   reference for k = 6 (n ≤ 12) and k = 7 (n ≤ 11): see the log at the end.
+   reference: equal for k = 6 at n = 9, 10, 11 (295,341; 1,605,580; 6,838,370 chord sets) and for k = 7 at n = 9
+   (887,832 chord sets); logs in `xcheck/cmp_ref_k6.log` and `xcheck/cmp_ref_k7.log`.
 4. *Against the per-n searcher*, which shares no idea with these programs:
    identical solution sets for k = 4 at n = 17..24 and for k = 5 at n = 38, 39, 40
    (0.03 s here against 528 s and 638 s there for n = 38 and 39). The per-n
@@ -169,7 +170,7 @@ What each row of the table therefore rests on:
 | no 6 chords for n ≥ 68 | `arcdfs2` and `arcdfs` (the latter complete: all 6,346 types with enough cycles, 400 parts in `xcheck/`, none with n ≥ 68) |
 | no 7 chords for n ≥ 115 | `arcdfs2` only |
 
-The k = 7 row has not been reproduced by a second program. Treat N(7) = 114 and
+The k = 7 row has not been reproduced by a second search program. (The program's complete output at n = 9 equals the naive reference, which tests the type list, the cycle formulas and the search at k = 7, but only for small n.) Treat N(7) = 114 and
 "h(n) ≥ 8 for n ≥ 115" as computed, not as independently confirmed. The values
 h(n) = 7 for 68 ≤ n ≤ 114 do not depend on it: they need the k = 6 row and the
 witnesses.
