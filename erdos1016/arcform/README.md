@@ -154,7 +154,11 @@ being complete. The checks:
 6. *CP-SAT* (`solve.py`): the same forms as an integer program. For k ≤ 4 it
    returns the maxima 5, 8, 14, 24; for k = 5 and n ≥ 41 every one of the 329
    types with enough cycles is infeasible.
-7. *Bookkeeping.* `runk.sh` compares the number of types searched with the
+7. *Tests that did not work or are weak, recorded as such.* CP-SAT is no option at k = 7: on a sample of types it
+   hit a 150 s limit in 12 of 12 attempts, including types with known solutions (`crosscheck7.py`, `xcheck/k7_cpsat.log`).
+   The solutions for k = 7 are closed under the symmetries of their type (211 types, 7,594 solutions, no missing image;
+   only 8 of the types have a nontrivial symmetry, so this test is weak).
+8. *Bookkeeping.* `runk.sh` compares the number of types searched with the
    number the generator reports.
 
 What each row of the table therefore rests on:
