@@ -142,3 +142,38 @@ A364132(k) is the same minimum restricted to rulers whose gaps increase.
 * A364132(24)=60: 1, 6, 12, 15, 30, 31, 36, 37, 40, 41, 42, 43, 44, 46, 47, 49, 50, 53, 54, 55, 56, 58, 59, 60
 * A364132(25)=63: 2, 4, 8, 10, 13, 33, 34, 41, 42, 43, 44, 45, 47, 48, 49, 51, 52, 53, 54, 55, 57, 59, 61, 62, 63
 * A364132(26)=67: 1, 2, 4, 5, 14, 22, 35, 39, 42, 44, 49, 50, 51, 52, 53, 54, 55, 56, 58, 59, 61, 63, 64, 65, 66, 67
+
+---
+
+## A389839 — Erdős problem 854 (smallest even number that is not a gap between consecutive coprimes to prime(n)#)
+
+Current entry: offset 2, 11 terms `6, 8, 12, 16, 20, 28, 32, 42, 48, 60, 68`.
+
+**Continuation** (n = 13, 14, ...):
+
+```
+76, 86, 98, 108, 120, 134, 146, 166, 182, 194, 218, 230, 254, 266, 278, 296, 314, 328, 346, 368, 386, 406, 424, 446, 468, 488, 512, 530, 552, 572, 592, 618
+```
+
+**Where the terms come from — say this in the submission.**
+
+* a(13)..a(23) (76 .. 218): computed here with an exhaustive covering search
+  (`erdos854/gaps3w.c`, cross-checked by a second solver with a different search tree for
+  n <= 16, by direct sieving for n <= 9, and with every smaller attained gap verified by an
+  explicit integer `x` and real gcds, n <= 17). They agree with Table 1 of the paper below.
+* a(24)..a(44) (230 .. 618): **not computed here**; read off Table 1 of Mario Ziller,
+  "On differences between consecutive numbers coprime to primorials", arXiv:2007.01808
+  (2020): a(n) is the smallest non-existent difference listed for k = n, or h(n)+2 when
+  the table lists none (h = A048670). The n = 24 term (230) is being re-derived here, see
+  `erdos854/run3w.out` for how far the run got.
+
+**Suggested comments.**
+
+1. g is a difference between consecutive integers coprime to prime(n)# iff one can choose a
+   residue s_p mod p for each prime p <= prime(n), with s_p not congruent to 0 or g (mod p),
+   such that the classes i == s_p (mod p) cover 1, ..., g-1. (Chinese remainder theorem;
+   Ziller phrases it as a restricted covering.)
+2. a(n) <= A048670(n) + 2, with equality iff every even number up to A048670(n) is such a
+   difference. This fails for n = 6, 8, 14, 15, 19, 20, 21, 22, 24, 25, 27, 28, 30, ..., and
+   holds for n = 2..5, 7, 9..13, 16..18, 23, 26, 29, 39, 41, 44.
+3. Reference: M. Ziller, arXiv:2007.01808.

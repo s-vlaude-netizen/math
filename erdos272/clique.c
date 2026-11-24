@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdint.h>
 typedef uint64_t u64;
-static int *perm; static int n, V, W, best, *bestset, cur[16384];
+static int split_m=1, split_r=0; static int *perm; static int n, V, W, best, *bestset, cur[16384];
 static u64 *adj; static long long nodes;
 static int isap(unsigned m){            /* m nonzero bitmask: is the set an arithmetic progression (size<=2 always) */
     int c=__builtin_popcount(m); if(c<=2) return 1;
@@ -35,6 +35,7 @@ static void expand(u64 *P,int depth){
     for(int i=cnt-1;i>=0;i--){
         if(depth+col[i]<=best) return;
         int v=order[i]; cur[depth]=v;
+        if(depth==0 && ((cnt-1-i)%split_m)!=split_r){ P[v>>6]&=~(1ULL<<(v&63)); continue; }
         u64 NP[W]; int any=0; u64 *a=adj+(size_t)v*W;
         for(int w=0;w<W;w++){NP[w]=P[w]&a[w]; if(NP[w]) any=1;}
         if(any) expand(NP,depth+1);
@@ -43,7 +44,7 @@ static void expand(u64 *P,int depth){
     }
 }
 int main(int argc,char**argv){
-    n=atoi(argv[1]); int lb=argc>2?atoi(argv[2]):0; V=(1<<n)-1; W=(V+63)/64;
+    n=atoi(argv[1]); int lb=argc>2?atoi(argv[2]):0; if(argc>4){split_m=atoi(argv[3]); split_r=atoi(argv[4]);} V=(1<<n)-1; W=(V+63)/64;
     adj=calloc((size_t)V*W,8); bestset=malloc(16384*sizeof(int));
     /* vertex order: decreasing degree; vertex v represents set mask perm[v] */
     int *deg=calloc(V,sizeof(int)); perm=malloc(V*sizeof(int));
