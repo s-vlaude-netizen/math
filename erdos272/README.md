@@ -1,0 +1,59 @@
+# Erdős problem 272 — families of sets whose pairwise intersections are non-empty arithmetic progressions
+
+[Problem 272](https://www.erdosproblems.com/272) · OEIS [A401861](https://oeis.org/A401861)
+
+Let `a(n)` be the largest number of subsets of `{1..n}` such that every two have an
+intersection that is a **non-empty arithmetic progression** (one or two elements count).
+Simonovits–Sós asked whether `C(n,2)+1` is best possible; Szabó (1999) showed it is not,
+giving `a(n) >= C(n,2) + floor((n-1)/4) + 1`, and conjectured that `a(n) = C(n,2) + O(n)` and
+that extremal families have an element common to all sets.
+
+The OEIS entry (new, Nov 2026) has `a(1..12) = 1, 2, 4, 7, 12, 17, 23, 30, 39, 48, 58, 69`.
+All twelve equal Szabó's bound.
+
+## Method
+
+`clique.c` — exact maximum clique (bit-parallel branch and bound with greedy colouring) on the
+graph whose vertices are the non-empty subsets of `{1..n}` and whose edges join two sets when
+their intersection is a non-empty AP. Reproduces `a(1..10)` and shows no family of 49 sets
+for n = 10, no family of 59 for n = 11.
+
+`clique_star.c` — the same, restricted to sets that contain one fixed element `x` ("stars").
+This graph is much easier: the colouring bound is already tight at the root, so the search
+needs about as many nodes as the clique has vertices.
+
+## Results
+
+Maximum family when all sets contain the centre element `x = ceil(n/2)` (exact):
+
+| n | star maximum | Szabó's formula |
+|--:|--:|--:|
+| 11 | 58 | 58 |
+| 12 | 69 | 69 |
+| 13 | 82 | 82 |
+| 14 | 95 | 95 |
+| 15 | 109 | 109 |
+| 16 | 124 | 124 |
+| 17 | 141 | 141 |
+| 18 | 158 | 158 |
+
+For n = 13 the other choices of the common element are strictly worse (79, 79, 80, 80, 81, 81
+for x = 1..6). So among families with a common element, Szabó's formula is exactly right for
+every n <= 18 tested, and the centre is the best element. This gives `a(n) >= formula` (known)
+and shows that no improvement can come from a star; any improvement would have to be a
+family with no common element.
+
+**Open here:** the exact value of `a(13)` over *all* families, i.e. whether a family of 83
+sets without a common element exists. A run (`clique 13 83`, three interleaved workers)
+is the only way implemented; see the bottom of this file for its outcome.
+
+## Status of the full n = 13 search
+
+Pending at the time of writing. A fixed-size-stack bug in an earlier build (frames of 128 KB,
+overflow at recursion depth 64) was found and fixed before any result was taken from it.
+
+Two things tried for the full graph that did **not** help (n = 10, bound 49, 461,344 nodes
+in the natural order): other initial vertex orders (centre-containing sets first: 2x worse;
+small sets first: 40x worse; by degree: 12x worse) and cutting a branch whose partial family
+still has a common element that no remaining candidate avoids (never fires; the colouring bound
+already disposes of star-like regions).
