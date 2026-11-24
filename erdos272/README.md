@@ -47,6 +47,24 @@ family with no common element.
 sets without a common element exists. A run (`clique 13 83`, three interleaved workers)
 is the only way implemented; see the bottom of this file for its outcome.
 
+## Families with no common element (exact, n <= 11)
+
+`clique_nonstar.c` records only cliques whose sets have empty common intersection.
+
+| n | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|--:|--:|--:|--:|--:|--:|--:|--:|
+| largest family with no common element | 11 | 16 | 22 | 29 | 37 | 46 | 56 |
+| C(n,2)+1 | 11 | 16 | 22 | 29 | 37 | 46 | 56 |
+| Szabó's formula (families with a common element) | 12 | 17 | 23 | 30 | 39 | 48 | 58 |
+
+So for 5 <= n <= 11 the best family without a common element is exactly the old Simonovits–Sós
+value `C(n,2)+1`, and the extremal one for n = 8, 9 is: every 2- and 3-subset containing a fixed
+element `x` except `{x}` itself, together with the single set `{1..n} \ {x}` (its intersection
+with each of those is a pair, hence an AP). This is the data point behind Szabó's conjecture
+that extremal families have a common element, and it says more: the gap to the best star
+family is `floor((n-1)/4)`, growing with n. It also means the n = 13 search below is looking for
+something 4 sets above the best non-star family the pattern predicts (79).
+
 ## Status of the full n = 13 search
 
 Pending at the time of writing. A fixed-size-stack bug in an earlier build (frames of 128 KB,
