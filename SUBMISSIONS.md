@@ -177,3 +177,26 @@ Current entry: offset 2, 11 terms `6, 8, 12, 16, 20, 28, 32, 42, 48, 60, 68`.
    difference. This fails for n = 6, 8, 14, 15, 19, 20, 21, 22, 24, 25, 27, 28, 30, ..., and
    holds for n = 2..5, 7, 9..13, 16..18, 23, 26, 29, 39, 41, 44.
 3. Reference: M. Ziller, arXiv:2007.01808.
+
+---
+
+## A401861 — Erdős problem 272 (families of subsets whose pairwise intersections are non-empty APs)
+
+Current entry: offset 1, 12 terms `1, 2, 4, 7, 12, 17, 23, 30, 39, 48, 58, 69`, all equal to Szabó's lower bound
+`C(n,2) + floor((n-1)/4) + 1`.
+
+**New term: not yet.** a(13) >= 82 (Szabó's bound; a family of 82 sets exists). Whether 83 sets are possible is
+being decided by `erdos272/clique3` (`n13_lb83_*`); do not submit a(13) until that run reports "none >= 83".
+
+**Suggested comments (computed, exact, `erdos272/`; each is a statement about a restricted class, not about a(n)):**
+
+1. Among families in which all sets contain a common element, the maximum size is exactly C(n,2) + floor((n-1)/4) + 1
+   for 11 <= n <= 18, attained with the common element ceil(n/2) (for n = 13 the other common elements give 79, 79, 80,
+   80, 81, 81 for x = 1..6). So no improvement of Szabó's bound can come from a family with a common element.
+2. Among families with no common element, the maximum size is C(n,2) + 1 for 5 <= n <= 11 (11, 16, 22, 29, 37, 46, 56).
+   An extremal one for n = 8, 9: all 2- and 3-subsets containing a fixed element x except {x}, plus the set {1..n} \ {x}.
+3. Consequently a(n) = C(n,2) + floor((n-1)/4) + 1 for 5 <= n <= 12 is also what one expects to continue, since the
+   gap between the two classes, floor((n-1)/4), grows with n (a conjecture; Szabó asked for the common-element property).
+
+Reproduce: `gcc -O3 -march=native -o clique_star clique_star.c && ./clique_star n 0 1 0 x` (star at x) and
+`clique_nonstar.c` (no common element).
