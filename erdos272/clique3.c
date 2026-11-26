@@ -7,7 +7,7 @@
 #include <string.h>
 #include <stdint.h>
 typedef uint64_t u64;
-static int split_m=1, split_r=0; static char *rootdone; static FILE *ckpt; static int rootcount=0; static double t0; static int *ordpool,*colpool; static int *perm; static int n, V, W, best, *bestset, cur[16384];
+static int only0=0, no0=0; static int split_m=1, split_r=0; static char *rootdone; static FILE *ckpt; static int rootcount=0; static double t0; static int *ordpool,*colpool; static int *perm; static int n, V, W, best, *bestset, cur[16384];
 static u64 *adj; static long long nodes;
 static int isap(unsigned m){            /* m nonzero bitmask: is the set an arithmetic progression (size<=2 always) */
     int c=__builtin_popcount(m); if(c<=2) return 1;
@@ -37,6 +37,8 @@ static void expand(u64 *P,int depth){
         if(depth+col[i]<=best) return;
         int v=order[i]; cur[depth]=v;
         if(depth==0 && ((cnt-1-i)%split_m)!=split_r){ P[v>>6]&=~(1ULL<<(v&63)); continue; }
+        if(depth==0 && only0 && (cnt-1-i)!=0){ P[v>>6]&=~(1ULL<<(v&63)); continue; }
+        if(depth==0 && no0 && (cnt-1-i)==0){ P[v>>6]&=~(1ULL<<(v&63)); continue; }
         if(depth==0 && rootdone && rootdone[cnt-1-i]){ P[v>>6]&=~(1ULL<<(v&63)); continue; }
         u64 NP[W]; int any=0; u64 *a=adj+(size_t)v*W;
         for(int w=0;w<W;w++){NP[w]=P[w]&a[w]; if(NP[w]) any=1;}
@@ -56,6 +58,7 @@ int main(int argc,char**argv){
     for(int i=1;i<0;i++){int t=perm[i],j=i-1; while(j>=0&&deg[perm[j]]<deg[t]){perm[j+1]=perm[j];j--;} perm[j+1]=t;}
     for(int a=0;a<V;a++) for(int b=0;b<V;b++) if(a!=b){ unsigned m=(perm[a]+1)&(perm[b]+1); if(m&&isap(m)) adj[(size_t)a*W+(b>>6)]|=1ULL<<(b&63);}
     { const char*ck=getenv("CKPT"); if(ck){ rootdone=calloc(V+1,1); FILE*f=fopen(ck,"r"); if(f){int k; while(fscanf(f,"%d",&k)==1) if(k>=0&&k<=V) rootdone[k]=1; fclose(f);} ckpt=fopen(ck,"a"); } }
+    only0=getenv("ONLY0")!=NULL; no0=getenv("NO0")!=NULL;
     best=lb-1; u64 P[W]; memset(P,0,W*8); for(int i=0;i<V;i++) P[i>>6]|=1ULL<<(i&63);
     expand(P,0);
     if(best<lb){printf("n=%d none >= %d nodes=%lld\n",n,lb,nodes);return 0;}
