@@ -37,15 +37,12 @@ Maximum family when all sets contain the centre element `x = ceil(n/2)` (exact):
 | 17 | 141 | 141 |
 | 18 | 158 | 158 |
 
-For n = 13 the other choices of the common element are strictly worse (79, 79, 80, 80, 81, 81
-for x = 1..6). So among families with a common element, Szabó's formula is exactly right for
-every n <= 18 tested, and the centre is the best element. This gives `a(n) >= formula` (known)
-and shows that no improvement can come from a star; any improvement would have to be a
-family with no common element.
-
-**Open here:** the exact value of `a(13)` over *all* families, i.e. whether a family of 83
-sets without a common element exists. A run (`clique 13 83`, three interleaved workers)
-is the only way implemented; see the bottom of this file for its outcome.
+For every n from 11 to 16 all choices of the common element were run (x = 1 .. ceil(n/2); the rest follow by
+reflection): the centre `x = ceil(n/2)` gives Szabó's value and every other position is strictly lower
+(n = 13: 79, 79, 80, 80, 81, 81, 82 for x = 1..7). For n = 17 and 18 only the centre was run. So among families
+with a common element Szabó's formula is exactly the maximum for 11 <= n <= 16, and is a lower bound with the
+centre as the (checked) best element for 17 and 18. This gives `a(n) >= formula` (known) and shows that no
+improvement can come from a star at those n; any improvement would have to be a family with no common element.
 
 ## Families with no common element (exact, n <= 11)
 

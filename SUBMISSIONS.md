@@ -191,8 +191,10 @@ being decided by `erdos272/clique3` (`n13_lb83_*`); do not submit a(13) until th
 **Suggested comments (computed, exact, `erdos272/`; each is a statement about a restricted class, not about a(n)):**
 
 1. Among families in which all sets contain a common element, the maximum size is exactly C(n,2) + floor((n-1)/4) + 1
-   for 11 <= n <= 18, attained with the common element ceil(n/2) (for n = 13 the other common elements give 79, 79, 80,
-   80, 81, 81 for x = 1..6). So no improvement of Szabó's bound can come from a family with a common element.
+   for 11 <= n <= 16 (all choices of the common element were run; it is attained with the element ceil(n/2) and every
+   other element gives strictly fewer, e.g. 79, 79, 80, 80, 81, 81 for x = 1..6 at n = 13). For n = 17 and 18 only the
+   element ceil(n/2) was run (it gives 141 and 158, again equal to the formula). So no improvement of Szabo's bound can
+   come from a family with a common element, for those n.
 2. Among families with no common element, the maximum size is C(n,2) + 1 for 5 <= n <= 11 (11, 16, 22, 29, 37, 46, 56).
    An extremal one for n = 8, 9: all 2- and 3-subsets containing a fixed element x except {x}, plus the set {1..n} \ {x}.
 3. For 5 <= n <= 11 the two maxima differ by exactly floor((n-1)/4) (1, 1, 1, 1, 2, 2, 2), and that gap grows with n.
