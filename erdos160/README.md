@@ -23,6 +23,24 @@ and `h = 6` from `n = 36` to the end of the data (`N_6 >= 53`).
   many short runs with different seeds beat one long run.
 * `color4ap_r.c` — the DFS with random restarts (not better than the local search here).
 
+## The exact solver for k = 6 (`col6b.c`) and how far it is trusted
+
+* `est4ap.c` estimates the DFS tree size with Knuth's random-probe estimator. It is accurate where
+  it can be checked (k = 5, N = 36: estimate 3.07e5 +- 4e3, true 307,363 nodes). For k = 6 it gives
+  about 4e9 nodes for every N from 46 to 62, i.e. the proof of "no colouring" costs the same wherever
+  it is attempted above the threshold, about 5 core-hours at 215,000 nodes/s.
+* `col6b.c` is the same search made deterministic so that it can be split over workers (the
+  nodes at depth D are tasks, worker r of m takes tasks with index % m == r) and checkpointed
+  (finished tasks are appended to a file; a restart skips them).
+* **Checks of the solver:** it reproduces the known N_3 = 12, N_4 = 22, N_5 = 35 (a colouring at N and
+  none at N + 1); on k = 5, N = 36 it uses exactly the 307,363 nodes of the unoptimised `color4ap.c`;
+  three workers' node counts add up to that plus the shared top levels; a resumed run skips every
+  finished task. `test_prop.c` tests the propagation rules against exhaustive completion on random partial
+  assignments (k = 3, 4, 5, N = 11..13; about 170,000 colour removals checked, none of which a
+  valid completion uses; propagation never failed when a completion existed).
+* What is **not** independent: the claim "no 6-colouring of [1..N]" rests on this one program (no
+  certificate); the soundness test and the reproduction of N_3..N_5 are the evidence for it.
+
 ## Findings
 
 * The exhaustive search for 6 colours is out of reach: a first-moment count of valid prefixes
