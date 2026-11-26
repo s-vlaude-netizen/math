@@ -3,7 +3,7 @@
 # against the naive reference sets ../../research/agentic-math/p2-gates/refs/N_K.txt (where present).
 cd "$(dirname "$0")"; export LC_ALL=C
 K=$1; NMAX=$2; G=../../research/agentic-math/p2-gates; T=$(mktemp -d)
-./gentypes $K | ./arcdfs2 0 --print --max $NMAX | grep '^S' > $T/sol.txt
+./gentypes $K | awk -v m=$NMAX '$2 <= m' | ./arcdfs2 0 --print --max $NMAX | grep '^S' > $T/sol.txt   # n <= NMAX needs p <= NMAX endpoints
 bad=0
 for n in $(seq 4 $NMAX); do
   ref=$G/refs/${n}_$K.txt
