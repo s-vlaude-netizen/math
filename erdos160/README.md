@@ -16,6 +16,11 @@ and `h = 6` from `n = 36` to the end of the data (`N_6 >= 53`).
   independently of both solvers.
 * `gen_cnf.py`, `gen_cnf2.py`, `solve_col*.sh` — CNF encodings for `../sat/sat.c`
   (the direct 4-literal encoding is far better).
+* `walkw4ap.c` — the same local search with constraint weighting (breakout / PAWS style: when no
+  move improves, raise the weight of every currently violated progression). Far better than
+  plain WalkSAT: N = 53 with 6 colours in about 1e5 iterations on a lucky seed, against several
+  minutes for `walk4ap`. Run times are heavy-tailed (N = 50: 0.02 s to 15 s over three seeds), so
+  many short runs with different seeds beat one long run.
 * `color4ap_r.c` — the DFS with random restarts (not better than the local search here).
 
 ## Findings
