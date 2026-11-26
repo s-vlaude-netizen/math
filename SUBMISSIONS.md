@@ -195,8 +195,9 @@ being decided by `erdos272/clique3` (`n13_lb83_*`); do not submit a(13) until th
    80, 81, 81 for x = 1..6). So no improvement of Szabó's bound can come from a family with a common element.
 2. Among families with no common element, the maximum size is C(n,2) + 1 for 5 <= n <= 11 (11, 16, 22, 29, 37, 46, 56).
    An extremal one for n = 8, 9: all 2- and 3-subsets containing a fixed element x except {x}, plus the set {1..n} \ {x}.
-3. Consequently a(n) = C(n,2) + floor((n-1)/4) + 1 for 5 <= n <= 12 is also what one expects to continue, since the
-   gap between the two classes, floor((n-1)/4), grows with n (a conjecture; Szabó asked for the common-element property).
+3. For 5 <= n <= 11 the two maxima differ by exactly floor((n-1)/4) (1, 1, 1, 1, 2, 2, 2), and that gap grows with n.
+   This is consistent with Szabo's conjecture that extremal families have a common element, but it is evidence
+   for small n only and does not prove a(n) = C(n,2) + floor((n-1)/4) + 1 for larger n.
 
 Reproduce: `gcc -O3 -march=native -o clique_star clique_star.c && ./clique_star n 0 1 0 x` (star at x) and
 `clique_nonstar.c` (no common element).
