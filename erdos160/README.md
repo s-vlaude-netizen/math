@@ -43,8 +43,10 @@ and `h = 6` from `n = 36` to the end of the data (`N_6 >= 53`).
 
 ## Findings
 
-* The exhaustive search for 6 colours is out of reach: a first-moment count of valid prefixes
-  predicts about 5e9 DFS nodes, and N = 66 did not finish in 2 minutes. So `N_6` is not determined here.
+* **N_6 = 53.** The exhaustive search (`col6b`, k = 6, N = 54) finished: no 6-colouring of {1..54}
+  (4.25e9 nodes, 43,036 tasks on 4 cores, about 2 hours; see `results.md` for the checks). So h(n) = 7 for
+  n >= 54 up to the largest 7-colourable n. (An earlier attempt with the plain DFS did not finish; the
+  cost estimate that made the parallel run worthwhile is in the section above.)
 * A 6-colouring of `{1..53}` was found by local search and verified (matches the OEIS entry).
   See `results.md` for the longest verified 6-colourings found.
 * Terms `h(n) = 6` for `36 <= n <= L` are exact once a 6-colouring of `[1..L]` is exhibited,
