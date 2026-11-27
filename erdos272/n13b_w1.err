@@ -216,3 +216,5 @@ root0 child 857 done (share 1/4), nodes=22332843
 root 29/8191 done, nodes=22688803, t=1158s
 root 41/8191 done, nodes=23225348, t=1188s
 root 45/8191 done, nodes=26934791, t=1350s
+root 53/8191 done, nodes=27588358, t=1390s
+root 57/8191 done, nodes=28051724, t=1415s
