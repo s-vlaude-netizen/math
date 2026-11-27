@@ -220,3 +220,6 @@ root 54/8191 done, nodes=11902938, t=695s
 root 62/8191 done, nodes=13509617, t=816s
 root 66/8191 done, nodes=28749328, t=1272s
 root 70/8191 done, nodes=35013328, t=1571s
+root 74/8191 done, nodes=35822338, t=1608s
+root 78/8191 done, nodes=36029815, t=1613s
+root 82/8191 done, nodes=36693705, t=1644s
