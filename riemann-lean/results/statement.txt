@@ -1,0 +1,11 @@
+def RiemannHypothesis : Prop :=
+∀ (s : ℂ), riemannZeta s = 0 → (¬∃ n, s = -2 * (↑n + 1)) → s ≠ 1 → s.re = 1 / 2
+riemannHypothesis : RiemannHypothesis
+riemannHypothesis : RiemannHypothesis
+'riemannHypothesis' depends on axioms: [propext, Classical.choice, Quot.sound]
+RiemannHypothesis: declared in module Mathlib.NumberTheory.LSeries.RiemannZeta
+riemannZeta: declared in module Mathlib.NumberTheory.LSeries.RiemannZeta
+DirichletCharacter.LFunction: declared in module Mathlib.NumberTheory.LSeries.DirichletContinuation
+RiemannZetaZerosOnLine: declared in module Statements
+DirichletLZerosOnLine: declared in module Statements
+riemannHypothesis: declared in module Main

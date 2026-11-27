@@ -1,0 +1,11 @@
+
+THM riemannHypothesis :: isTheorem = true :: type = Lean.Expr.const `RiemannHypothesis [] :: hasValue = true :: valueMentionsSorry = true 
+THM riemannZeta_eq_zero_re :: isTheorem = true :: type = Lean.Expr.const `RiemannZetaZerosOnLine [] :: hasValue = true :: valueMentionsSorry = true 
+THM LFunction_ne_zero_of_half_lt_re :: isTheorem = true :: type = Lean.Expr.const `DirichletLNonvanishingRightOfHalf [] :: hasValue = true :: valueMentionsSorry = true 
+THM LFunction_eq_zero_re :: isTheorem = true :: type = Lean.Expr.const `DirichletLZerosOnLine [] :: hasValue = true :: valueMentionsSorry = true 
+THM LFunction_eq_zero_re_of_isPrimitive :: isTheorem = true :: type = Lean.Expr.const `PrimitiveDirichletLZerosOnLine [] :: hasValue = true :: valueMentionsSorry = true 
+DEF RiemannZetaZerosOnLine :: type = Lean.Expr.sort (Lean.Level.zero) :: valueHash = 1449047577 
+DEF DirichletLNonvanishingRightOfHalf :: type = Lean.Expr.sort (Lean.Level.zero) :: valueHash = 3651990855 
+DEF DirichletLZerosOnLine :: type = Lean.Expr.sort (Lean.Level.zero) :: valueHash = 3336198893 
+DEF PrimitiveDirichletLZerosOnLine :: type = Lean.Expr.sort (Lean.Level.zero) :: valueHash = 3617923246 
+DEF RiemannHypothesis :: type = Lean.Expr.sort (Lean.Level.zero) :: valueHash = 1420031164 

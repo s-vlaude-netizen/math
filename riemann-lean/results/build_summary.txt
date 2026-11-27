@@ -1,0 +1,8 @@
+final lines of the lake build log:
+✔ [9840/9843] Built New.Main (13s)
+✔ [9842/9843] Built Main (4.7s)
+Build completed successfully (9843 jobs).
+
+modules 794   summed module time 27,337 s = 7.6 h (elaboration + kernel check, per module, run up to 4 at a time)
+slowest: Lib.PadicComparison.Crystalline.CrystallineClasses 178s; New.Selmer.TwistTheorem 163s; New.Exchange.GridFirstColumns 158s; New.Exchange.GridParameters 154s; New.Exchange.CrudeRows 144s
+warning lines: 298 (deprecation: 264); lines mentioning sorry: 0; lines starting with error: 0
