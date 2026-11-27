@@ -210,28 +210,28 @@ Reproduce: `gcc -O3 -march=native -o clique_star clique_star.c && ./clique_star 
 
 Current entry: offset 1, 53 terms (checked 2026-11-27): 1,1,1, then 3 (n=4..12), 4 (13..22), 5 (23..35), 6 (36..53).
 
-**Continuation** (n = 54, 55, ...; 19 terms so far):
+**Continuation** (n = 54, 55, ...; 21 terms so far):
 
 ```
-7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
 ```
 
-b-file for n = 1..72: `erdos160/b402186.txt` (its first 53 lines agree with the live entry).
+b-file for n = 1..74: `erdos160/b402186.txt` (its first 53 lines agree with the live entry).
 
 **What each part rests on (state this in the submission).**
 
-* `a(n) <= 7` for 54 <= n <= 72: a 7-colouring of {1..72} (restriction gives every smaller n), found by local search and
+* `a(n) <= 7` for 54 <= n <= 74: a 7-colouring of {1..74} (restriction gives every smaller n), found by local search and
   verified by an independent script (`erdos160/verify.py`). It is
-  `3 4 7 1 1 6 5 7 6 6 4 2 2 1 4 1 6 3 3 2 5 7 2 3 2 4 4 7 5 7 1 5 3 6 1 4 6 6 3 2 6 1 7 4 7 2 2 5 4 3 5 5 7 1 7 3 3 1 5 2 5 6 1 4 3 2 4 2 6 1 7 6 `
+  `1 3 4 3 1 5 3 1 2 7 6 6 4 2 4 3 7 5 6 6 7 2 1 1 6 3 5 4 1 1 5 4 7 5 3 7 7 4 2 6 2 4 5 2 6 2 3 1 6 7 1 7 5 5 1 3 4 7 7 6 2 3 3 1 2 2 4 5 6 2 5 6 4 6 `
 * `a(n) >= 7` for n >= 54: there is **no** 6-colouring of {1..54}. This is an exhaustive computer search (`erdos160/col6b.c`,
   4.25e9 nodes, all 43,036 tasks completed on 4 cores; checks in `erdos160/results.md`). It is **one program and has no
   certificate**; it reproduces the known thresholds for 3, 4 and 5 colours (12, 22, 35) and its propagation rules were
   tested against exhaustive completion. A second, independent implementation has not been run.
-* Further terms: the longest 7-colourable interval is not known (>= 72). The same search for 7 colours is out of reach
+* Further terms: the longest 7-colourable interval is not known (≥ 74). The same search for 7 colours is out of reach
   (estimated tree size 2e15 to 4e15 nodes).
 
 **Suggested comment.** Let N(k) be the largest n for which {1..n} has a k-colouring in which every 4-term AP has at least 3
-colours; then a(n) = k iff N(k-1) < n <= N(k). N(3), ..., N(6) = 12, 22, 35, 53, and N(7) >= 72.
+colours; then a(n) = k iff N(k-1) < n <= N(k). N(3), ..., N(6) = 12, 22, 35, 53, and N(7) >= 74.
 
 **Program** (verifies the first thresholds; k = 5, 6 need `erdos160/col6b.c`):
 
@@ -259,7 +259,7 @@ contains at least three distinct colours.
 
 **DATA** (offset 1) `3, 3, 12, 22, 35, 53`
 
-**COMMENTS** Inverse of A402186: a(k) is the largest n with A402186(n) <= k. a(7) >= 72 (a 7-colouring of 1..72 exists).
+**COMMENTS** Inverse of A402186: a(k) is the largest n with A402186(n) <= k. a(7) >= 74 (a 7-colouring of 1..74 exists).
 a(1) = a(2) = 3 because the progression 1, 2, 3, 4 needs three colours. a(3), a(4), a(5) agree with the thresholds visible in
 A402186 (12, 22, 35); a(6) = 53 follows from A402186(53) = 6 and the exhaustive search above showing no 6-colouring of 1..54.
 
