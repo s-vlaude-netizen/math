@@ -263,7 +263,7 @@ contains at least three distinct colours.
 a(1) = a(2) = 3 because the progression 1, 2, 3, 4 needs three colours. a(3), a(4), a(5) agree with the thresholds visible in
 A402186 (12, 22, 35); a(6) = 53 follows from A402186(53) = 6 and the exhaustive search above showing no 6-colouring of 1..54.
 
-**CROSSREFS** A402186. **KEYWORD** nonn,hard,more,hard. (Check that this sequence is still absent before submitting: searched
+**CROSSREFS** A402186. **KEYWORD** nonn,hard,more. (Check that this sequence is still absent before submitting: searched
 2026-11-27 for 3,12,22,35,53 with no match.)
 
 Reproduce: `erdos160/README.md`.
