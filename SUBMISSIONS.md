@@ -203,3 +203,67 @@ being decided by `erdos272/clique3` (`n13_lb83_*`); do not submit a(13) until th
 
 Reproduce: `gcc -O3 -march=native -o clique_star clique_star.c && ./clique_star n 0 1 0 x` (star at x) and
 `clique_nonstar.c` (no common element).
+
+---
+
+## A402186 — Erdős problem 160 (least number of colours so that every 4-term AP has at least 3 colours)
+
+Current entry: offset 1, 53 terms (checked 2026-11-27): 1,1,1, then 3 (n=4..12), 4 (13..22), 5 (23..35), 6 (36..53).
+
+**Continuation** (n = 54, 55, ...; 19 terms so far):
+
+```
+7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7
+```
+
+b-file for n = 1..72: `erdos160/b402186.txt` (its first 53 lines agree with the live entry).
+
+**What each part rests on (state this in the submission).**
+
+* `a(n) <= 7` for 54 <= n <= 72: a 7-colouring of {1..72} (restriction gives every smaller n), found by local search and
+  verified by an independent script (`erdos160/verify.py`). It is
+  `3 4 7 1 1 6 5 7 6 6 4 2 2 1 4 1 6 3 3 2 5 7 2 3 2 4 4 7 5 7 1 5 3 6 1 4 6 6 3 2 6 1 7 4 7 2 2 5 4 3 5 5 7 1 7 3 3 1 5 2 5 6 1 4 3 2 4 2 6 1 7 6 `
+* `a(n) >= 7` for n >= 54: there is **no** 6-colouring of {1..54}. This is an exhaustive computer search (`erdos160/col6b.c`,
+  4.25e9 nodes, all 43,036 tasks completed on 4 cores; checks in `erdos160/results.md`). It is **one program and has no
+  certificate**; it reproduces the known thresholds for 3, 4 and 5 colours (12, 22, 35) and its propagation rules were
+  tested against exhaustive completion. A second, independent implementation has not been run.
+* Further terms: the longest 7-colourable interval is not known (>= 72). The same search for 7 colours is out of reach
+  (estimated tree size 2e15 to 4e15 nodes).
+
+**Suggested comment.** Let N(k) be the largest n for which {1..n} has a k-colouring in which every 4-term AP has at least 3
+colours; then a(n) = k iff N(k-1) < n <= N(k). N(3), ..., N(6) = 12, 22, 35, 53, and N(7) >= 72.
+
+**Program** (verifies the first thresholds; k = 5, 6 need `erdos160/col6b.c`):
+
+```
+(Python)
+def longest(k):
+    col = []; best = [0]
+    def ok(p):
+        return all(len({col[p], col[p-d], col[p-2*d], col[p-3*d]}) >= 3 for d in range(1, p//3 + 1))
+    def rec(p, used):
+        best[0] = max(best[0], p)
+        for c in range(min(used + 1, k)):
+            col.append(c)
+            if ok(p): rec(p + 1, max(used, c + 1))
+            col.pop()
+    rec(0, 0)
+    return best[0]
+print([longest(k) for k in range(1, 5)])  # [3, 3, 12, 22]
+```
+
+### New sequence (companion of A402186)
+
+**NAME** Largest n such that the integers 1..n can be coloured with k colours so that every 4-term arithmetic progression
+contains at least three distinct colours.
+
+**DATA** (offset 1) `3, 3, 12, 22, 35, 53`
+
+**COMMENTS** Inverse of A402186: a(k) is the largest n with A402186(n) <= k. a(7) >= 72 (a 7-colouring of 1..72 exists).
+a(1) = a(2) = 3 because the progression 1, 2, 3, 4 needs three colours. a(3), a(4), a(5) agree with the thresholds visible in
+A402186 (12, 22, 35); a(6) = 53 follows from A402186(53) = 6 and the exhaustive search above showing no 6-colouring of 1..54.
+
+**CROSSREFS** A402186. **KEYWORD** nonn,hard,more,hard. (Check that this sequence is still absent before submitting: searched
+2026-11-27 for 3,12,22,35,53 with no match.)
+
+Reproduce: `erdos160/README.md`.
