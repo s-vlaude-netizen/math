@@ -1,0 +1,10 @@
+--- a/clique5.c
++++ b/clique5.c
+@@ -33,6 +33,7 @@
+         }
+         for(int w=0;w<W;w++) if(U[w]){nonempty=1;break;}
+     }
++    if(depth==0 && getenv("DUMPORDER")){ FILE*f=fopen(getenv("DUMPORDER"),"w"); for(int i=cnt-1;i>=0;i--) fprintf(f,"%d %d %d\n",cnt-1-i,order[i],perm[order[i]]+1); fclose(f); exit(0); }
+     for(int i=cnt-1;i>=0;i--){
+         if(depth+col[i]<=best) return;
+         int v=order[i]; cur[depth]=v;
