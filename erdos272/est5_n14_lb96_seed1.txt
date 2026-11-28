@@ -1,0 +1,4 @@
+n=14 lb=96: roots explored 2401 of 16383 vertices; estimated expand() calls = 1.261e+10 (standard error 1.2e+10, 92%)
+share of the estimated cost by root index: <10: 0.5%  10-99: 95.3%  100-999: 4.1%  1000-9999: 0.1%  >=10000: 0.0%
+real	4m50.386s
+

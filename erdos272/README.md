@@ -91,3 +91,14 @@ in the natural order): other initial vertex orders (centre-containing sets first
 small sets first: 40x worse; by degree: 12x worse) and cutting a branch whose partial family
 still has a common element that no remaining candidate avoids (never fires; the colouring bound
 already disposes of star-like regions).
+
+## Is n = 14 feasible? (not attempted)
+
+`est5.c` is a Knuth-style estimator of the number of search nodes of `clique5` (random root-to-leaf probes, stratified over the
+root vertices). Calibration: at n = 11, bound 59 (true 4.95M nodes) it gave 3.1M-5.5M; at n = 13, bound 83 (true about 4.9e8
+nodes) it gave 1.8e8 and 3.1e8 (standard errors 15% and 47%), so it reads low by a factor of about 1.6-2.8 and its error
+bars are too small. For n = 14, bound 96 (Szabó's value is 95, and stars reach 95 for every centre) one run gave 1.3e10 nodes
+with a standard error of 92% (`est5_n14_lb96_seed1.txt`; 95% of that estimate sits in the roots 10..99, i.e. in a few huge
+probes). Correcting for the low reading, the full search needs roughly 1e10 to 1e11 nodes. With bitsets twice as wide as at
+n = 13 (about 25 microseconds per node instead of 12) that is on the order of 100-300 CPU-hours, so it was not started. A
+better bound (infra-chromatic or recolouring) or a symmetry argument would be needed to make a(14) reachable.
