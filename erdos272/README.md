@@ -82,6 +82,11 @@ How much to trust it (one program, no replayable certificate):
   node counts of the old logs (318144, 307756, 372659), so the imported "finished root" lists use the same numbering;
 * `check_n13_coverage.py` confirms that every root of each share up to its last one (1328, 1329, 1330, 1331 for shares 0..3, after
   which the colouring bound stops the loop) and every one of the 861 children of root 0 appears in some finished list.
+* **positive control at the size of the main run (2026-11-28):** `clique5` for bound 82 on the single root where the known 82-family is first
+  reached in the depth-0 processing order (root index 7 of 8191, the set {7,12,13}; the order is dumped by the three-line `dump_order.patch`) prints
+  `max=82` after 5,545,197 nodes (6 min, `./clique5 13 82 1000000 7`), and the family it prints is exactly `family_n13_82.txt` (valid by
+  `verify_family.py`, 3321 pairs). So at n = 13 (8191 vertices, 128-word bitsets, recursion depth 82) the program does find an 82-family where one
+  exists (`n13_poscontrol_root7.out`, `.err`). It does not test the other roots; their coverage is what `check_n13_coverage.py` is for.
 
 A fixed-size-stack bug in an earlier build (frames of 128 KB,
 overflow at recursion depth 64) was found and fixed before any result was taken from it.

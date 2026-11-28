@@ -195,6 +195,8 @@ Checks behind it: the same program reproduces a(1..10) and shows no family of 59
 four shares' node counts add up to the unsplit count plus exactly the 6 repeated calls (4954058 = 4954052 + 6), so the split
 into shares loses nothing; three roots imported from earlier partial runs were recomputed and gave identical node counts;
 `erdos272/check_n13_coverage.py` finds no root of any share, and no child of the split root 0, that was skipped.
+A positive control at n = 13: the same program, asked for bound 82 on the one root where the known 82-family is first reached, finds
+an 82-family in 5.5e6 nodes (it is the stored family, `erdos272/n13_poscontrol_root7.out`).
 Suggested comment: "a(13) = 82, equal to C(13,2) + floor(12/4) + 1: exhaustive computer search finds no family of 83
 subsets (about 5e8 nodes of an exact maximum-clique search); families with a common element reach 82."
 Do not call it proved: it is one unreviewed program run, and the OEIS usually wants an independent confirmation for such terms.
