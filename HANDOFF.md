@@ -21,14 +21,16 @@ Nothing below has been submitted to the OEIS; submitting needs the owner's accou
   `SPLIT0=1 S1M=4 S1R=$r CKPT=n13b_w$r.ckpt CKPT1=n13b_w$r.ckpt1 CKPTR=<earlier .ckpt files, colon separated> ./clique5 13 83 4 $r >> n13b_w$r.out 2>> n13b_w$r.err`,
   each as a registered background task (`run_in_background`), not with `&`: see "Why background jobs die" in `SESSIONS.md`.
 * **Kelvin enumerations**: `exp054` (unweighted, exact) is finished for n = 9..20 and `exp053` (second weight optimised) for n = 10..19.
-  The weighted n = 20 search runs as four shards started on 2026-11-28 between 05:28 and 05:35 UTC (about 3 h each; `results/exp053_n20_shard{0..3}of4.json`
-  appear when a shard ends, a shard that did not end must be rerun from scratch): `cd quantumalgorithms; OPENBLAS_NUM_THREADS=1 python3
+  The weighted n = 20 search runs as four shards restarted on 2026-11-28 at about 06:05 UTC with the value-only path (about 1 h each, 1.6 GB each; `results/exp053_n20_shard{0..3}of4.json`
+  appear when a shard ends, a shard that did not end must be rerun from scratch; a first attempt with the gradient path was OOM-killed, see Constraints): `cd quantumalgorithms; OPENBLAS_NUM_THREADS=1 python3
   experiments/exp053_circulant_enumerate.py --n 20 --shard I/4` for I = 0..3, each as a registered background task, then `... --n 20 --merge 4`
   (about 8 min; it certifies the best three and writes `results/exp053_n20.json`). Then add the result to the last addendum of Result 102 in
   `RESEARCH_LOG.md` (the n = 19 text there is the model) and fix the sentence that still calls the unweighted n = 20 value unchecked.
 * **A402186 7-colourings**: `cd erdos160; ./ladder7.sh 7 <N> 95 40 25 <seed_offset>` (several copies with different offsets race on the same N).
 
 ## Constraints met in this environment
+
+Memory: the container's limit is about 16 GB in total; four `Problem.value_grad` processes at n = 20 (3.5 GB each) plus a merge were OOM-killed (exit 137), so exp053 now uses `Problem.value` (1.6 GB at n = 20).
 
 No scipy, sympy, mpmath, SAT solver or network installs (installs were refused), so the Kelvin experiments in
 `quantumalgorithms` (exp050..054) were rewritten to use numpy and exact integer arithmetic only; everything else uses C and numpy only.
