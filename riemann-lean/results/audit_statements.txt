@@ -1,0 +1,19 @@
+def RiemannHypothesis : Prop :=
+∀ (s : ℂ), riemannZeta s = (0 : ℂ) → (¬∃ n, s = (-2 : ℂ) * (↑n + (1 : ℂ))) → s ≠ (1 : ℂ) → s.re = (1 / 2 : ℝ)
+def RiemannZetaZerosOnLine : Prop :=
+∀ (s : ℂ), riemannZeta s = (0 : ℂ) → (¬∃ n, s = (-2 : ℂ) * (↑n + (1 : ℂ))) → s ≠ (1 : ℂ) → s.re = (1 / 2 : ℝ)
+def DirichletLNonvanishingRightOfHalf : Prop :=
+∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+  (1 / 2 : ℝ) < s.re → χ ≠ (1 : DirichletCharacter ℂ N) ∨ s ≠ (1 : ℂ) → LFunction χ s ≠ (0 : ℂ)
+def DirichletLZerosOnLine : Prop :=
+∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+  (0 : ℝ) < s.re → s.re < (1 : ℝ) → LFunction χ s = (0 : ℂ) → s.re = (1 / 2 : ℝ)
+def PrimitiveDirichletLZerosOnLine : Prop :=
+∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N),
+  χ.IsPrimitive → ∀ (s : ℂ), (0 : ℝ) < s.re → s.re < (1 : ℝ) → LFunction χ s = (0 : ℂ) → s.re = (1 / 2 : ℝ)
+'audit_zeta_statement_is_mathlibs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'audit_all_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'audit_primitive_of_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'audit_nonvanishing_of_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'audit_rh_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'audit_cluster' depends on axioms: [propext, Classical.choice, Quot.sound]

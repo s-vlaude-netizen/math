@@ -62,7 +62,8 @@ from different parties. No body certifies a formal statement; the Lean FRO / Mat
 vetted by experts in Lean and number theory and compared with the proof by `comparator` and `con-leche` (second-hand summary, not
 read directly here, and it is the stewards' own statement). Lean checks proofs, not that a definition means what its name says:
 that part is a human reading of the three lines above. The four GRH statements are different: the authors define them in
-`src/Statements.lean`, they are not Mathlib's.
+`src/Statements.lean`, they are not Mathlib's. I read them separately, with Lean cross-checks that use only Mathlib: see
+`STATEMENTS_AUDIT.md` (all five theorems follow from the single textbook statement "GRH for primitive Dirichlet characters").
 
 ## Reproduce
 
@@ -76,6 +77,7 @@ lake env lean /path/to/scripts/Statement.lean       # statement and where each n
 lake build Challenge                                # five `sorry` warnings are expected
 lake env lean /path/to/scripts/DumpChallenge.lean   # then DumpMain.lean; compare the THM and DEF lines
 lake env leanchecker Statements                     # one module; scripts/lc_all.sh loops over all of them
+lake env lean /path/to/scripts/AuditStatements.lean    # the cross-checks of STATEMENTS_AUDIT.md (about 10-30 s)
 ```
 
 `scripts/run.sh` is the clean-environment wrapper used for every command (paths are those of this container).
