@@ -20,7 +20,10 @@ Nothing below has been submitted to the OEIS; submitting needs the owner's accou
   `gcc -O3 -march=native -o clique5 clique5.c`, then for r in 0..3:
   `SPLIT0=1 S1M=4 S1R=$r CKPT=n13b_w$r.ckpt CKPT1=n13b_w$r.ckpt1 CKPTR=n13_lb83_part0.ckpt:n13_lb83_part1.ckpt:n13_lb83_part2.ckpt:n13_lb83_root0.ckpt ./clique5 13 83 4 $r > n13b_w$r.out 2> n13b_w$r.err &`
   A worker that finishes prints `n=13 none >= 83 ...`; a clique of size >= 83 would be printed instead. The answer is
-  "none >= 83" only when all four workers have printed it.
+  "none >= 83" only when all four workers have printed it. Use `>>` instead of `>` to keep the logs, and start each
+  worker as a registered background task (`run_in_background`), not with `&`: see "Why background jobs die" in `SESSIONS.md`.
+  **Status 2026-11-28 00:09 UTC: worker 2 (roots = 2 mod 4) has finished, `n=13 none >= 83` in `n13b_w2.out`**;
+  workers 0, 1 and 3 were still running (their roots done are listed in `n13b_w*.ckpt`).
 * **Kelvin enumerations** (`quantumalgorithms/experiments/exp054_unweighted_circulants_exact.py --n N`, N = 18, 19, 20 may still be running; results in `results/exp054_n*.json`).
 * **A402186 7-colourings**: `cd erdos160; ./ladder7.sh 7 <N> 95 40 25 <seed_offset>` (several copies with different offsets race on the same N).
 
