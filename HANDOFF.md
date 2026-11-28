@@ -22,8 +22,9 @@ Nothing below has been submitted to the OEIS; submitting needs the owner's accou
   A worker that finishes prints `n=13 none >= 83 ...`; a clique of size >= 83 would be printed instead. The answer is
   "none >= 83" only when all four workers have printed it. Use `>>` instead of `>` to keep the logs, and start each
   worker as a registered background task (`run_in_background`), not with `&`: see "Why background jobs die" in `SESSIONS.md`.
-  **Status 2026-11-28 00:09 UTC: worker 2 (roots = 2 mod 4) has finished, `n=13 none >= 83` in `n13b_w2.out`**;
-  workers 0, 1 and 3 were still running (their roots done are listed in `n13b_w*.ckpt`).
+  **Status 2026-11-28 00:15 UTC: workers 0 and 2 (roots = 0 and 2 mod 4) have finished, `n=13 none >= 83` in
+  `n13b_w0.out` and `n13b_w2.out`**; workers 1 and 3 were still running (their roots done are listed in `n13b_w*.ckpt`;
+  worker 1 had not finished a new root for 30 min, it is on a hard one).
 * **Kelvin enumerations** (`quantumalgorithms/experiments/exp054_unweighted_circulants_exact.py --n N`, N = 18, 19, 20 may still be running; results in `results/exp054_n*.json`).
 * **A402186 7-colourings**: `cd erdos160; ./ladder7.sh 7 <N> 95 40 25 <seed_offset>` (several copies with different offsets race on the same N).
 
