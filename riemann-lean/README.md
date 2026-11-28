@@ -38,6 +38,32 @@ results only, not the authors' Lean source (see "Reproduce").
   64 GB of memory and a few hours; that was not run here.
 * The three Dirichlet-L theorems say nothing about zeros with real part at most 0 (authors' README).
 
+## Is the headline statement the Riemann hypothesis? (added 2026-11-28)
+
+`riemannHypothesis : RiemannHypothesis`, and `RiemannHypothesis` is Mathlib's, declared in
+`Mathlib/NumberTheory/LSeries/RiemannZeta.lean` (the file header says "Authors: David Loeffler", 2023; I did not trace who added
+the definition line itself):
+
+    def RiemannHypothesis : Prop :=
+      ∀ (s : ℂ) (_ : riemannZeta s = 0) (_ : ¬∃ n : ℕ, s = -2 * (n + 1)) (_ : s ≠ 1), s.re = 1 / 2
+
+Read: every zero of ζ other than the trivial zeros -2, -4, -6, ... (and other than s = 1) has real part 1/2.
+Why `riemannZeta` is the real ζ (all proved in the Mathlib revision used here): `differentiableAt_riemannZeta` (holomorphic away from
+s = 1), `zeta_eq_tsum_one_div_nat_cpow` (equal to the series for Re s > 1), `riemannZeta_eulerProduct`, `riemannZeta_one_sub`
+(functional equation), `riemannZeta_neg_two_mul_nat_add_one` (trivial zeros), `riemannZeta_zero` (ζ(0) = -1/2). A function holomorphic
+on the connected set ℂ∖{1} is fixed by its values on Re s > 1, so only the value at s = 1 is a convention; Mathlib sets it to
+(γ − log 4π)/2 and proves it is not 0 (`riemannZeta_one_ne_zero`), so the clause `s ≠ 1` is harmless.
+
+Who made what: Mathlib is the Lean community's library, not Anthropic's (35,419 commits in the checked-out history, none with an
+anthropic author address, which is weak evidence by itself). The proof repository's own README says its proof is based on
+Alpöge's "with Claude" and carries "Copyright 2026 Anthropic, PBC", so the proof and the definition it is measured against come
+from different parties. No body certifies a formal statement; the Lean FRO / Mathlib Initiative post
+<https://leanprover-community.github.io/blog/posts/riemann-hypothesis/> (2026-11-21) is reported to say that the statement was
+vetted by experts in Lean and number theory and compared with the proof by `comparator` and `con-leche` (second-hand summary, not
+read directly here, and it is the stewards' own statement). Lean checks proofs, not that a definition means what its name says:
+that part is a human reading of the three lines above. The four GRH statements are different: the authors define them in
+`src/Statements.lean`, they are not Mathlib's.
+
 ## Reproduce
 
 ```bash
