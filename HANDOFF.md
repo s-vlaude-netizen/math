@@ -25,6 +25,12 @@ Nothing below has been submitted to the OEIS; submitting needs the owner's accou
   for I = 0..3 (registered background tasks), then `--n N --merge 4`; n = 20 needs 1.6 GB per shard and about 1 h, and every added dimension roughly doubles both.
 * **A402186 7-colourings**: `cd erdos160; ./ladder7.sh 7 <N> 95 40 25 <seed_offset>` (several copies with different offsets race on the same N).
 
+## Decisions by the owner (2026-11-28)
+
+* Keep the three tracked ELF binaries (`erdos1016/arcform/arcdfs2`, `erdos1016/arcform/gentypes`, `erdos817/ternary`); do not remove them.
+* Do not attempt a(14) for A401861 (estimated 100 to 300 CPU-hours) yet.
+* Kelvin beyond n = 20: asked how many shards it would need; not yet decided (n = 21 would be 3 shards, about 3 h and 10 GB; n = 22 is not practical here).
+
 ## Constraints met in this environment
 
 Memory: the container's limit is about 16 GB in total; four `Problem.value_grad` processes at n = 20 (3.5 GB each) plus a merge were OOM-killed (exit 137), so exp053 now uses `Problem.value` (1.6 GB at n = 20).
