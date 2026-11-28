@@ -185,8 +185,19 @@ Current entry: offset 2, 11 terms `6, 8, 12, 16, 20, 28, 32, 42, 48, 60, 68`.
 Current entry: offset 1, 12 terms `1, 2, 4, 7, 12, 17, 23, 30, 39, 48, 58, 69`, all equal to Szabó's lower bound
 `C(n,2) + floor((n-1)/4) + 1`.
 
-**New term: not yet.** a(13) >= 82 (Szabó's bound; a family of 82 sets exists). Whether 83 sets are possible is
-being decided by `erdos272/clique3` (`n13_lb83_*`); do not submit a(13) until that run reports "none >= 83".
+**New term: a(13) = 82** (computed 2026-11-28; the data line would become `1, 2, 4, 7, 12, 17, 23, 30, 39, 48, 58, 69, 82`).
+Lower bound: a family of 82 sets exists (Szabó's bound; an explicit one is in `erdos272/family_n13_82.txt`, checked by an
+independent Python script, `erdos272/verify_family.py`: 3321 pairs, every intersection a non-empty AP). Upper bound:
+exhaustive maximum-clique search of the graph on the 8191 non-empty subsets of {1..13} found no family of 83 sets; all four
+shares printed `n=13 none >= 83` (`erdos272/n13b_w{0..3}.out`). About 5e8 search nodes, roughly 6 CPU-hours, one program
+(`clique5.c`, bit-parallel branch and bound with greedy colouring), no certificate that a second program could replay.
+Checks behind it: the same program reproduces a(1..10) and shows no family of 59 sets at n = 11 (a(11) = 58); at n = 11 the
+four shares' node counts add up to the unsplit count plus exactly the 6 repeated calls (4954058 = 4954052 + 6), so the split
+into shares loses nothing; three roots imported from earlier partial runs were recomputed and gave identical node counts;
+`erdos272/check_n13_coverage.py` finds no root of any share, and no child of the split root 0, that was skipped.
+Suggested comment: "a(13) = 82, equal to C(13,2) + floor(12/4) + 1: exhaustive computer search finds no family of 83
+subsets (about 5e8 nodes of an exact maximum-clique search); families with a common element reach 82."
+Do not call it proved: it is one unreviewed program run, and the OEIS usually wants an independent confirmation for such terms.
 
 **Suggested comments (computed, exact, `erdos272/`; each is a statement about a restricted class, not about a(n)):**
 

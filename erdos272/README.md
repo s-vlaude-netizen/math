@@ -65,7 +65,25 @@ something 4 sets above the best non-star family the pattern predicts (79).
 
 ## Status of the full n = 13 search
 
-Pending at the time of writing. A fixed-size-stack bug in an earlier build (frames of 128 KB,
+**Result (2026-11-28): no family of 83 sets exists for n = 13, so a(13) = 82 = Szabó's bound.**
+`clique5.c` searched the full graph on the 8191 non-empty subsets of {1..13} for a clique of size 83 or more; the work was
+split into four shares by root vertex (root 0, the largest, is split among them one level down), and all four printed
+`n=13 none >= 83` (`n13b_w0.out` ... `n13b_w3.out`; 39.8M, 106.0M, 31.1M and 75.3M nodes in the last process of each share;
+about 5e8 nodes and 6 CPU-hours over all partial runs, including the 3-way runs `n13_lb83_part*` whose finished roots were
+imported). The lower bound is an explicit 82-family (`family_n13_82.txt`, found by `clique_star 13 82 1 0 7`, checked by
+the independent script `verify_family.py`: all 3321 pairwise intersections are non-empty APs).
+
+How much to trust it (one program, no replayable certificate):
+* the program reproduces a(1..10) and finds no family of 59 sets at n = 11;
+* at n = 11 the four shares are an exact partition of the search tree: with bound 59 their node counts sum to 4954058, the
+  unsplit run has 4954052, and the difference 6 is exactly the repeated depth-0 and root-0 calls (3 + 3); with bound 58
+  two of the four shares find 58-families;
+* roots 27, 58 and 23 (one from each earlier 3-way run) were recomputed alone with the current program and gave exactly the
+  node counts of the old logs (318144, 307756, 372659), so the imported "finished root" lists use the same numbering;
+* `check_n13_coverage.py` confirms that every root of each share up to its last one (1328, 1329, 1330, 1331 for shares 0..3, after
+  which the colouring bound stops the loop) and every one of the 861 children of root 0 appears in some finished list.
+
+A fixed-size-stack bug in an earlier build (frames of 128 KB,
 overflow at recursion depth 64) was found and fixed before any result was taken from it.
 
 Two things tried for the full graph that did **not** help (n = 10, bound 49, 461,344 nodes
