@@ -21,7 +21,7 @@ Nothing below has been submitted to the OEIS; submitting needs the owner's accou
   `SPLIT0=1 S1M=4 S1R=$r CKPT=n13b_w$r.ckpt CKPT1=n13b_w$r.ckpt1 CKPTR=<earlier .ckpt files, colon separated> ./clique5 13 83 4 $r >> n13b_w$r.out 2>> n13b_w$r.err`,
   each as a registered background task (`run_in_background`), not with `&`: see "Why background jobs die" in `SESSIONS.md`.
 * **Kelvin enumerations**: `exp054` (unweighted, exact) is finished for n = 9..20 and `exp053` (second weight optimised) for n = 10..19.
-  The weighted n = 20 search runs as four shards restarted on 2026-11-28 at about 06:05 UTC with the value-only path (about 1 h each, 1.6 GB each; `results/exp053_n20_shard{0..3}of4.json`
+  The weighted n = 20 search runs as four shards restarted on 2026-11-28 at about 05:43 UTC with the value-only path (about 1 h each, 1.6 GB each; `results/exp053_n20_shard{0..3}of4.json`
   appear when a shard ends, a shard that did not end must be rerun from scratch; a first attempt with the gradient path was OOM-killed, see Constraints): `cd quantumalgorithms; OPENBLAS_NUM_THREADS=1 python3
   experiments/exp053_circulant_enumerate.py --n 20 --shard I/4` for I = 0..3, each as a registered background task, then `... --n 20 --merge 4`
   (about 8 min; it certifies the best three and writes `results/exp053_n20.json`). Then add the result to the last addendum of Result 102 in
