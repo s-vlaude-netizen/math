@@ -1,0 +1,157 @@
+A001220  terms=  2  erdos#=['11']  kw=nonn,hard,bref,nice,more
+     Wieferich primes: primes p such that p^2 divides 2^(p-1) - 1.
+A297867  terms=  2  erdos#=['939']  kw=nonn,hard,bref,more
+     3-powerful numbers that can be written as the sum of two coprime 3-powerful numbers.
+A003135  terms=  3  erdos#=['373']  kw=nonn,bref,more,hard
+     n! is a nontrivial product of factorials. It is conjectured that the list is complete.
+A003323  terms=  4  erdos#=['554']  kw=nonn,more,hard
+     Multicolor Ramsey numbers R(3,3,...,3), where there are n 3's.
+A180058  terms=  4  erdos#=['849']  kw=nonn,more
+     Smallest number occurring in exactly n rows of Pascal's triangle.
+A392185  terms=  4  erdos#=['901']  kw=nonn,hard,more
+     Smallest number of sets a(n) in a collection C of sets of size n such that C does not have Property B (see com
+A030126  terms=  5  erdos#=['483']  kw=nonn,hard,nice,more
+     Schur's numbers (version 1).
+A050259  terms=  5  erdos#=['479']  kw=nonn,more,hard
+     Numbers k such that 2^k == 3 (mod k).
+A292528  terms=  5  erdos#=['1013', '1104']  kw=nonn,hard,more
+     Minimal number of vertices in a triangle-free graph with chromatic number n.
+A394563  terms=  5  erdos#=['82']  kw=nonn,hard,more
+     Least integer a(n) such that every graph on a(n) vertices has an induced regular subgraph of order at least n.
+A394564  terms=  5  erdos#=['82']  kw=nonn,hard,more
+     Least integer a(n) such that every graph on a(n) vertices has an induced regular subgraph of order n.
+A003829  terms=  6  erdos#=['104']  kw=nonn,more
+     Maximal number of unit circles through n points in plane, each circle containing 3 of the points.
+A005346  terms=  6  erdos#=['138', '169']  kw=nonn,hard,more
+     Van der Waerden numbers W(2,n).
+A006560  terms=  6  erdos#=['141']  kw=nonn,hard,more,nice
+     Smallest starting prime for n consecutive primes in arithmetic progression.
+A245762  terms=  6  erdos#=['86']  kw=nonn,more
+     Maximum number of edges in a C_4 free subgraph of the n-cube.
+A385316  terms=  6  erdos#=['979']  kw=nonn,hard,more
+     Smallest number that is the sum of 3 cubes of primes in exactly n different ways.
+A399720  terms=  6  erdos#=['817']  kw=nonn,hard,more
+     Least N such that {1,...,N} contains an n-element subset whose set of subset sums contains no 3-term arithmeti
+A000445  terms=  7  erdos#=['436']  kw=nonn,nice,more,hard,changed
+     Latest possible occurrence of the first consecutive pair of n-th power residues, modulo any prime.
+A001661  terms=  7  erdos#=['345']  kw=nonn,nice,more,hard
+     Largest number not the sum of distinct positive n-th powers.
+A007539  terms=  7  erdos#=['1053']  kw=nonn,nice,more
+     a(n) = first n-fold perfect (or n-multiperfect) number.
+A039669  terms=  7  erdos#=['236', '1142']  kw=nonn,hard,more
+     Positive numbers m such that m - 2^k is a prime for all k > 0 with 2^k < m.
+A098565  terms=  7  erdos#=['849']  kw=nonn,more
+     Numbers that appear as binomial coefficients exactly 6 times.
+A131628  terms=  7  erdos#=['89']  kw=nonn,more
+     Maximal size of an n-distance set in the plane.
+A280992  terms=  7  erdos#=['386']  kw=nonn,more
+     Squarefree triangular numbers that are products of consecutive primes.
+A362137  terms=  7  erdos#=['902']  kw=nonn,hard,more
+     Smallest size of an n-paradoxical tournament built as a directed Paley graph.
+A001438  terms=  8  erdos#=['724']  kw=nonn,hard,more,nice
+     Maximal number of mutually orthogonal Latin squares (or MOLS) of order n.
+A006585  terms=  8  erdos#=['148']  kw=nonn,nice,hard,more
+     Egyptian fractions: number of solutions to 1 = 1/x_1 + ... + 1/x_n in positive integers x_1 < ... < x_n.
+A054377  terms=  8  erdos#=['313']  kw=nonn,more,hard
+     Primary pseudoperfect numbers: numbers k > 1 such that 1/k + sum 1/p = 1, where the sum is over the primes p |
+A000791  terms=  9  erdos#=['165', '544', '1030']  kw=nonn,hard,more,nice
+     Ramsey numbers R(3,n).
+A389839  terms= 11  erdos#=['854']  kw=nonn,more
+     Smallest even number which cannot be written as the difference of two consecutive numbers which are relatively
+A343507  terms= 12  erdos#=['727']  kw=nonn,hard,more,changed
+     a(n) is the smallest nonnegative integer k such that (2*k)! / (k+n)!^2 is an integer.
+A377587  terms= 12  erdos#=['11']  kw=nonn,more
+     a(n) is the smallest odd integer m with m-2^k not squarefree for all 1<=k<=n.
+A401861  terms= 12  erdos#=['272']  kw=nonn,hard,more
+     Maximum size of a family of distinct subsets of {1, ..., n} whose pairwise intersections are nonempty arithmet
+A015940  terms= 13  erdos#=['479']  kw=nonn,more
+     Positive integers n such that 2^n == -3 (mod n).
+A119242  terms= 13  erdos#=['942']  kw=nonn,more
+     Least number k such that there are exactly n powerful numbers between k^2 and (k+1)^2.
+A186704  terms= 13  erdos#=['89', '91', '661', '1083']  kw=nonn,hard,more,nice
+     The minimum number of distinct distances determined by n points in the Euclidean plane.
+A387897  terms= 13  erdos#=['528']  kw=nonn,cons,more
+     Decimal expansion of the connective constant of the square lattice.
+A394930  terms= 13  erdos#=['82']  kw=nonn,hard,more
+     Number of graphs with n vertices that have no induced regular subgraph of order 7.
+A394933  terms= 13  erdos#=['82']  kw=nonn,hard,more
+     Number of graphs with n vertices that have no induced regular subgraph of order 7 or greater.
+A399654  terms= 13  erdos#=['84']  kw=nonn,hard,more
+     Number of distinct sets of cycle lengths realized by simple graphs on n vertices.
+A193838  terms= 14  erdos#=['1208']  kw=nonn,hard,more
+     Size k of smallest square of k X k lattice points from which n points with distinct mutual distances can be ch
+A388850  terms= 14  erdos#=['382']  kw=nonn,hard,more
+     Initial term of first maximal bad interval of width n, i.e., initial term of the first run of exactly n+1 cons
+A392636  terms= 14  erdos#=['82']  kw=nonn,hard,more
+     Number of graphs with n vertices that have no induced regular subgraph of order 6 or greater.
+A394462  terms= 14  erdos#=['82']  kw=nonn,hard,more
+     Number of graphs with n vertices that have no induced regular subgraph of order 6.
+A003035  terms= 16  erdos#=['669']  kw=nonn,nice,hard,more
+     Maximal number of 3-tree rows in n-tree orchard problem.
+A025494  terms= 16  erdos#=['1108']  kw=nonn,more
+     Squares which are the sum of factorials of distinct integers (probably finite).
+A060427  terms= 16  erdos#=['1056']  kw=nonn,nice,more
+     Smallest prime p such that there are n strings of consecutive integers all having products = 1 mod p.
+A375077  terms= 16  erdos#=['396']  kw=nonn,hard,more
+     Smallest k such that Product_{i=0..n} (k-i) divides C(2*k,k).
+A398541  terms= 16  erdos#=['176']  kw=nonn,hard,more
+     Least k such that every {+1,-1}-coloring of {1,...,k} contains an n-term arithmetic progression whose signed s
+A271490  terms= 17  erdos#=['1208']  kw=nonn,hard,more,nice
+     Size of largest subset of points of n X n grid such that no two points are at the same distance.
+A332077  terms= 17  erdos#=['20']  kw=nonn,tabl,hard,more,nice
+     Square array of sunflower numbers Sun(m,n) = minimal number of distinct sets of cardinality <= m such that the
+A048892  terms= 18  erdos#=['945']  kw=nonn,nice,more
+     Start of n consecutive integers with distinct number of divisors.
+A005432  terms= 19  erdos#=['1162']  kw=nonn,hard,more,nice
+     Number of permutation groups of degree n (or, number of distinct subgroups of symmetric group S_n, counting co
+A192881  terms= 19  erdos#=['295']  kw=nonn,more,hard
+     Number of terms for the shortest Egyptian fraction representation of 1 starting with 1/n.
+A364153  terms= 19  erdos#=['357']  kw=nonn,hard,more
+     a(n) is the smallest positive integer such that from the set {1, 2, ..., a(n)} one can choose a sequence (s(1)
+A006065  terms= 20  erdos#=['101', '588', '669']  kw=nonn,hard,nice,more
+     Maximal number of 4-tree rows in n-tree orchard problem.
+A051761  terms= 21  erdos#=['1108']  kw=nonn,more
+     Numbers that are simultaneously a sum of factorials of distinct integers and of the form a^b with b >= 2.
+A186705  terms= 21  erdos#=['1085']  kw=nonn,hard,more,nice
+     The Erdős unit distance problem: the maximum number of occurrences of the same distance among n points in the 
+A385657  terms= 21  erdos#=['668']  kw=nonn,hard,more
+     Number of nonisomorphic maximally dense unit-distance graphs on n vertices.
+A390257  terms= 21  erdos#=['82']  kw=nonn,more
+     Minimum size of maximum regular induced subgraph of a graph on n vertices.
+A175769  terms= 22  erdos#=['503']  kw=nonn,more,hard
+     Maximum cardinality of isosceles sets in E^n.
+A008997  terms= 24  erdos#=['588', '669']  kw=nonn,nice,hard,more
+     Orchard problem with 5 trees in a row.
+A005115  terms= 26  erdos#=['200']  kw=nonn,hard,more,nice
+     Let i, i+d, i+2d, ..., i+(n-1)d be an n-term arithmetic progression of primes; choose the one which minimizes 
+A115645  terms= 26  erdos#=['1108']  kw=nonn,more
+     Powerful(1) numbers (A001694) that are sums of distinct factorials.
+A003022  terms= 27  erdos#=['30', '155']  kw=nonn,hard,nice,more,changed
+     Length of shortest (or optimal) Golomb ruler with n marks.
+A227590  terms= 28  erdos#=['30', '155']  kw=nonn,hard,more
+     a(n) = A003022(n)+1 with a(1)=1.
+A394574  terms= 28  erdos#=['82']  kw=nonn,hard,more
+     a(n) is the greatest k such that every graph on n vertices has an induced regular subgraph of order k.
+A364132  terms= 29  erdos#=['357']  kw=nonn,hard,more
+     a(n) is the smallest positive integer such that from the set {1, 2, ..., a(n)} one can choose an increasing se
+A393584  terms= 33  erdos#=['36']  kw=nonn,more
+     a(n) is the minimum, over all partitions {X, Y} of {1..2n} with |X| = |Y|, of the maximum number of pairs (x, 
+A386439  terms= 35  erdos#=['168']  kw=nonn,cons,more
+     Decimal expansion of the maximal density of a set of positive integers free of subsets of the form {n, 2n, 3n}
+A006672  terms= 38  erdos#=['85', '552']  kw=nonn,hard,more
+     a(n) = smallest m such that for every red-blue edge-coloring of the graph K_{m} there exists either a red 4-cy
+A006855  terms= 40  erdos#=['60']  kw=nonn,more
+     Maximum number of edges in an n-node squarefree graph, or, in a graph containing no 4-cycle, or no C_4.
+A390256  terms= 43  erdos#=['82']  kw=nonn,more
+     Minimum size of maximum clique or independent set of a graph on n vertices.
+A392342  terms= 45  erdos#=['1107']  kw=nonn,more
+     Numbers that are not the sum of at most four cubefull numbers.
+A066063  terms= 51  erdos#=['791']  kw=nonn,more
+     Size of the smallest subset S of T={0,1,2,...,n} such that each element of T is the sum of two elements of S.
+A006856  terms= 53  erdos#=['573']  kw=nonn,more
+     Maximal number of edges in n-node graph of girth at least 5.
+A402186  terms= 53  erdos#=['160']  kw=nonn,more,hard,new
+     Least number of colors in a coloring of {1, ..., n} such that every 4-term arithmetic progression contains at 
+A105206  terms= 65  erdos#=['1016']  kw=nonn,more,changed
+     Number of edges in a pancyclic graph on n+2 vertices with the fewest possible edges.
+candidates: 78
