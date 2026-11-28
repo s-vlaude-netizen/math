@@ -281,3 +281,6 @@ root 296/8191 done, nodes=33898563, t=1486s
 root 300/8191 done, nodes=34034696, t=1492s
 root 304/8191 done, nodes=34081596, t=1494s
 root 308/8191 done, nodes=34197229, t=1499s
+root 312/8191 done, nodes=34400344, t=1509s
+root 316/8191 done, nodes=34423167, t=1510s
+root 320/8191 done, nodes=34591734, t=1519s
