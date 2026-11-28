@@ -73,7 +73,21 @@ all-characters statement could not follow from the primitive one).
 * That Mathlib's `DirichletCharacter.LFunction` and `IsPrimitive` are what their names say (documented and tied to the series, as above; the same
   standing as Mathlib's `riemannZeta`), and that the reader agrees `PrimitiveDirichletLZerosOnLine` is the generalized Riemann hypothesis for Dirichlet
   L-functions.
-* The Lean kernel and Mathlib, as always. This read says nothing about the proof itself.
+* The Lean kernel and Mathlib, as always (next section).
+
+## How this fits with the compile
+
+This audit is about the *statements* only. The *proof* is what the build and the replay in `README.md` check: `lake build` (the kernel type-checks
+every declaration), `#print axioms` giving only `propext`, `Classical.choice`, `Quot.sound` for all five theorems, a source scan with no `sorry`,
+`native_decide` or kernel-bypass pattern, and a module-by-module `leanchecker` replay of all 794 modules. Put together:
+
+1. the statements are the standard ones (this read: the headline one is Mathlib's `RiemannHypothesis`, the other four reduce to the textbook GRH for
+   primitive characters), and
+2. Lean's kernel accepts proofs of them from the standard axioms (the compile and the replay).
+
+In the formal sense that is a machine-checked proof of the five statements, relative to the trusted base: the Lean kernel (both checks used the same kernel
+code; an independent kernel replay such as nanoda was not run here, the authors' README says they ran it), Mathlib as downloaded from its prebuilt cache (not
+replayed here), and the three standard axioms. What the compile does not give is a human reading of the proof; nobody has read it through yet.
 
 ## Reproduce
 

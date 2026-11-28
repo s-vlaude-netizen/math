@@ -3,6 +3,14 @@
 Done on 2026-11-27 in a cloud container with 4 cores and 16 GB RAM. This folder holds the scripts and the
 results only, not the authors' Lean source (see "Reproduce").
 
+## Bottom line
+
+In the formal sense this is a machine-checked proof: Lean's kernel accepted proofs of the five theorems from the three standard axioms, in a clean build
+and again in a module-by-module replay, and the headline statement is Mathlib's `RiemannHypothesis`, whose definition I checked against the standard
+statement (below, and `STATEMENTS_AUDIT.md`). Relative to that, `riemannHypothesis` is a theorem. What this run does not take out of the trusted base: the
+Lean kernel itself (both checks used the same kernel code; an independent kernel replay was not run here), Mathlib as downloaded (prebuilt, not replayed)
+and the standard axioms. And no mathematician has read the proof through (the authors' README says so).
+
 ## What was checked
 
 * **Source:** <https://github.com/lsernau/grh-lean>, commit `72fead102f663d5c7a407964a13dc0cf9d977207`, directory
